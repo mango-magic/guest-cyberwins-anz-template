@@ -172,7 +172,7 @@ const Hero = () => {
             alt="CyberWins by Exclusive Networks"
             style={{ height: "220px", width: "auto", maxWidth: "600px", marginBottom: "2px", marginTop: "-40px" }}
           />
-          <span className="font-sans text-xs font-medium tracking-widest uppercase px-3 py-1 rounded-full border border-exclusive-orange/40 text-exclusive-orange bg-exclusive-orange/10 -mt-4">
+          <span className="font-sans text-xs font-medium tracking-widest uppercase px-3 py-1 rounded-full border border-exclusive-orange/40 text-exclusive-orange bg-exclusive-orange/10 -mt-7">
             Australia & New Zealand
           </span>
         </div>
