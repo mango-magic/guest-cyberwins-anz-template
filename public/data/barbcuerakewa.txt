@@ -1,0 +1,670 @@
+0:10
+Welcome to Cyber Winds podcast. Today we have with us Roberto Sagast who has some
+0:14
+really interesting takes on attack surfaces and chaos that I think you'll
+0:17
+really enjoy. Uh Roberto, first of all, thanks for joining. It's a privilege
+0:21
+that someone would come log on and talk about us in our podcast. But as you
+0:25
+know, uh from a chaos perspective, we spend a lot of time talking about the
+0:28
+negatives. we don't spend near enough time sharing and talking about the
+0:31
+positives. So feel free to introduce yourself and and tell us some of the
+0:35
+things that are interesting in your world. We really appreciate you joining
+0:38
+Cyber Winds today. Yeah, absolutely. Thanks Mark. And uh so
+0:41
+Roberto Sagumi, I've been in cyber for about I'd say 25 years combined. I've
+0:48
+been I've done a lot of work. You're dating you're dating yourself.
+0:51
+I know dating yourself. I know. Don't let the Don't let the the
+0:53
+looks deceive you. But um I started my career doing a lot of uh cellular
+0:59
+networks and and then I transitioned into a consulting space where I I
+1:04
+consulted I I did a lot of web development, web pen testing and a lot
+1:08
+of uh specialized turnkey solutions for uh private public sector and then I
+1:15
+transition into a public sector role. Uh but I I I see things differently from a
+1:20
+different economy. Um just in in terms of what I consider work control.
+1:24
+Everything has to generate work in in cyber, in IT, in OT. And the work
+1:32
+control generates transactions in a network. And those transactions are, you
+1:37
+know, we talk about the three-way handshake. We talk about uh packets and
+1:41
+everything inside of a network is chaos. Everything inside of it is devices that
+1:47
+are talking, devices that are uh you know sending, listening, and if if
+1:53
+they're probing, if they're sending, if they're receiving, there's this well
+1:57
+orchestrated chaos that moves at the speed of light. So when I talk about an
+2:00
+attack surface um and I've presented at uh multiple uh you know seminars and and
+2:06
+and conferences here in the valley uh I talk about how that makes up your attack
+2:14
+surface but also how we see a light in the economy like we we see
+2:20
+the the the chaos but we don't quite understand it and we don't know what to
+2:24
+do with it. So every product we buy, every situation where we bring in
+2:28
+something to promote a solution or to solve a problem, it's really looking at
+2:33
+the chaos that we have, whether it's uh you know and in the attack surface can
+2:38
+be broken down into layers, but whether it's a managed device, unknown devices,
+2:43
+third party sources like contractors or things that come and go which are
+2:48
+ephemereral and that is basically what um our role in the function of cyber
+2:56
+that's in in terms of you know when you break down the functional areas of cyber
+3:00
+instant response vulnerability management uh threat intel assessments
+3:05
+and when you talk about risk right all those pillars that build up the risk
+3:08
+metric for the organization they're broken down into areas where we don't
+3:13
+have the specialists but we also don't know what we have so many products out
+3:18
+there come up with solutions for us and they visualize they give us dashboards
+3:21
+they visual they help us visualize this Um so when I when I started my um you
+3:28
+know my transition and shift in approach to looking at attack surface I looked at
+3:31
+the NIS framework and the different tiers that they have in the NIS
+3:36
+framework to looking at uh their implementation tier for risk and one of
+3:43
+them is risk informed which is a second uh tier and what that does is you need
+3:48
+to know what you have. Let me let me pause. Some people on our show who um
+3:52
+aren't cyber people may have no idea what NIST is.
+3:56
+Yeah. Will you give a brief right? I about one
+3:59
+third of the folks that that tune in are cyber folks and one third are IT folks
+4:03
+and one third are other and and the other may not understand what NIST is.
+4:07
+So give us like 10 15 seconds on the NIST framework. So, so the NIS framework
+4:12
+is is you know the National Institute of Standards sets up this you know
+4:16
+published document um that is the cyber security framework and NIC CSF as we
+4:21
+call it in the industry gives us the prescribed
+4:25
+you know uh practices for cyber security and once we once we do uh and I say
+4:33
+prescribe because this is like a like you know religion
+4:37
+you know what the Bible says but how do you interpret it and how do you apply
+4:41
+apply it to your life. So it and you look at the NIST implementation or the
+4:45
+NIST recommendations, some of them may not be applicable to your industry, some
+4:49
+of them may not be applicable to your uh operation or the makeup of your
+4:52
+organization. And the reality is that this NIS scoping uh conversation is a
+4:59
+whole other animal, right? You have to have this entire conversation around
+5:02
+like what are we going to prescribe for ourselves based on what these standards
+5:06
+are. So let me ask a question. So now that
+5:09
+you've spent a lot of time with these standards and I know what NIST is and
+5:12
+I've read you know adnauseium and whenever I need to go to sleep I just
+5:15
+pull out my NIST book and 10 minutes and I'm out right
+5:20
+does h having it understand these these standards from a cyber security
+5:24
+perspective change the kinds of things you do in your normal life um because
+5:28
+now you understand risk versus understanding uh you know what a what a
+5:33
+what a nonnist expert may do like does it change the things you do from your
+5:37
+family perspective does it change of things you do at home because you're a
+5:40
+cyber expert. Absolutely. You look at passwords
+5:43
+differently. You look at your kids browsing history a lot differently.
+5:47
+And then you understand risk from a different vantage point. Right. So So
+5:51
+the goal and and and I I wholeheartedly believe this that when you go through
+5:56
+the entire readout of the NIST framework for CSF for just a basic security
+6:01
+framework uh publication because there's multiple publications in the NIS
+6:04
+framework. um you see 19 different policy areas and policies
+6:12
+that are meant to give you better practices in your business. But then
+6:16
+when you look at your personal life, you know, like the email filtering, the uh
+6:21
+passwords, like I mentioned, the digital trails that your kids leave on social
+6:26
+media, and how many people they're interacting with, and how many people
+6:30
+they're emailing, and what companies you're you're visiting websites to, and
+6:34
+you know, you end up putting, and this is, you know, me preaching to the choir,
+6:38
+I know, but you end up putting a firewall. You end up configuring
+6:41
+insights in your network. you go you run out and you go to XYZ store and you get
+6:46
+the router and the firewall that gives you the exact you know location your
+6:50
+packets are going to and from on your kids devices and then you end up putting
+6:53
+more parental control. So it transforms your perspective on technology and it
+6:58
+also transforms your perspective on the digital frontier.
+7:02
+So we spend, you know, time and money at home protecting our kids, but we forget
+7:08
+what the digital frontier does to that family life from every angle, right?
+7:13
+From every vantage point, from their friends, how they interact, how they
+7:17
+message. You know, some some kids have uh different platforms where they they
+7:22
+don't just use text messages or iMessage. they go on forums or they go
+7:27
+on uh different areas like uh you know they'll create discord channels or
+7:32
+they'll create RC channels and do you know that as a parent it's it's scary
+7:37
+but at the same time you don't have that perspective unless you've delved into
+7:42
+this you know understanding of all the things
+7:45
+that are threats to information systems threats to an organization and threats
+7:51
+to individual uh digital personas Right. So we we can break down the digital
+7:56
+personas in in a in a household. We can break down digital personas in an
+7:59
+organization. All those things are part of an attack surface. Um so when you go
+8:04
+through that maturity assessment of what you want to prescribe yourself and what
+8:11
+you want to adopt um you understand how to map those things that are going to
+8:15
+affect production, uptime, uh confidentiality, you know, integrity and
+8:21
+assurance basically in in the digital persona. So when you look at those
+8:25
+pillars of operation, you see value in investing in how to
+8:31
+what I call treat them, how to treat them and how to reach them because some
+8:35
+of them are unreachable, right? And and I talk about that in the attack surface
+8:39
+when they're ephemereral assets, they come and go. You know, you case in
+8:45
+point, you don't know what your kids are bringing home and who they're bringing
+8:48
+home. And if they bring somebody with a compromised device, that device is on
+8:51
+your network because I guarantee you 100% of the time your kids are going to
+8:55
+share the Wi-Fi password with their friends.
+8:58
+I do. I work at cyber security. I actually you walk in my house and it's
+9:03
+uh uh it may or may not be on the wall for convenience for people to
+9:08
+because it's convenience, right? So convenience and one of the things that
+9:11
+um I've learned over the last I would say 25 years is that
+9:16
+necessity, convenience and innovation,
+9:22
+they create risk. They they just create risk. They're risk they're almost like
+9:28
+the seeds of risk. It's true.
+9:32
+And and that risk is planted today. And I tell you what, that risk is going to
+9:37
+grow and it will have roots and those roots will have roots and then those
+9:41
+roots will have even more roots. And you think just because you see a little bud
+9:45
+and you take out the little bud and then you don't get the root and it's never
+9:48
+going to come back, it comes back with a full force. So, uh, pruning, uh, you
+9:54
+know, scouting, and then treating the the treatment part is always the hardest
+9:59
+part about risk because, um, you know, I've had experiences with pentests and
+10:04
+assessments in my career where we get a readout
+10:09
+and we don't have a PKI expert. We don't have uh an identity manager that knows
+10:16
+uh you know sometimes they don't they don't know Google because nobody you
+10:21
+know everybody's Microsoft AWS but they forget about the
+10:25
+Google identity uh pillar of management right and uh you know how do you deal
+10:31
+with that which means that if you have a a vulnerability management program or
+10:35
+you have a security program that pillar is weak because you don't have the
+10:39
+expert there or you don't have the skill set. So um the economy of this attack
+10:44
+surface management is not just finding out what you have not just knowing how
+10:50
+risky it is and how much risk there is to understand the chaos you need to
+10:54
+understand well if I need to fix it how long will it take me to fix this and
+10:58
+that's where the work control comes into play because you can get a camb board of
+11:01
+all the things that an organization has to fix and you have 1500 things to fix
+11:06
+but which one should take priority and which one has a dependency and which one
+11:10
+is a critical one which one's not a critical one, but which one will get us
+11:14
+to the base standard. Working the problem backwards is like where do we
+11:19
+want to be as a standard? Like our risk needs to be based on what we're willing
+11:24
+to accept as the norm versus what we don't want to tolerate but we have to
+11:30
+fix but we can't fix it and we just play this game of whack-a-ole. We fix one
+11:33
+thing and five others pop up. So um you know many many different vendors define
+11:40
+the attack surface uh many different ways but um I personally
+11:46
+take the approach of looking at every component of the organization that is
+11:50
+under stress duress and exposure. So
+11:55
+you made a you made a comment earlier that um one of your superhero attributes
+12:00
+you didn't say superhero attributes but I'm going to assign that to you is that
+12:03
+CISOs tend to live right for whatever reason they've been bred to live in this
+12:07
+stress environment and that's where they perform their best comment on that.
+12:11
+That is correct. So, you know, part of being uh brought in the chaos and living
+12:15
+in the economy of chaos is that we live under pressure, right? We're almost
+12:18
+built to be in a pressure cooker. And that is because we understand that there
+12:22
+is chaos and that we understand that there is a tremendous amount of data
+12:26
+coming at us. Uh we call it the fire the fire hose, right? It comes at us all at
+12:31
+once. And how do you know how to prioritize? How
+12:35
+do you know what are those things that are going to be uh key? And it's a
+12:39
+battlefield where we're dealing with alerts, alert fatigue, uh under underst
+12:45
+staffed uh resources, uh no budget almost. You know that that battle of the
+12:51
+budget is always a battle that everybody brings a
+12:55
+pitchfork to the table and there's like no no that's my money. No, no, whose
+12:58
+money it is? And it, you know, that that that is one of the things that um I will
+13:02
+say adds to the stress is we don't have the money for this. We don't have the
+13:05
+time for this. We don't have the people for this. But then at the same time, you
+13:08
+have all these alerts coming and you're anticipating
+13:12
+uh a failure of sorts, right? Something's going to give. And when that
+13:16
+gives, that creates an incident. That creates a breach. That creates a a
+13:20
+situation where there's chaos. And in that chaos,
+13:25
+that's one of the skill sets that we need to have in our industry is CISOs,
+13:30
+instant responders, cyber security professionals in general. You need to be
+13:34
+aware that you're stepping into a world of chaos.
+13:37
+And you need to bring calm to that chaos. You need to be the one that is
+13:42
+able to see above the economy of the chaos and understand that there is
+13:46
+always going to be a way to solve the problem. The chaos was started by
+13:53
+some level of scaffolding that brought up this circumstance. Right? So all
+13:59
+these things had to happen for this to take place. The attacker had to figure
+14:03
+out that that vulnerability was exploitable, that it had a presence in
+14:07
+your network, and that wherever he pivoted from, he was able to reach it.
+14:11
+So, you have to work the problem backwards. Don't train
+14:16
+for the incident. Don't train for the event. Train for the circumstance,
+14:21
+right? And that's the economy of the chaos where you you look at the problem
+14:25
+from the onset back to where it started. And sometimes these problems are not
+14:32
+something that relates to us directly or something that are are you know when you
+14:36
+look at the makeup of an organization you have cyber you have OT it and then
+14:41
+you have the business process sometimes the business process demands this risk
+14:46
+and that is something that we can't change but we have to be able to deal
+14:50
+with the risk and risk will always be relevant time you got up this morning
+14:55
+and you went to Starbucks you chose to go get a cup of coffee and And if in
+14:59
+that drive-thru you picked up a nail, who do you blame?
+15:04
+The coffee company, the barista for taking too long, or Google Maps for
+15:10
+sending you there? You made a comment that one of your
+15:14
+concerns, you know, not concerns, suggestions for the industry is that um
+15:18
+we don't we don't reertify people uh often enough that are that are incident
+15:23
+responders or CISOs or CISSB. For those of you that don't know, CISSP is the big
+15:28
+one of the big tests about you know everything we do in our industry. But uh
+15:32
+share with us that comment and and you know the comparisons that you made if
+15:36
+you remember. Yeah. So I I've uh you know in my career
+15:40
+I've learned to train myself to qualify for certain jobs, right? and you know
+15:46
+you go out and you get your certifications or you get your training
+15:48
+in you know whatever product or genre in IT OT cyber operations whatever it is
+15:54
+that you want to perform in and you do have certifications in the industry um
+15:59
+but the challenges come when you have like I said earlier you don't have that
+16:04
+expert let's say you have a PKI need and you need to have somebody that's that
+16:09
+knows cryptography very well for all your EAP EAS and your um you know
+16:15
+certific find those terms really quick for for
+16:17
+once again for those that don't understand them.
+16:20
+So so in cryptography there is um you know just to kind of give you an idea of
+16:25
+what all those terms mean uh in cryptography you have uh algorithms and
+16:31
+key exchange principles. So for me to talk to you in the worldwide web, we
+16:37
+need to have a way to securely do it because
+16:40
+uh contrary to belief packets moving throughout the internet don't have
+16:45
+security. So this video stream and email doesn't
+16:51
+show up in like uh you know a deck of cards, right? You get a package of
+16:59
+cards. That's not how they show up. And then they're sealed. the packets. You
+17:02
+can open up the packet and you can see what's in it. Now, in order to have
+17:07
+secure communications, you need to encrypt those packets, which means that
+17:10
+I just put garble. It's it's garble, it's key ciphered, and you can break
+17:16
+down the packet to see what the cipher is, but without the key to open the
+17:21
+message, you're not going to be successful. So, EAPAS are standards of
+17:26
+encryption and we do this by creating algorithms. So, throughout the worldwide
+17:34
+web today, at any given time, there's billions and billions of packets that
+17:39
+are encrypted with a certificate and with an algorithm in a cipher text and
+17:44
+key. So, to decrypt those, um, you need to have, you know, it's it's almost like
+17:50
+a three-way handshake. Somebody has a key, somebody has a cipher, somebody has
+17:53
+a packet, and then you need a combination of the three. Um, and you
+17:56
+know, we can we can go down this path of trying to get deep in into cipher text
+18:00
+and and and encryption. But what I'm trying to say is when you don't have
+18:05
+that skill, how do you bring that skill to your organization? You got to go find
+18:10
+the cyber security professional that all he does is PKI.
+18:14
+And how many of us out there have that in the resume? We don't. How many how
+18:19
+many of us have taken the courses and gotten the certification and if we did I
+18:24
+mean I know my peers they've taken their CISSP you know 15 20 years ago threats
+18:31
+are evolving at the speed of light we are finding more and more CVEes in the
+18:37
+last uh two years than in the previous 10. So, I don't know if I can pause
+18:44
+there for a minute, but um there's a there's a website called cvedetails.com
+18:49
+and you can see how many CVEs have been published in the last um 20 actually 25
+18:55
+years I believe. uh you can I think it's cveedails.com
+18:59
+and there's they show you they show you the publications by year and if you see
+19:04
+from 2019 to 2022 we have a steady growth but then
+19:10
+they almost double in 23 24 and 25 so we have more CVEes more vulnerabilities as
+19:17
+a technology evolves and deprecated technology becomes stale
+19:23
+because it's not in constant development And these CVEes have what I call decay.
+19:28
+And the deeper they are in your attack surface, the more impact they will have
+19:34
+in a circumstance where you have an incident in a cyber security event.
+19:39
+And that is why I'm passionate about the attack surface because we don't we don't
+19:45
+know for sure what will fail. But without mapping, discovery, context
+19:51
+prioritization, and a remediation strategy, the attack surface is always
+19:56
+going to be the Achilles heel of the organization because we don't know how
+20:02
+um that happened. We just know that this was this object over here was
+20:07
+compromised because it was old, it was outdated, and it wasn't patched, and the
+20:12
+attacker had access to it. But when did he have access to that? Right? All the
+20:16
+things that basically with a precursor to that are irrelevant to us until the
+20:22
+event takes place. So we need to understand the circumstance that we're
+20:25
+putting ourselves in if we don't understand our attack surface. So
+20:28
+mapping it gives us that perspective where risk is real at the time. If you
+20:33
+don't know what that you know going back to the
+20:37
+analogy of of you in the in in the drive-thru getting that nail, if you
+20:40
+don't know that that nail was there, you go about your day without caring about
+20:44
+that nail. But when you're on the freeway and
+20:48
+you're commuting home and that nail pops and you become aware that you have a
+20:52
+flat, that's the event that is causing that circumstance. Right? So there's
+20:58
+many things that are going to be part of the attack surface that we need to map
+21:02
+and uh the discovery phase should be
+21:06
+constant. Um, and the risk prioritization is going to be
+21:13
+what is more important for you to t tackle and address today. So, you know,
+21:18
+I have three kids. Um, you know, one of them just uh happened to be going 91
+21:23
+miles an hour. And obviously, you know, none of us none of us have had kids that
+21:28
+have ever done that. Yours is the only one in the history of kids that have
+21:31
+ever got a speeding ticket. Sorry, I can't relate. Maybe 20 or 30 times. I
+21:36
+can relate a little bit. Yeah. So now I have I have one that has
+21:39
+gone 91 miles an hour and I have two more. One that's driving and one that's
+21:44
+going to drive in three years. So my goal should not be and I could take this
+21:48
+approach, right? I could I could put a governor on the vehicle. I can make sure
+21:51
+he never goes above 655. Um
+21:55
+but that's tactical strategically speaking. I need to make sure that I
+22:00
+train and educate the other two to learn from that experience and that
+22:05
+circumstance and so that they don't become victims of that circumstance. So
+22:10
+I need to make sure that I I build the risk awareness and I uh help the
+22:16
+function of their driving improve. So we become uh and this is kind of going back
+22:22
+to how we're shapeshifting as uh cyber security professionals. We become
+22:25
+influencers. We don't we don't walk around
+22:29
+uh like the Phoenix Project says, we walk around with a little uh tablet and
+22:34
+paper and just say, "No, we can't do that. No, we can't do that. No, we can't
+22:37
+do that." We become influencers to the business need. Everybody's going 85 90
+22:44
+on the freeway. But how do we influence others to be cautious? not necessarily
+22:49
+just safe but cautious and aware of the circumstances that they put themselves
+22:53
+in when they do go you know speed go 91 uh 85 90 miles an hour. So you know
+23:00
+bringing it back to the attack surface if we know that our risk is relevant
+23:03
+time the perspectives are built by understanding what our
+23:09
+outcomes expected outcomes are we talk in this industry about MTTD meantime to
+23:14
+detection mtr meanantime to remediation but if we can't get there to detect
+23:21
+because we don't know what it is we don't know if it's logging we don't know
+23:23
+if it's available we we can't see it uh we don't have the perspective right so
+23:27
+working our way back three
+23:29
+What was that? You've got three years mean You've got
+23:31
+three years meantime to detection or remediation for the youngest one.
+23:35
+Yeah. Exactly. So, so me mean meantime through detection mean radiation are
+23:39
+numbers that we don't know what we don't know. And and the best way I can tell
+23:43
+you is that determining those numbers is really about the risk appetite for the
+23:48
+organization. If nobody cared about cyber,
+23:53
+then we wouldn't be in this conversation, right? But because we care
+23:56
+about cyber, we know what the meanantime to exploit is for an attacker. We know
+24:02
+that once they get into our network, they can encrypt. You know, I was I was
+24:06
+at a conference in in in Vegas two years ago, and I was taking a ransomware
+24:12
+course, and they they basically went through the through the economy of how
+24:17
+fast an attacker goes in your network, encrypts your data, and leaves. and
+24:22
+within 20 minutes um they're able to encrypt you know up to a terabyte of
+24:28
+data so they can breach the network gain
+24:32
+access control and start encrypting and then leave.
+24:36
+It's a interesting interesting insights in the last minute or two. Um anything
+24:42
+very specific you've learned over your career that was like one of the the
+24:45
+things that changed how you how you look at life or it doesn't even have to be
+24:48
+from a career perspective. It could be just in life that's kind of changed your
+24:52
+trajectory to be where you are now. And I'll give you the last word, but thanks
+24:56
+for joining our our podcast. We really appreciate it.
+24:59
+I think I think it goes back to the chaos. We have to understand that we
+25:03
+live in a world of chaos and to be part of cyber. It's an exciting thing because
+25:09
+we get to enjoy to see all the different things that cyber supports. So, there's
+25:14
+going to be a chaos and in whatever industry you're in. Um, you just have to
+25:19
+be able to see through it and make the best of it.
+25:23
+Very, very true, my friend. Good luck in your quest. Uh, thanks for sharing your
+25:28
+insights with us. Good luck in the chaos at home with three teenagers. I can
+25:32
+relate to that a little bit. And hopefully in a couple of months, um, if
+25:35
+you have another story or something you'd like to share, you'd like to come
+25:37
+back on and join the podcast again, we'd appreciate it.
+25:40
+Sounds good. Thank you. Thanks for having me.
+25:42
+Cheers.

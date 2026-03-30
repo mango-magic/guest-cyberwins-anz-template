@@ -1,0 +1,178 @@
+{
+  "slug": "waynetowson",
+  "hero": {
+    "profileImage": "/images/Wayne-Towson-profile-pic.jpg",
+    "name": "Wayne Towson",
+    "tagline": "Cybersecurity Expert | Developed the Loss and Stolen Travel Document Database to enhance international border security systems."
+  },
+  "media": {
+    "sectionTitle": {
+      "primary": "Cyber",
+      "secondary": "Wins"
+    },
+    "description": "In this episode of the Cyber Wins Podcast, Wayne Toon, a seasoned cybersecurity professional, reflects on his extensive journey in the field since 1991. He shares notable milestones achieved during his tenure at Interpol Washington, where he rose from system administration to management. Wayne highlights significant technical victories, such as implementing one of the first internet-based VPNs for international communications and establishing a robust information exchange system post-9/11 to enhance border security. His work led to the creation of the Loss and Stolen Travel Document Database, allowing for the efficient tracking of potentially fraudulent travel documents. Throughout the discussion, Wayne emphasizes the importance of aligning technology with the mission of the organization, fostering collaboration, and staying curious in an ever-evolving cybersecurity landscape.",
+    "items": [
+      {
+        "title": "Full Interview",
+        "type": "video",
+        "thumbnail": "/images/full-interview-thumbnail.png",
+        "icon": "PlayCircle",
+        "embedUrl": "https://drive.google.com/file/d/1QoMWYulfxUYlbzeLzuXKsNfouNnT-fbT/preview",
+        "description": "Interview with Wayne Towson"
+      },
+      {
+        "title": "Speaker Introduction",
+        "type": "video",
+        "thumbnail": "/images/introduction-thumbnail.png",
+        "icon": "Mic",
+        "embedUrl": "https://drive.google.com/file/d/1FkK0iRQ0Y2k_ZGb09rChUQn7P4b_urMC/preview",
+        "description": "Introduction to Wayne Towson"
+      },
+      {
+        "title": "Interview Highlights",
+        "type": "videolist",
+        "thumbnail": "/images/highlights-thumbnail.png",
+        "icon": "Video",
+        "embedUrl": [
+          "https://drive.google.com/file/d/1kp4OGEGZQ3B1iO5Yr08N888X8-HLetNt/preview",
+          "https://drive.google.com/file/d/1QSGZ8yv_0JNHUg8j_HaUJC-Dtvx5IL-f/preview",
+          "https://drive.google.com/file/d/1g2yNJNstrMFSUtdxUJnNAKZ0MbqQLd23/preview",
+          "https://drive.google.com/file/d/1rpO92ZQT96QELm3LkbcgzTi1d0E6aS1_/preview",
+          "https://drive.google.com/file/d/1UovJ1PHV6ULfPfN-eQHwlNJ5gxaKTzTF/preview",
+          "https://drive.google.com/file/d/1HKBenMiNJG6jLsGc6tNSuWIL9pGYgkSn/preview",
+          "https://drive.google.com/file/d/1sh2ZrsB9a3ZJfABgiEm6OqlASsSLDhgY/preview",
+          "https://drive.google.com/file/d/1QDNVxcan8iQmAKuJ38-iZePkB8CE2lDs/preview",
+          "https://drive.google.com/file/d/1F_9qc7LwPn-_shrSRFH2LJs1QbxwM9wc/preview",
+          "https://drive.google.com/file/d/1apQG4UgZz6kEdx4ykUJMCQA5zhlx3Ce2/preview",
+          "https://drive.google.com/file/d/1xUR2FEaLmZs7AKGNTaj_uAKVh75h-nNX/preview",
+          "https://drive.google.com/file/d/1X7P9GVeJQDGnYF0h_dzGLZ3z6BsnxB6z/preview",
+          "https://drive.google.com/file/d/1WgIo-0hCNyUPLJkdaVh9XigQ5SDtCyz2/preview",
+          "https://drive.google.com/file/d/1ARu1JvdGcHav9yVOxe7Rd-0r_BPRjVoJ/preview",
+          "https://drive.google.com/file/d/1C_4NYoOMN0qS6-zWN91LPMxUQftrbM3b/preview",
+          "https://drive.google.com/file/d/1C51U6qWaK6XoEFu6x3abkJCdgLmhALHZ/preview",
+          "https://drive.google.com/file/d/1mDLikzfF0vaxS0Q1PF548WZ8Q7lDUCY3/preview",
+          "https://drive.google.com/file/d/1LT8md8ep137BbYHoAFXTfpRN9Ww5SJij/preview",
+          "https://drive.google.com/file/d/1btI6cyrI_5g7JA4vWpcIc_Qv693ng4M8/preview"
+        ],
+        "description": "Key moments and insights from the interview with Wayne Towson"
+      }
+    ],
+    "highlights": [
+      {
+        "title": "Highlight 1",
+        "fileId": "1kp4OGEGZQ3B1iO5Yr08N888X8-HLetNt"
+      },
+      {
+        "title": "Highlight 2",
+        "fileId": "1QSGZ8yv_0JNHUg8j_HaUJC-Dtvx5IL-f"
+      },
+      {
+        "title": "Highlight 3",
+        "fileId": "1g2yNJNstrMFSUtdxUJnNAKZ0MbqQLd23"
+      },
+      {
+        "title": "Highlight 4",
+        "fileId": "1rpO92ZQT96QELm3LkbcgzTi1d0E6aS1_"
+      },
+      {
+        "title": "Highlight 5",
+        "fileId": "1UovJ1PHV6ULfPfN-eQHwlNJ5gxaKTzTF"
+      },
+      {
+        "title": "Highlight 6",
+        "fileId": "1HKBenMiNJG6jLsGc6tNSuWIL9pGYgkSn"
+      },
+      {
+        "title": "Highlight 7",
+        "fileId": "1sh2ZrsB9a3ZJfABgiEm6OqlASsSLDhgY"
+      },
+      {
+        "title": "Highlight 8",
+        "fileId": "1QDNVxcan8iQmAKuJ38-iZePkB8CE2lDs"
+      },
+      {
+        "title": "Highlight 9",
+        "fileId": "1F_9qc7LwPn-_shrSRFH2LJs1QbxwM9wc"
+      },
+      {
+        "title": "Highlight 10",
+        "fileId": "1apQG4UgZz6kEdx4ykUJMCQA5zhlx3Ce2"
+      },
+      {
+        "title": "Highlight 11",
+        "fileId": "1xUR2FEaLmZs7AKGNTaj_uAKVh75h-nNX"
+      },
+      {
+        "title": "Highlight 12",
+        "fileId": "1X7P9GVeJQDGnYF0h_dzGLZ3z6BsnxB6z"
+      },
+      {
+        "title": "Highlight 13",
+        "fileId": "1WgIo-0hCNyUPLJkdaVh9XigQ5SDtCyz2"
+      },
+      {
+        "title": "Highlight 14",
+        "fileId": "1ARu1JvdGcHav9yVOxe7Rd-0r_BPRjVoJ"
+      },
+      {
+        "title": "Highlight 15",
+        "fileId": "1C_4NYoOMN0qS6-zWN91LPMxUQftrbM3b"
+      },
+      {
+        "title": "Highlight 16",
+        "fileId": "1C51U6qWaK6XoEFu6x3abkJCdgLmhALHZ"
+      },
+      {
+        "title": "Highlight 17",
+        "fileId": "1mDLikzfF0vaxS0Q1PF548WZ8Q7lDUCY3"
+      },
+      {
+        "title": "Highlight 18",
+        "fileId": "1LT8md8ep137BbYHoAFXTfpRN9Ww5SJij"
+      },
+      {
+        "title": "Highlight 19",
+        "fileId": "1btI6cyrI_5g7JA4vWpcIc_Qv693ng4M8"
+      }
+    ]
+  },
+  "podcastInfo": {
+    "whatIs": {
+      "title": {
+        "prefix": "What is",
+        "highlight": "Cyber Wins"
+      },
+      "description": "Cyber Wins is a cutting-edge podcast that brings you exclusive interviews with cybersecurity leaders, CISOs, and experts who are at the forefront of protecting organizations in today's digital landscape. Each episode dives deep into the strategies, insights, and real-world experiences behind defending against cyber threats, managing security risks, and building resilient security programs. From threat detection and incident response to security architecture and compliance frameworks, we cover the critical topics that matter most to cybersecurity professionals and organizations navigating the complex cyber space. Learn from those who have secured major enterprises and discover actionable knowledge to strengthen your own cybersecurity posture."
+    },
+    "getInvolved": {
+      "title": {
+        "prefix": "Get",
+        "highlight": "Involved"
+      },
+      "subtitle": "Join the conversation and be part of the movement",
+      "description": "Ready to amplify your knowledge and connect with thought leaders? Here's how you can get involved with Cyber Wins:",
+      "links": {
+        "linkedIn": "https://www.linkedin.com/company/exclusive-networks-podcast-series/posts/?feedView=all",
+        "shareStoryForm": "https://forms.gle/4QZVeeSwfB6BURG77"
+      }
+    },
+    "whyCyberWins": {
+      "title": {
+        "prefix": "Why",
+        "highlight": "Cyber Wins"
+      },
+      "paragraphs": [
+        "In a rapidly evolving digital landscape, staying informed isn't just an advantage—it's essential. Cyber Wins delivers the insights, strategies, and inspiration you need to win in your field.",
+        "Whether you're an entrepreneur, executive, or innovator, our podcast provides the competitive edge to help you make smarter decisions, build stronger networks, and drive meaningful impact. Don't just keep up with change—lead it."
+      ],
+      "ctaText": "Ready to score your next win? Let's connect.",
+      "shareStoryForm": "https://forms.gle/4QZVeeSwfB6BURG77"
+    }
+  },
+  "footer": {
+    "text": "Cyber Wins Podcast © 2026",
+    "logoSrc": "/images/cyber-wins-logo.png"
+  },
+  "host": "Mark Voorhies",
+  "transcript": "/data/waynetowson.txt"
+}

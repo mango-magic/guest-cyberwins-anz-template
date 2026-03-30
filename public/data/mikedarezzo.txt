@@ -1,0 +1,550 @@
+0:09
+Welcome to the Cyber Winds podcast today. Today h I have with me Mike Darzo
+0:13
+who was kind enough to join us and has some really interesting life experiences
+0:17
+and a bit of a backdoor into the cyber security world but I won't share
+0:20
+anything about that Mike. Thanks for coming to the show and feel free to
+0:23
+introduce yourself a little bit. Oh no thanks for having me Mark I really
+0:27
+appreciate it. Uh yeah, so Mike Detszo. I'm the executive director of
+0:31
+information security at WellStar Health. Uh we're a nonfor-profit uh healthcare
+0:36
+provider out of the state of Georgia and uh been in cyber security for about 15
+0:43
+years overall 28 year career. Yeah. And I understand that as I said
+0:48
+you like me came into cyber from a little different angle. Explain to us
+0:51
+how you got here and how you became what you do today.
+0:54
+Yeah. So, so I I I was in IT. Um, I actually I've I've done a lot. Um, you
+1:01
+know, so I I've uh I was in IT. I I was a sales engineer and uh I was involved
+1:07
+with a very large client that uh Visa called on. This is 20 years ago, over 20
+1:14
+years ago. Man, I'm getting old. But uh they Visa called on him and said,
+1:17
+"Explain to us how you're protecting, you know, the credit card databases and
+1:22
+your point of sales system." And this client looked at me and said, "Would you
+1:25
+care to answer that?" I was like, "We we're not." Um, and uh, to which Visa
+1:32
+was in was said, "That's interesting." And several weeks later was the Visa
+1:37
+payment acceptance best practice introduction to the world. So, uh, uh,
+1:42
+you know, that that's that was the forerunner for PCI compliance. Um, and
+1:47
+so I've been involved in PCI roundabouts for number of number of years. Um and uh
+1:54
+you know that kind of led its way into governance, risk and compliance and uh
+1:58
+in turn led into greater cyber security. Uh got me a job at AMF bowling which is
+2:03
+now Bolero uh with Lucky Strike. uh and you know from there went to General
+2:09
+Electric to work in their uh risk and uh risk uh management team here in Richmond
+2:15
+and uh started a security consulting practice for a larger company uh with a
+2:21
+buddy of mine and uh yeah so it just it just evolved right there's no one path
+2:26
+for everybody in this world and you know people always ask like well how did you
+2:30
+get your job like the way I got my job is not the way you're going to get your
+2:34
+job you but you know we'll talk about that in a second. But yeah, that that's
+2:38
+been Yeah. When people ask me that question
+2:40
+in college, one of my buddies called me and said, "Hey, I'm going to go apply
+2:43
+for a job at this company called Gateway." And I'm like, "I'm a college
+2:47
+student. I don't need a job." He's like, "Yeah, but I need a ride." And I'm like,
+2:50
+"So really, you need me to give you a ride to an interview?" He's like,
+2:53
+"Yeah." And so, you know, I went and he didn't show up. So, I just drove to the
+2:57
+interview myself and took the job and they gave me this job. And I thought,
+3:00
+"You're going to pay me how much to be a college student to answer phone calls
+3:03
+for, you know, 1800 gateway." Tada. 25, 30 years later, I'm in cyber security
+3:08
+with a bunch of, you know, weaves back and forth. So, I totally agree with you.
+3:12
+It's not how we started. That's a great story. Mark,
+3:14
+let me ask you a question. Over your your many different roles that you've
+3:18
+had and changes, was there anything like one critical thing that stuck out stuck
+3:21
+out to you as this is what's going to make a change and it's going to lead to,
+3:24
+you know, 20 years down the road what I'm going to be doing?
+3:29
+Yeah. I you know I've um obviously the the client I had that had the the credit
+3:34
+card issue was a was a big one. Um I when I wor went to work for AMF bowling
+3:41
+uh you know I was a part of the point of sale team and so you know tangentally I
+3:48
+was in charge of PCI compliance that was one of the reasons they brought me on
+3:52
+board was to define define PCI compliance because we
+3:55
+have a lot of folks that aren't cyber geeks.
+3:57
+Yeah. So this is credit card compliance, right? So industry industry uh payment
+4:02
+card holder industry uh regulatory compliance for credit cards. This is the
+4:06
+reason why numbers are masked on a credit card receipt and so on and so
+4:09
+forth. So this was 20 years ago. Uh they needed help with
+4:16
+this, right? Hey, we we're hearing that we need to be compliant with this. They
+4:20
+were like, yeah, I can help out with that. I've got a lot of experience with
+4:22
+that. So came on board, helped them with that. uh and that kind of spun out into
+4:27
+other projects, right? And so, you know, other things in it. And so, I I I talk
+4:31
+about the table and what that means is the vendor client relationship table.
+4:36
+And I've been on both sides of the table many times. And and uh you know, my
+4:41
+career has been actually bouncing back and forth between those, right? Get a
+4:44
+little perspective on this side. Go and share that experience on the vendor and
+4:48
+the consulting side. Go back, get get a little bit more knowledge, right?
+4:52
+straighten out some things that I had misconceptions on and things like that.
+4:55
+So, that's been my trajectory is it's just been I was involved in this, I
+5:01
+spoke up and I said, I can help with that, right? I I can I know enough about
+5:05
+that that I can help about it. And you know that you you hear about imposttor
+5:09
+syndrome um where people are like I don't think
+5:13
+I'm good enough to do it. You are good enough to do it. you are, you know,
+5:17
+especially if someone asks you a question about it, they regard you at
+5:20
+least as good enough to know something about it. And so imposter syndromes are
+5:24
+real. Men and women, you know, young and old, it's real. Uh, and so believe in
+5:29
+yourself. And if you don't think you do, research and do some things as as my
+5:33
+friend John out there would say, do your own research, but you know, you know,
+5:38
+figure out the things on your own to make sure that you reinforce that. But
+5:41
+that's been it. uh Mark is really just that one kickoff of I really see this
+5:47
+not going anywhere and you know 20 plus years later we still have the payment
+5:51
+card holder industry PCI compliance uh still in full effect and and changing
+5:56
+every day. Fantastic. So, I mean, one of the the t
+6:01
+obviously the title of our podcast is Cyber Winds. And I always like to remind
+6:04
+people we spend so much time with FUD out there of of, you know, all of the
+6:08
+problems we that go wrong and you that's what you see in the news, but you know,
+6:11
+we want to tell stories about about things that actually went well and I
+6:15
+know you have a couple of interesting stories to share and and uh you know,
+6:18
+fill us in because we find them really interesting.
+6:21
+Yeah. So I and so the biggest one I have is
+6:25
+executing on security projects and needs with other people's budgets, right? And
+6:30
+you're like, "Well, what does that mean?" And you're like, "So
+6:32
+this is so good." Yes. So at AMF, I didn't have a budget. Like
+6:37
+uh I came in midcycle. Um I was like, "We need to get this stuff done." You're
+6:41
+like, "Well, that's great. We don't have a budget." So the next fiscal year, I
+6:44
+got all the plans and strategy and everything else. And so the next fiscal
+6:47
+year, I said, "Great. I need I need at least at least this much." And they're
+6:51
+like, "We'll give you this much." And you're like, "Oh, okay. Well, just to be
+6:55
+clear, that's going to take a few things off the checklist, and you need to be
+6:58
+responsible for that." No, no, no. It'll be fine. Okay. So, you know, I got
+7:03
+creative and I did as much as I could for, you know, open- source tooling and
+7:08
+and lock it down and everything else and and uh but there were some items I was
+7:12
+like, I don't have a solution for like mobile device management, identity
+7:16
+access management. These are very very early on in in the day 15 17 years ago
+7:21
+where you know we know enough. We had Active Directory but I I need something
+7:26
+to do. I need a tool. I I can't build a a process around nothing and stuff. So I
+7:31
+started asking around the company of of what are some of the biggest challenges
+7:35
+that you're facing today that it can solve for you? Right? And so one of them
+7:41
+was like I hate dragging this was an outside salesperson. They were like, "I
+7:45
+hate dragging my laptop," which was like a six pound Dell laptop at that point in
+7:50
+time. Um, and the power charger and everything else. And I hate taking this
+7:54
+thing. They're like, "Okay, well, what do you want to take?" Well, I want to
+7:56
+take a tablet. iPads had just come out. That's how old I am. iPads had just come
+8:01
+out. Um, and they wanted to use iPads. I'm like, "Okay, what if I could make
+8:05
+that happen?" They're like, "Yeah, that would be great." And so on my side of
+8:10
+it, it's I can get mobile device management. I can get identity
+8:13
+management. We can start building in and locking down some of these applications
+8:16
+that folks are using that they're getting to that are, you know, they're
+8:20
+on the edge of the network that they're reaching out to from free Wi-Fi and
+8:24
+things like that and you're like, I need to lock this down, but I can't do it on
+8:27
+my budget. But if I solve a problem that they're willing to fork out money for,
+8:33
+right? Like this has value to me and everyone else here that pays for it and
+8:38
+it's transparent, right? it's transparent to the people that need
+8:42
+solutions and I'm solving this in a security way right now that was when I
+8:48
+was it right there was no infosac at that point in time for that company so I
+8:53
+was IT but had a security mindbase um so this is where I pulled it together and
+8:58
+started doing so I started saying well man that worked out great let's what
+9:01
+else we can do with this um so we started building out more and more right
+9:05
+SQL database protection well I want to be able to reach the database from
+9:09
+wherever ever to run reports on. You're like, "Oh, what are you using to run
+9:11
+reports? We're using Crystal 8." Like, okay, what if we built out this together
+9:16
+and we we did, you know, allowed you to reach out to it and query the the
+9:20
+database from a web application. Like, you can do that. You're like, we can do
+9:24
+that. It's all ones and zeros, right? We can do anything. So, we we kind of
+9:27
+pulled that together, but out of that became database uh management and backup
+9:32
+and recovery and things like that, protection of um you know, API and
+9:36
+requests and things like that. And it's all this amazing stuff that people are
+9:40
+like, "We didn't know you could do that." And you're like, "You can, but
+9:43
+you need security in place in order to make those requests safely with their
+9:48
+budget." We were able to make that happen in a safe way, right? And so that
+9:52
+opened up eyes and what else could you do? And so
+9:55
+I have to I have I have to apologize. Just that last three minutes of stories,
+9:59
+you're now going to have about 500,000 IT guys calling you and saying, "Hey,
+10:03
+how can I do that in my company to take money from budget A and still fit it
+10:06
+into the budgets that they cut?" So because I don't have money to spend.
+10:09
+That's brilliant. Well, and it's it's um it's how you get
+10:13
+you have to get stuff done. So, and I think you and I talked about it is as
+10:16
+you move up in in the ranks, it's more of a political role, right? like how do
+10:22
+I enable us to be secure but still have business get done, right? Still have
+10:27
+innovation and creativity and and outward focus and flexibility while
+10:33
+still being secure. That's a balancing act, right? And so you you really need
+10:37
+to start learning those lessons early on is the psychology of how do I make this
+10:42
+a win-win for everyone, right? And that's what we should be striving for.
+10:47
+We've talked about uh the CISO role or the CIO role is is less of the box of
+10:52
+how we protect people and it's more becoming understanding how finance
+10:56
+works, understanding how HR works, understanding how IT works,
+10:59
+understanding the business needs and you kind of have to be a master of all of
+11:02
+those kinds of things with enough technical background to be able to
+11:05
+translate between the IT folks and the business folks to be able to solve those
+11:09
+solutions which uh you know we talked previously about um the value of
+11:14
+psychology uh which is you know I know one your passions and and understanding
+11:17
+people and how that how that plays in. How how do you find that you know
+11:21
+understanding a little bit about psychology has actually increased your
+11:24
+opportunity to deal with all of these disperate kinds of people there in the
+11:27
+in the world that we live in. So, so it starts off with how do I mature as a
+11:33
+human being? Because, you know, I didn't handle things the the right way in my
+11:38
+career, right? And and even I'm, you know, you're a work in progress. Every
+11:42
+human being is. We're all hopefully you're a cognizant, self-aware work in
+11:46
+progress, but we're all works in progress, right? So, how do I understand
+11:51
+how I can be a smarter person about things? How do I how I can be a better
+11:55
+person to approach problems appropriately? Um, and how to back out
+11:59
+when you know you're like you can't solve for this. Don't like stop stop
+12:04
+trying to force the solution to something that maybe you Mike Dretzo
+12:08
+can't solve for. Maybe it requires somebody else. Maybe it requires
+12:12
+understanding where it is. And I I you know I had clients who were difficult um
+12:17
+and and you know the salespeople were just like what what am I going to do?
+12:21
+you know, this person's giving us money, but like every meeting is is a yellfest
+12:26
+of us just getting a beatd down. And you're like, we need to figure out how
+12:29
+to humanize this relationship because right now it's a client vendor and
+12:33
+they're just looking us at how much we're screwing them over, you know, if
+12:37
+if when do we cheat them and how, right? Like it's how do we change that
+12:40
+relationship? So, the dynamics of this are wrong. And so, I humanized myself
+12:45
+with this client, right? I got I joined a call early and we were sitting there
+12:50
+talking. And I said, "Hey, I noticed your pen. It's a Montlong so and so."
+12:53
+And he goes, "Oh, you know about pens?" And I was like, "Kind of." And I reached
+12:58
+in and I grabbed a pen that I bought for myself years ago. It was a going out of
+13:02
+business sale and stuff like that. And uh mom was a client of a company I
+13:07
+worked for at one point in time. And and I told him the story about the pens. And
+13:11
+because I was a kid who had no money and and I was like, "Why would somebody buy
+13:16
+a $1,000 pen, right? And this is 20 this is 30 years ago. It's like why would
+13:20
+somebody buy a 20, you know, a 10,000 $1,000 pen, whatever, right? And my boss
+13:26
+at the time, Tom Rothchild, shout out to Tom if you're out there, uh, said,
+13:31
+"Don't think of this as a pen. Think of it as a milestone in your life. And when
+13:35
+you know, you know, right? So when you do something that you're happy and proud
+13:38
+of, you know, it it's not a selfagrivising trophy. It's it's a
+13:43
+memorial piece that says you are worth it worthy as a human being, right?
+13:48
+you've you've you've struggled, you've come far enough, here's a milestone
+13:51
+piece." And I told that to the client and he was like, "That's amazing." And
+13:56
+then he showed me all of his pens and I was like, "Wow, that's you know this and
+13:59
+that and the other thing I just had." And so after that phone call, that first
+14:03
+part of the phone call, it changed the dynamics and the salesperson joined the
+14:07
+call and he was like, "What in the heck happened to this guy?" You're like,
+14:12
+"Well, before you joined, you know, I explain." and he was like, "That's the
+14:16
+craziest conversation I've ever heard." And you're like, "But that changed the
+14:20
+dynamic of how we humanized ourselves." And that's the psychology of it. So
+14:24
+sometimes when when I'm dealing with IT folks or or things like that, you have
+14:29
+to remind yourself their job is not to patch all the vulnerabilities.
+14:34
+Their job is to keep the lights on. Their job is to keep the system running.
+14:38
+The job is to keep their internal customers from not screaming at them
+14:42
+because of downtime issues and and whatever else. So their job is this.
+14:47
+Your job is to reduce the risk of the organization. So how do you meet them as
+14:52
+a human being and not as another opportunity or obstacle that's keeping
+14:56
+you from saving the company, right? And so you know we have to remind ourselves
+15:01
+like and I'm I have a unique perspective because I was in it, right? And so I I
+15:06
+get it. You know, I work nights and weekends doing upgrades and stuff like
+15:09
+that. So I kind of understand it. And it's like we have to humanize ourselves
+15:13
+to that. And that's really the trick, right? Is for really probably anything
+15:19
+out there is is humanizing to that. I I see in the background obviously you
+15:24
+have a love of guitars as an example. I don't play guitar to save my life, but
+15:29
+and I appreciate good music and and people people that do, but that's very
+15:33
+true a lot of the time. And you'll see that my background bound behind me is
+15:36
+fairly blank. And I do that specifically because I don't want any controversy
+15:39
+about some of the things that I love with people that may may come on.
+15:42
+Although I've yet to have someone come on the show that we don't have tons and
+15:45
+tons of things in common, which is really great. Let me ask you one
+15:48
+question before we close. If you had to remember like one thing, you know, one
+15:52
+piece of advice, one uh uh saying, you know, that sticks to you that could be
+15:57
+of value to other folks from our podcast, what what would that be? And
+16:00
+then I'll just give you an opportunity to close with what you like and and Uh,
+16:04
+thank you for coming on the show. We really appreciate it. And I'd ask one
+16:06
+more favor. If in six, you know, four to six months you decide you have another
+16:10
+great story, we'd love to have you on anytime. So, really appreciate taking
+16:13
+the time and and coming and speaking with us.
+16:16
+Yeah. And and it, you know, what I'm about to say kind of goes on with that
+16:19
+the pay it forward, you know, where it's like I'm not here for Mike Do, the Mike
+16:23
+Dretzo show. It's it's what have I learned that can help other people,
+16:26
+right? uh remove the frustrations that I've lived through and and take the
+16:30
+lessons that I've been taught by people who are masters of their art, you know,
+16:34
+before me and and improve my life and and and in turn the rest of the world
+16:38
+is, you know, making it better. So, you know, I I have a quote that I I've kind
+16:42
+of worked with over my lifetime is uh you know there there is no justice in
+16:47
+the universe. And you know, that that hits sometimes. You're like, what do you
+16:51
+mean there's no justice? Of course there is. You're like, that's a human concept.
+16:55
+There is no justice in the universe. But there is balance even if even if you
+17:01
+need to be the balance. And you know some people are like what
+17:05
+is what does that actually mean? You're like you know it's one thing to see
+17:08
+injustice and bad things happen in the world and see problems you know and it's
+17:12
+just like man that sucks. Why does that have to happen? You're like you could do
+17:17
+that or you could say that sucks. How do I help? You know what? And I don't need
+17:22
+to solve everything. I don't need to solve world hunger. I just need to solve
+17:26
+the problems that I can face and I can adjust to and I can work through and
+17:30
+help out with, you know, even if it's an individual basis, right? And and it's
+17:35
+the simple basis of if I change one human being's life, you know, and
+17:38
+convince them that they should in turn change other people's lives. Now you
+17:41
+have two people changing human beings lives, right? And it's that pay it
+17:45
+forward, you know, kind of understanding. And that's so critical as
+17:50
+human beings, as a species, as a social, you know, construct of how we need to
+17:55
+treat the world that's going to make lives better, right? And it doesn't need
+18:00
+to I don't need to solve all the problems. I need to solve the things
+18:03
+that I can solve that I know, you know, apply my experience to or apply my time,
+18:08
+willingness, effort, and things to do. Um, that's that's probably the biggest
+18:13
+thing in this world is how do I make life better? So, I don't have children.
+18:18
+Um, you know, just wasn't in the card for me. But, how do I how do I change
+18:22
+the lives of other people and and how do I improve that? And so, that's what I'm
+18:27
+here for. And I don't need to be remembered for anything else other than
+18:31
+there was a guy I met once who told me to pay it forward, you know, and and you
+18:34
+know, and that's I don't need to be remembered. I just need that lesson to
+18:38
+be learned, right? And I think I think we'll be much better off as a human
+18:42
+species if we can do that. Yeah. Those are unbelievable lessons,
+18:45
+especially in the business applications that we work in, not to mention outside
+18:48
+of all of the things that we do. Thank you, my friend, for coming on. I really
+18:51
+appreciate it. You know, you come on and pay it forward and um I hope we'll have
+18:55
+you back in the future, but thank you for some of the lessons that you've
+18:57
+learned on the Cyber Winds podcast and and uh uh once again, just really really
+19:02
+appreciate taking the time to talk with us.
+19:04
+Well, thank you for the opportunity, my friend. Have a wonderful day.
+19:08
+Cheers, my friend. Appreciate it. Byebye.

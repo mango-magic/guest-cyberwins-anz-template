@@ -1,0 +1,131 @@
+Welcome to Cyber Wins Podcast. Today we have with us Wayne Toon. Uh, I'm gonna let you introduce yourself because you have such a varied and, and lively background and so many years in cybersecurity experience. But thanks for joining and, and sharing a cybersecurity win with us. We really appreciate it.
+
+Well, mark, thank you for the invite. I've been, uh, working in the cybersecurity field. It was referred to as InfoSec. so, uh, my entry was in 1991. I really started with Interpol Washington at that time. Um, I started as a routine, uh, system admin person who ran crime jobs and backups at 3:00 AM. Worked my way up to help desk.
+
+And, uh, from there, uh, got into management, uh, uh, after managing, uh, a wide variety of technologies. So I can talk to you about telecom links, frame relay. I can tell you about the systems that we managed, which were Windows boxes, Unix boxes really was a good opportunity for me at that time to be introduced to a wide variety of technologies.
+
+And so I became a very. Responsible for a varied, a varied inventory of, uh, that, uh, uh, kind of existed in my environment, which was unprecedented. I wasn't pigeonholed. I can manage a firewall on one hand and an exchange server on the other. Ultimately, um, the SQL databases and the, the information stored in these systems is really kind of where, um, most of my journey kind of pushed me forward in terms of information exchange. Um, but in the beginning, I. It was a, a young guy in his twenties that was given an opportunity, uh, by a manager. He saw a passion and, uh, what I like to do and what I had capacity to do. And, um, I like people, I like helping people. And the mission was awesome at that time. Um, it was the ability to, uh, work for an organization that fell under the Department of Justice, um, for international law enforcement. And so I had no experience. Uh, I was, now listen in the beginning. And then the guy, like I said, worked my way up. Um, but it had an interesting mission, and that mission was to be part of a larger organization. Interpol headquarters is located in Leon, France, and, um, Washington is one of, at that time about a hundred eighty, a hundred eighty two countries. I think it's probably up to one 90 something right now. I can't, uh. Don't quote me on the exact number, but the, the number's grown as, and it operates like the un. In the sense that every country pays its own dues, every country has its own representatives. Um, I worked for Department of Justice, um, and so I, I was a, uh, federal employee for the US government.
+
+Uh, but my liaison job was to facilitate, uh, systems or to support systems, um, between the us. And Leon France. And so that job was pretty, um, well defined in the mid and late nineties. basically it was internal applications. It was internal systems. It was protecting those systems. It was hardening those systems. Uh, a lot of my dev dev experience came from debugging. Fixing problem, um, within code that, uh, developers kind of walked away from or didn't document. So my, my job was, uh, not easy, but I found it interesting because when a person had a bug or a problem with a certain line of code and I went and fixed it, it was very clear.
+
+It was, uh, a deliverable. I got it done and got them back to, to being able to do their job. And the people that I supported at Interpol Washington were fantastic. They were like family and still are a small, about a hundred. So odd people that were in that organization and uh, to be able to support them and to support the mission was at 20 years old, something I couldn't even imagine.
+
+Right place, right time. Yeah. Right place, right time.
+
+It, that's all it was. And the right people, I had a right manager that saw something, um, in me, um, gave me the confidence to really kind of expand. You know, I went through all the certs. I did the CNA for Cisco, did MCSE, went to grad schools, um, systems, software engineering, went, got cybersecurity Pol did all that stuff, really counted were the people that were in my path.
+
+And the opportunities that they provided for me. And then the people I worked with at at Interpol Washington, they were great human beings. They really were very encouraging to kind of push me forward. And you know, you wanted to do everything that you could possibly do to support that, those people in that organization.
+
+And that's where the mission was first. And the technology came after and it was like the mission was everything for me. It was making sure that this organization, which was 24 7. I had everything available within my power, um, to the team that had to do the job. And so that where, that's where my passion came from, is I was so aligned between, you know, I'm an IT guy, cyber guy, but I was aligned to the mission first. I understood the mission because I had been there so long. So that helped a lot in terms of a lot of the work that, uh, I was involved in because I will argue, you know, a lot of people won't get involved in technology, you know, or get involved in cybersecurity. First thing is understanding the mission of the organization. If you don't understand the mission and what the organization does, how can you even begin to help? Um, so yeah, I did that. I, for a long time I was, uh, just a basic system admin and a, and a ad and a manager for mostly, um, on-prem, um, um, applications and databases and, um. Exchange servers 'cause they were on-prem at that day.
+
+In, in those days they're not, there was no such thing as the cloud. You know, it's a funny, interesting story. We used to do di network diagrams all the time. And so whenever we, when we set up our first, uh, internet based VPM, which for us was in the
+
+Hi tech.
+
+nineties.
+
+Uh.
+
+It was, it was unprecedented. Um, and I think we were one of the maybe first or second, um, international organization to set it up.
+
+And we did a internet based VPN for the first time and we did it the right way. And that's one thing I am proud of. We always tried to do the right thing, and then we didn't stand up our own circuit. used the DOJ enterprise, the DOJ enterprise, uh, perimeter. We used the firewalls that were in place for the entire enterprise, we, that's where we placed a DOJ managed device to set up that first internet based VPN.
+
+So everything was still in the perimeter. Um, it was easy during those days to just bootleg it and set up a connection and, you know, fire it up and like, and make that connection. But we, I understood the importance of, uh, having a international connection. That was protected. That was coming from a foreign source and you know, my job was one to protect him for Washington, but more importantly to. the Department of Justice as a whole, and to make sure that I didn't, I was not responsible for bringing in any new, um, potential vulnerabilities, right? So we did the right thing with the right team, and we set up that VPN because before then we had frame relays and dedicated circuits. And so we set up that I-P-V-P-N and I, I tell you, that really set the stage for everything that we did moving forward, because from there we moved from X 400. Which was the, uh, the communication protocol, um, in play to SMTP, which, uh, allowed us to transition off of, um, what we used to refer to as an iscore MTA. So it used to be a box they used to translate between X 400 and email. Or translate the protocols, um, between the exchange server and the, and the, the, the X 400 communications that used to come in.
+
+So that was eliminated. We went straight S-S-M-T-P and we were able to have direct communications with France and 180 different countries because a lot of that was also predicated on DNS. So we had to have all the right rules in place to resolve those addresses. And also the ability to, um, connect with, uh, France in a secure way.
+
+So that was a big. deal for us and uh, we were very proud once we set that up. But that, again, that was probably 1998.
+
+Isn't it interest domain strategies today are still one of the biggest parts of cybersecurity, and that was what, 27 years ago. And on the.
+
+Yeah, the one thing I learned, you know, was setting up those, uh, firewall rules and also setting up the, the pa, you know, the SMT v relays is that DNS breaks, everything breaks. And so if your DNS is not clean, then you got problems. Um, and so yeah, it's true then it's true today. And, you know, you take DNS and today, uh, bigger issues like, uh, border gateway protocols and those issues, if networking goes sideways. You're screwed. And so the ability to connect from A to B, um, uh, is depending on those protocols very severely. And when, when things break and it's easy to break things, mis communication, misconfiguration, um, things can go wrong to kind of, uh, you know, make people a little nervous. 'cause you know, today. Back then, it wasn't like the lights, you know, the lights or the utility. And that's how the Internet's looked at today. 'cause to tell you the truth, back in when we first, uh, uh, introduced, uh, internet to desktops and we had two browsers, we had Internet Explorer, and we had, uh, was the other one? It was, uh, so, um, can't remember her name.
+
+Netscape? We had Netscape. Um, because at that time there was a, a, a suit. Between Microsoft and DOJ at that time. And there was a, the suit, uh, was around, uh, Explorer being bundled into the operating system and that was unfair, um, com competition for other vendors that wanted to enter into that space.
+
+So we had two browsers and that was mandated.
+
+I'm old enough to.
+
+And so. Yeah, yeah, yeah. So I lived on it, so I had to support those two browsers. And, um, you know, from there we, um. Um, got the internet VPN up and uh, we were able to do straight email, which was, you know, didn't sound that important today, but, you know, be able to handle your own exchange server and manage that, that, that, that was kind of the life that we live. so past that, that internet, VPN introduced a, a concept of, uh, information exchange. And so nine 11 happened. And that changed the world for everybody. I was in the off, two things that happened. One is Y 2K, which was a pretty much a non-event. I was in the office at 1159 clock stick. Lot, lot of contractors got good work in terms of writing documentation for everything that was supposed to been Y two, the Y 2K plan.
+
+But for the most part, um, there were no issues. And so, uh, 11, 12 o'clock at midnight on New Year's Day, uh, that's a couple minutes after that I was heading home, but I was in the office on that day. I remember that very well. And so. Past that point to an event that was more significant and, um, led to kind of the reshaping of career and maybe even Interpol Washington in terms of the direction that they really were involved in, in terms of, uh, international relations.
+
+And as nine 11 nine 11, I was in the office again, uh, when the first plane, uh, went into, uh, tower one, second plane, tower two, then the Pentagon. Which again, I was at 1301 New York Avenue, which is blocks down from the White House. so everybody was on the street and so, um, we were able to kind of get everybody home safely.
+
+In fact, I took one of my developers home. My wife got pissed at me because, you know, I thought he lived in place outside of dc which normally is a 20 minute commute to get back and forth driving. So I wanted to make sure he got home 'cause the, the metro. Subway was all packed and nobody can get on there.
+
+So I took him home and I came home. It took me three hours to get home. And so my wife was, you know, she's freaking out because she didn't know where I was. The Pentagon was on fire and the cell phones did not work. Cell phone saturation, um, cell phone lines were saturated and the only technology that actually, uh, was useful at that time was Blackberry. And that's why the government shifted to Blackberry after post nine 11 because they had pinned to PIN communication and they were able, 'cause all the communications didn't use standard, um, communication towers. They used their own internal network and they were able to do a text messaging or pen to pin communications with other devices and they were able to stay in the loop.
+
+And then after that. Um, you know, all the government, uh, agencies switched over to Blackberry service. Um, but anyway, so post nine 11, how'd that change things for me? Well, it changed things for me because there was a new mandate. First, the creation of DHS because before that. Um, INS and all the immigration authorities came through.
+
+DOJ got separated out. DHS got built out. Um, and from DHS, um, uh, that's where the, uh, border security systems started to kind of get beefed up a bit. 'cause before then, um, they weren't in interconnected with anybody. Um, but then there was a dec within, um, the federal government that these federal agencies need to figure out ways. To collaborate more, to share information more so we had a big mandate. Post nine 11, which was, which was information sharing. Figure out ways to exchange information, especially international information because there were a lot of gaps that occurred during nine 11 that allowed those terrorists to come into the country. goal was, the objective was to keep those guys from getting into the country, um, in a more effective way so that we had more trip wires that would identify these guys before they got here. And so that was the result of nine 11. And so Interpol came up with the, a new database called the Loss and Stolen Travel Document Database. And basically countries, um, came up with, or they participate in a standard for how that information will be captured. To use those passport numbers without the PII identifying information associated with it, and find a way to report that information for loss of stolen travel documents to a centralized repository so that it can be used effectively, effectively for border screening. so what does that mean? That means when you go through your standard immigration, um, port. And you bring your passport. There is an automated system today that checks your passport number for any particular issues that you have with that passport. And either one or two things come, usually get the people, get the green and they go on to their next event or their next, uh, next, uh, trip or the, or the destination that they're going to, or. They get pushed to secondary, which is, you know, that guy got a red flag and nine times outta 10, I would say, uh, 99.9% of the time. By the time you get to that immigration authority or that point, they already know who you are because. What they do typically is they run those manifest information for everybody in those planes that starts at 72 hours before the flight takes off. And so that's how the immigration officer knows, um, for the most part, who, who's standing in front of them. And so if you're a, if you're a person of suspicion, they know that when you get to their, to, to their terminal that they're gonna. Push you off to, to secondary. So how does that involve me? So basically, um, did, Interpol stood up a system called the Lost of Stolen Travel Document Database.
+
+Um, and I think Ron Noble was the Secretary General at that time. He was a former treasury employee or treasury leader. Uh, came out of the, uh, he was a us uh, uh, uh, person that worked in the US or US National that, that, that was leading Interpol at the time. and so. Interpol had a system of exchanging information.
+
+They put that framework together, they put the systems together. Um, they decided that they were gonna use web services. I don't know if you know what a web service is, but it's a loosely coupled API using, uh, XML to transfer a communication back and forth, using soap as a transport mechanism to send messages back and forth. That was. Nineties
+
+Okay.
+
+2003 that was like, man, are you serious? This is really kind of exciting stuff. This is something that we really can wrap our heads around in terms of creating interoperability. And so their web service was based on common XML standards. Um, all we needed to do is translate that information to the destination source that it was going to. And at that time there were three major players, department of state. Uh, we had DHS then we had law enforcement, which was FBI. CBP was the big player because they were immigration and they, we needed to fix the immigration holes that we had. we had to figure out a way, a mechanism to figure out how to tie border screening in the US against Interpol Systems.
+
+Basically the way it would work is a person flies, gets on a plane, their passport gets crosswalk through Interpol. Loss of stolen trauma document database. Um, it also checks a variety of other indices between with Interpol two to make sure that person is who they say they are and that passport is valid. And that's not a, a person of interest if it is a person of interest. Sometimes they let 'em get 'em a plane so they can get 'em back into the country, but that's a whole nother issue. But anyway, our, our goal was to make sure that one. What's the use case for this? You know, what's the prototype? So, the summer of 2004, about 10 million records from CBP, um, on cd. Deliver it to me
+
+Wow.
+
+and I know, right? And so we said, how are we, what are we gonna do with this data? so we, you know, again, this goes back to the databases and then normalizing the data, creating a data local database to kind of pars through the data and then creating a subroutine. Kind of leverage the web service and the connection through that internet, VPN, to run those transactions.
+
+So we used the Unix box, we had a a Unix box in place. We had a service that we could use. We parsed the data, pulled the data back from the results and wrote it to a flat file. in that flat file, you know, flat table, um, we were able to identify. The potential average, you know, standard, average for a number of hits that we could potentially realize based on the data sets that were provided. So we ran 10 million records over the summer. Uh, we were meeting with high D-O-S-D-H-S 'cause DOS owns the P passport. DHS owns the immigration piece. And so everybody had to be in agreement in terms of, you know, the protocols that we were gonna follow to, you know. Understand what this data meant. so we looked at the records, we looked at the hits. Um, we averaged about 17 to 20 hits a day. Most of those hits that we were seeing at that time were people that did one, two things. One, they lost a passport then they found their passport and they reported it stolen initial time. they had a second passport and they used their old passport and they went traveling.
+
+So that means the US guy, can report your passport lost. You go to the Department of State, they'll issue a new, new passport with a new number. Now if you find your old passport or you get 'em mixed up you travel well, nobody screens you on the outbound. But when you land in the country, guess what?
+
+They're, they're gonna stop you because your passport's been reported lost or stolen. So we found that, that for the majority of the hits that we found uh, those, that was the case. And so for the exception was, you know, bad guy. We, we, we found a few bad guys that, that, that were actually, didn't know they were being checked, know that that screening was occurring.
+
+And, uh, we, we caught a few, uh, bandidos or bad guys that were, you know, um, not very good people. But, uh, anyway, so we saw the average, um, and then we said, okay, well how do we flip the switch and make this production? And so that was the trick that, and so the idea was, well. We can set up native APIs with those systems.
+
+DHS was the first. and we can run those directly against Interpol system using web services. And that's what we did. We ran, we did a test run and so we did a load test. Um, I mean, we were running at our max in the beginning. Ooh, million, 20 million transactions a day.
+
+What do you think that number is now, just outta curiosity
+
+man. I'm, I'm telling you, we, I have no idea
+
+Big.
+
+what we, what we did was we did a pilot of, of, uh, three airports, JFK Miami and Atlanta Hartsfield.
+
+And as you may know, the Hartsfield Airport's the biggest
+
+Sure.
+
+in the country. Um, and we saw the same average 17 to 20 hits a day. And again, most of those people were people that, uh, were reusing their own passports. If you say signal of noise, there was some noise. Um, that's noise. That's, that's an administrative hit. And then the exception were the bad guys that we, you know, wanted to pursue that were handled by law enforcement. I'm not law enforcement. I'm an IT guy. Those guys take that data and they do whatever they're gonna do with it. I have no insight into that piece. But, um, yeah, so we were running, so we flipped the switch and we told Interpol that we were gonna run these transactions and we were going live. They were, they, I mean, we had the highest number of transactions anywhere in the world. Um, the number of transac because of the volume. We went from three airports and as soon as everybody saw how easy it was, because there's no new system, everything was done behind the, behind the scenes web service, API. and the issue with web services, they're kind of slow. And so you had the mainframes running against web services, it is always this ma, this issue of matching threads and
+
+Lag. Yep.
+
+Yeah. Yeah, because X 400 is fat. I mean, it's, it's, it's bloy. It's not the most efficient, uh, transport mechanism. But anyway, we were able to handle load and
+
+Yeah.
+
+we moved from three airports to all airports, in the country. For a screening against Interpol. And we back that time, I can't even tell you what that number was, but we were the highest number in, in the, uh, in the, in the Interpol community for the number of transactions. everybody saw That's crazy,
+
+I've been in cybersecurity 25 years. I've never heard that story. That's really, really cool. Yeah, definitely qualifies as a cyber.
+
+And that was team of four. of four people.
+
+Wow.
+
+where innovation, and I'll tell you. It be, in the beginning it was, it's like anything else. You flip the switch to test the pilot and once the people figure out, one, you didn't break anything, and two, that this U, this is information that's pretty useful and it answers the congressional mandate that service never got turned off.
+
+Well, Wayne, I'm sure, I'm sure you probably have a dozen stories just like this. Hopefully at some point in the future you'll come back and share another one with us.
+
+I sure will. You
+
+I'm gonna give you, I'm gonna give you the last word so you can, you know, add whatever comments you like, but thanks for coming and what a really interesting story.
+
+Uh, I'm glad to participate. what I would say is that, uh, stay curious. Um, innovation comes from a, a wide variety of places. Um, be good, be a good person. Um, people make a difference. Um, you know, mission follows, technology, mission follows. Um. You know, impact. And so if you wanna make an impact with an organization, understand what the organization does.
+
+Mine is exactly, exactly minus a few words. What our uh, uh, podcast firm yesterday said, you gotta first understand what your objective and goal is before you can solve anything. So, you know, obviously great minds think a think alike. But thank you. Thank you for coming on. Really, really interesting story and look forward to talking to you again in the future.
+
+No, thank you.
+
+Cheers. 
+
+  📍 ​

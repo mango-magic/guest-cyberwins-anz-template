@@ -1,0 +1,162 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Combined Design System: 
+   - Default = Light (Corporate)
+   - Dark Editorial = namespaced (*1)
+   All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* =========================
+       🌞 LIGHT (PRIMARY SYSTEM)
+    ========================= */
+
+    --background: 0 0% 98%;
+    --foreground: 320 99% 31%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 320 99% 31%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 320 99% 31%;
+
+    --primary: 320 99% 31%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 318 56% 64%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 195 20% 95%;
+    --muted-foreground: 200 14% 55%;
+
+    --accent: 200 14% 60%;
+    --accent-foreground: 0 0% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 200 14% 85%;
+    --input: 200 14% 90%;
+    --ring: 320 99% 31%;
+
+    --radius: 0.5rem;
+
+    /* Brand */
+    --exclusive-purple: 320 99% 31%;
+    --exclusive-silver: 200 14% 60%;
+    --exclusive-orange: 29 100% 60%;
+    --exclusive-green: 100 38% 47%;
+    --exclusive-ink: 243 88% 7%;
+    --exclusive-purple-light: 318 56% 64%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(320 99% 31%) 0%, hsl(318 56% 64%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(320 99% 31%) 0%, hsl(243 88% 7%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 98%) 0%, hsl(195 20% 96%) 100%);
+    --gradient-vibrant: linear-gradient(135deg, hsl(320 99% 31%) 0%, hsl(29 100% 60%) 100%);
+
+    /* Shadows */
+    --shadow-soft: 0 2px 20px -5px hsl(320 99% 31% / 0.2);
+    --shadow-card: 0 4px 30px -8px hsl(320 99% 31% / 0.1);
+    --shadow-glow: 0 0 40px hsl(318 56% 64% / 0.3);
+
+    /* Transitions */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    /* =========================
+       🌑 DARK EDITORIAL (ALT SYSTEM)
+    ========================= */
+
+    --background1: 0 0% 0%;
+    --foreground1: 0 0% 95%;
+
+    --card1: 0 0% 6%;
+    --card1-foreground1: 0 0% 95%;
+
+    --popover1: 0 0% 6%;
+    --popover-foreground1: 0 0% 95%;
+
+    --primary1: 320 99% 31%;
+    --primary-foreground1: 0 0% 100%;
+
+    --secondary1: 318 56% 64%;
+    --secondary-foreground1: 0 0% 100%;
+
+    --muted1: 0 0% 12%;
+    --muted-foreground1: 0 0% 60%;
+
+    --accent1: 29 100% 60%;
+    --accent-foreground1: 0 0% 0%;
+
+    --destructive1: 0 84.2% 60.2%;
+    --destructive-foreground1: 0 0% 98%;
+
+    --border1: 0 0% 15%;
+    --input1: 0 0% 15%;
+    --ring1: 320 99% 31%;
+
+    --shadow-card1: 0 4px 30px -8px hsl(0 0% 0% / 0.5);
+
+    --gradient-primary1: linear-gradient(135deg, hsl(320 99% 31%) 0%, hsl(29 100% 60%) 100%);
+    --gradient-hero1: linear-gradient(180deg, hsl(0 0% 0%) 0%, hsl(0 0% 4%) 100%);
+    --gradient-subtle1: linear-gradient(180deg, hsl(0 0% 0%) 0%, hsl(0 0% 6%) 100%);
+  }
+
+
+  /* =========================
+     🌙 DARK MODE (LIGHT SYSTEM)
+  ========================= */
+
+  .dark {
+    --background: 243 88% 7%;
+    --foreground: 0 0% 95%;
+
+    --card: 243 70% 12%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 243 88% 7%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 318 56% 64%;
+    --primary-foreground: 243 88% 7%;
+
+    --secondary: 320 99% 31%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 243 40% 15%;
+    --muted-foreground: 200 14% 70%;
+
+    --accent: 200 14% 60%;
+    --accent-foreground: 0 0% 95%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 243 40% 20%;
+    --input: 243 40% 20%;
+    --ring: 318 56% 64%;
+
+
+    /* Optional: activate editorial tokens in dark mode */
+    --background1: 0 0% 0%;
+    --foreground1: 0 0% 95%;
+  }
+}
+
+/* =========================
+   GLOBAL BASE STYLES
+========================= */
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+}

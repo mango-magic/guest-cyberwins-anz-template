@@ -1,0 +1,158 @@
+{
+  "slug": "mikedarezzo",
+  "hero": {
+    "profileImage": "/images/Mike-DArezzo-profile-picture.jpg",
+    "name": "Mike D'Arezzo",
+    "tagline": "Executive Director of Information Security at WellStar Health | Key contribution to the establishment of PCI compliance standards"
+  },
+  "media": {
+    "sectionTitle": {
+      "primary": "Cyber",
+      "secondary": "Wins"
+    },
+    "description": "In this episode of the Cyber Winds podcast, Mike Dretzo, Executive Director of Information Security at WellStar Health, shares his unique journey into the cybersecurity realm and highlights several significant technical victories and strategies that have contributed to his career and industry advancements. He recounts a pivotal experience from over 20 years ago when a conversation about protecting credit card databases led to the establishment of PCI compliance standards. Dretzo emphasizes the importance of creative problem-solving, recounting how he successfully executed security projects without an initial budget by identifying business needs and collaborating with stakeholders. His approach to fostering relationships highlights the balance between enabling business innovation and ensuring security, establishing a framework for future growth and compliance. Dretzo concludes with a powerful message about societal responsibility, encouraging professionals to \"pay it forward\" and positively influence the next generation.",
+    "items": [
+      {
+        "title": "Full Interview",
+        "type": "video",
+        "thumbnail": "/images/full-interview-thumbnail.png",
+        "icon": "PlayCircle",
+        "embedUrl": "https://drive.google.com/file/d/1Pp1V54woKlbQIy299AN_WxNn_aMury4I/preview",
+        "description": "Interview with Mike D'Arezzo"
+      },
+      {
+        "title": "Speaker Introduction",
+        "type": "video",
+        "thumbnail": "/images/introduction-thumbnail.png",
+        "icon": "Mic",
+        "embedUrl": "https://drive.google.com/file/d/1m0Sc3s-ZotQv6GCXCyEXb5tgkwMUJ6Gx/preview",
+        "description": "Introduction to Mike D'Arezzo"
+      },
+      {
+        "title": "Interview Highlights",
+        "type": "videolist",
+        "thumbnail": "/images/highlights-thumbnail.png",
+        "icon": "Video",
+        "embedUrl": [
+          "https://drive.google.com/file/d/1JrKKVrLwv0yux1xyjzqvZ_X36KxxYoCw/preview",
+          "https://drive.google.com/file/d/1VIicvpRRrLlb6QzlSHKSDiElrefw1Jfp/preview",
+          "https://drive.google.com/file/d/1H6SFRWWxUcIY5MzP5vz3Tomeb_KpEM0I/preview",
+          "https://drive.google.com/file/d/1Y6LqgrzgYv_D8npHTnenzAAOTtHRQ1AK/preview",
+          "https://drive.google.com/file/d/1HAnNYeugxj0jHQlrKng8ymlUA7-aAfnR/preview",
+          "https://drive.google.com/file/d/1xFlhC3-Ort61yitpVaOn_e9wM3JblXTl/preview",
+          "https://drive.google.com/file/d/18KKoUz_F605zSbQE9NF1k5igknWacDhX/preview",
+          "https://drive.google.com/file/d/1L4rUjKg3a1FKYhiI58wo3jCJCm83ISp_/preview",
+          "https://drive.google.com/file/d/1gGES46OXK-dKTooJW1ZuZVCevCS5GP8Y/preview",
+          "https://drive.google.com/file/d/1SS3O83b22tr09YJHlnIWDLFPFeLtq-W1/preview",
+          "https://drive.google.com/file/d/196LGURMtLTJRUNlGBzCDvhy6hCi7WTon/preview",
+          "https://drive.google.com/file/d/1k916_ywAP2rwbcOG4XsnbcNYHZhUMtNz/preview",
+          "https://drive.google.com/file/d/165i5GNaKmi8zEldrmvkq8OI3-NyL1rNC/preview",
+          "https://drive.google.com/file/d/1nhgs-oTQPKBAS-3llYUVOzh5ZDCIFzXr/preview",
+          "https://drive.google.com/file/d/1G77C_0u39qF04tekbOJxFHI1oBvdybgX/preview"
+        ],
+        "description": "Key moments and insights from the interview with Mike D'Arezzo"
+      }
+    ],
+    "highlights": [
+      {
+        "title": "Highlight 1",
+        "fileId": "1JrKKVrLwv0yux1xyjzqvZ_X36KxxYoCw"
+      },
+      {
+        "title": "Highlight 2",
+        "fileId": "1VIicvpRRrLlb6QzlSHKSDiElrefw1Jfp"
+      },
+      {
+        "title": "Highlight 3",
+        "fileId": "1H6SFRWWxUcIY5MzP5vz3Tomeb_KpEM0I"
+      },
+      {
+        "title": "Highlight 4",
+        "fileId": "1Y6LqgrzgYv_D8npHTnenzAAOTtHRQ1AK"
+      },
+      {
+        "title": "Highlight 5",
+        "fileId": "1HAnNYeugxj0jHQlrKng8ymlUA7-aAfnR"
+      },
+      {
+        "title": "Highlight 6",
+        "fileId": "1xFlhC3-Ort61yitpVaOn_e9wM3JblXTl"
+      },
+      {
+        "title": "Highlight 7",
+        "fileId": "18KKoUz_F605zSbQE9NF1k5igknWacDhX"
+      },
+      {
+        "title": "Highlight 8",
+        "fileId": "1L4rUjKg3a1FKYhiI58wo3jCJCm83ISp_"
+      },
+      {
+        "title": "Highlight 9",
+        "fileId": "1gGES46OXK-dKTooJW1ZuZVCevCS5GP8Y"
+      },
+      {
+        "title": "Highlight 10",
+        "fileId": "1SS3O83b22tr09YJHlnIWDLFPFeLtq-W1"
+      },
+      {
+        "title": "Highlight 11",
+        "fileId": "196LGURMtLTJRUNlGBzCDvhy6hCi7WTon"
+      },
+      {
+        "title": "Highlight 12",
+        "fileId": "1k916_ywAP2rwbcOG4XsnbcNYHZhUMtNz"
+      },
+      {
+        "title": "Highlight 13",
+        "fileId": "165i5GNaKmi8zEldrmvkq8OI3-NyL1rNC"
+      },
+      {
+        "title": "Highlight 14",
+        "fileId": "1nhgs-oTQPKBAS-3llYUVOzh5ZDCIFzXr"
+      },
+      {
+        "title": "Highlight 15",
+        "fileId": "1G77C_0u39qF04tekbOJxFHI1oBvdybgX"
+      }
+    ]
+  },
+  "podcastInfo": {
+    "whatIs": {
+      "title": {
+        "prefix": "What is",
+        "highlight": "Cyber Wins"
+      },
+      "description": "Cyber Wins is a cutting-edge podcast that brings you exclusive interviews with cybersecurity leaders, CISOs, and experts who are at the forefront of protecting organizations in today's digital landscape. Each episode dives deep into the strategies, insights, and real-world experiences behind defending against cyber threats, managing security risks, and building resilient security programs. From threat detection and incident response to security architecture and compliance frameworks, we cover the critical topics that matter most to cybersecurity professionals and organizations navigating the complex cyber space. Learn from those who have secured major enterprises and discover actionable knowledge to strengthen your own cybersecurity posture."
+    },
+    "getInvolved": {
+      "title": {
+        "prefix": "Get",
+        "highlight": "Involved"
+      },
+      "subtitle": "Join the conversation and be part of the movement",
+      "description": "Ready to amplify your knowledge and connect with thought leaders? Here's how you can get involved with Cyber Wins:",
+      "links": {
+        "linkedIn": "https://www.linkedin.com/company/exclusive-networks-podcast-series/posts/?feedView=all",
+        "shareStoryForm": "https://forms.gle/4QZVeeSwfB6BURG77"
+      }
+    },
+    "whyCyberWins": {
+      "title": {
+        "prefix": "Why",
+        "highlight": "Cyber Wins"
+      },
+      "paragraphs": [
+        "In a rapidly evolving digital landscape, staying informed isn't just an advantage—it's essential. Cyber Wins delivers the insights, strategies, and inspiration you need to win in your field.",
+        "Whether you're an entrepreneur, executive, or innovator, our podcast provides the competitive edge to help you make smarter decisions, build stronger networks, and drive meaningful impact. Don't just keep up with change—lead it."
+      ],
+      "ctaText": "Ready to score your next win? Let's connect.",
+      "shareStoryForm": "https://forms.gle/4QZVeeSwfB6BURG77"
+    }
+  },
+  "footer": {
+    "text": "Cyber Wins Podcast © 2026",
+    "logoSrc": "/images/cyber-wins-logo.png"
+  },
+  "host": "Mark Voorhies",
+  "transcript": "/data/mikedarezzo.txt"
+}

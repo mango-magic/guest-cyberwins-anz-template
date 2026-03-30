@@ -1,0 +1,183 @@
+{
+  "slug": "stevebrining",
+  "hero": {
+    "profileImage": "/images/Steve-Brining-Profile-Picture.jpg",
+    "name": "Steve Brining",
+    "tagline": "Cybersecurity Evangelist | Significant reduction in troubleshooting time and enhanced operational efficiency through vendor consolidation and integration strategies."
+  },
+  "media": {
+    "sectionTitle": {
+      "primary": "Cyber",
+      "secondary": "Wins"
+    },
+    "description": "The latest episode of the Cyber Winds podcast features Steve Brining, a cybersecurity evangelist from Acronis, who brings over 30 years of experience in the field. The discussion delves into the common challenges faced by managed service providers and end users in today's cybersecurity landscape. Steve shares insightful case studies highlighting the importance of centralized visibility, integration of tools, and vendor consolidation. By addressing the issue of vendor sprawl, organizations can significantly reduce troubleshooting time and enhance endpoint protection, ultimately leading to improved operational efficiency and security posture. Steve emphasizes the need for a unified management console and the rising trend of vendor consolidation, which not only streamlines processes but also offers better pricing and support. Throughout the conversation, key themes emerge: the necessity for seamless integration of products, communication between security and network teams, and the strategic application of military principles in private enterprise cybersecurity management.",
+    "items": [
+      {
+        "title": "Full Interview",
+        "type": "video",
+        "thumbnail": "/images/full-interview-thumbnail.png",
+        "icon": "PlayCircle",
+        "embedUrl": "https://drive.google.com/file/d/1rVr9tufrsyTR9FjcJXqSdIA5WD0IWgaG/preview",
+        "description": "Interview with Steve Brining"
+      },
+      {
+        "title": "Speaker Introduction",
+        "type": "video",
+        "thumbnail": "/images/introduction-thumbnail.png",
+        "icon": "Mic",
+        "embedUrl": "https://drive.google.com/file/d/1MphiDPm2QM1vI5LdYYd4mSNPAcV4ovr-/preview",
+        "description": "Introduction to Steve Brining"
+      },
+      {
+        "title": "Interview Highlights",
+        "type": "videolist",
+        "thumbnail": "/images/highlights-thumbnail.png",
+        "icon": "Video",
+        "embedUrl": [
+          "https://drive.google.com/file/d/1bASfV1MYZfJg8Ss7Kl2aG4WZjSBHQ1zo/preview",
+          "https://drive.google.com/file/d/19nzIYNg3pQf5k7Thcn84ZFX9F3cbqu0g/preview",
+          "https://drive.google.com/file/d/1EcRe90Yw7ex-2BtpPddZpIub0QxxcfCH/preview",
+          "https://drive.google.com/file/d/19ZeOwFgNHVRNVYUhc3ajD_1F3Lk2gfm3/preview",
+          "https://drive.google.com/file/d/1lriv7ef1XZsDFiAfgz2VdvHyP3Kag-7y/preview",
+          "https://drive.google.com/file/d/1hw9hSWXP27WTshKttZPEGhR642Bg_OhN/preview",
+          "https://drive.google.com/file/d/1dDomFloB-WIouVHW2PL7b6pNVTn4hECR/preview",
+          "https://drive.google.com/file/d/1-Dc5mDEvlgj7-Lu44aIu6EHCNng3g202/preview",
+          "https://drive.google.com/file/d/1ILz0rBcJqWExn213yCnpPH1KM61isrBF/preview",
+          "https://drive.google.com/file/d/1dfm80dI396QyqhRWc_KkEEANUPAY_8qr/preview",
+          "https://drive.google.com/file/d/1Fe88zX2vKOsGPIT3oiFAtBNeraFdlEFf/preview",
+          "https://drive.google.com/file/d/1M5FUiDtgBjtchlWYZxY7BUwPAeeSyrFp/preview",
+          "https://drive.google.com/file/d/1ExCSMKPOUex9XQaamy8Xzl73mfOLoigR/preview",
+          "https://drive.google.com/file/d/1m2xYaoPEEz7X_M0IVb3wyIXrCddZ67Kf/preview",
+          "https://drive.google.com/file/d/1XXzabOd8gKG-D8OeIL9Jm2DEMgm8kTgd/preview",
+          "https://drive.google.com/file/d/1693xvq_M3cb2m4taxkTM00CwTLlxUSEK/preview",
+          "https://drive.google.com/file/d/1g2TolfRZbuhAwFzmkUEgcLwYRCowgFLr/preview",
+          "https://drive.google.com/file/d/1EcxQRVRWFRFVIIWXAvNt-gfGOYsvzzYe/preview",
+          "https://drive.google.com/file/d/16CWW8zBhfGrMMhsq7FT-qCNHyxBVfN9e/preview",
+          "https://drive.google.com/file/d/1SbRdKG5ZTw2CqvPnrgZmrWTGbR12_p8A/preview"
+        ],
+        "description": "Key moments and insights from the interview with Steve Brining"
+      }
+    ],
+    "highlights": [
+      {
+        "title": "Highlight 1",
+        "fileId": "1bASfV1MYZfJg8Ss7Kl2aG4WZjSBHQ1zo"
+      },
+      {
+        "title": "Highlight 2",
+        "fileId": "19nzIYNg3pQf5k7Thcn84ZFX9F3cbqu0g"
+      },
+      {
+        "title": "Highlight 3",
+        "fileId": "1EcRe90Yw7ex-2BtpPddZpIub0QxxcfCH"
+      },
+      {
+        "title": "Highlight 4",
+        "fileId": "19ZeOwFgNHVRNVYUhc3ajD_1F3Lk2gfm3"
+      },
+      {
+        "title": "Highlight 5",
+        "fileId": "1lriv7ef1XZsDFiAfgz2VdvHyP3Kag-7y"
+      },
+      {
+        "title": "Highlight 6",
+        "fileId": "1hw9hSWXP27WTshKttZPEGhR642Bg_OhN"
+      },
+      {
+        "title": "Highlight 7",
+        "fileId": "1dDomFloB-WIouVHW2PL7b6pNVTn4hECR"
+      },
+      {
+        "title": "Highlight 8",
+        "fileId": "1-Dc5mDEvlgj7-Lu44aIu6EHCNng3g202"
+      },
+      {
+        "title": "Highlight 9",
+        "fileId": "1ILz0rBcJqWExn213yCnpPH1KM61isrBF"
+      },
+      {
+        "title": "Highlight 10",
+        "fileId": "1dfm80dI396QyqhRWc_KkEEANUPAY_8qr"
+      },
+      {
+        "title": "Highlight 11",
+        "fileId": "1Fe88zX2vKOsGPIT3oiFAtBNeraFdlEFf"
+      },
+      {
+        "title": "Highlight 12",
+        "fileId": "1M5FUiDtgBjtchlWYZxY7BUwPAeeSyrFp"
+      },
+      {
+        "title": "Highlight 13",
+        "fileId": "1ExCSMKPOUex9XQaamy8Xzl73mfOLoigR"
+      },
+      {
+        "title": "Highlight 14",
+        "fileId": "1m2xYaoPEEz7X_M0IVb3wyIXrCddZ67Kf"
+      },
+      {
+        "title": "Highlight 15",
+        "fileId": "1XXzabOd8gKG-D8OeIL9Jm2DEMgm8kTgd"
+      },
+      {
+        "title": "Highlight 16",
+        "fileId": "1693xvq_M3cb2m4taxkTM00CwTLlxUSEK"
+      },
+      {
+        "title": "Highlight 17",
+        "fileId": "1g2TolfRZbuhAwFzmkUEgcLwYRCowgFLr"
+      },
+      {
+        "title": "Highlight 18",
+        "fileId": "1EcxQRVRWFRFVIIWXAvNt-gfGOYsvzzYe"
+      },
+      {
+        "title": "Highlight 19",
+        "fileId": "16CWW8zBhfGrMMhsq7FT-qCNHyxBVfN9e"
+      },
+      {
+        "title": "Highlight 20",
+        "fileId": "1SbRdKG5ZTw2CqvPnrgZmrWTGbR12_p8A"
+      }
+    ]
+  },
+  "podcastInfo": {
+    "whatIs": {
+      "title": {
+        "prefix": "What is",
+        "highlight": "Cyber Wins"
+      },
+      "description": "Cyber Wins is a cutting-edge podcast that brings you exclusive interviews with cybersecurity leaders, CISOs, and experts who are at the forefront of protecting organizations in today's digital landscape. Each episode dives deep into the strategies, insights, and real-world experiences behind defending against cyber threats, managing security risks, and building resilient security programs. From threat detection and incident response to security architecture and compliance frameworks, we cover the critical topics that matter most to cybersecurity professionals and organizations navigating the complex cyber space. Learn from those who have secured major enterprises and discover actionable knowledge to strengthen your own cybersecurity posture."
+    },
+    "getInvolved": {
+      "title": {
+        "prefix": "Get",
+        "highlight": "Involved"
+      },
+      "subtitle": "Join the conversation and be part of the movement",
+      "description": "Ready to amplify your knowledge and connect with thought leaders? Here's how you can get involved with Cyber Wins:",
+      "links": {
+        "linkedIn": "https://www.linkedin.com/company/exclusive-networks-podcast-series/posts/?feedView=all",
+        "shareStoryForm": "https://forms.gle/4QZVeeSwfB6BURG77"
+      }
+    },
+    "whyCyberWins": {
+      "title": {
+        "prefix": "Why",
+        "highlight": "Cyber Wins"
+      },
+      "paragraphs": [
+        "In a rapidly evolving digital landscape, staying informed isn't just an advantage—it's essential. Cyber Wins delivers the insights, strategies, and inspiration you need to win in your field.",
+        "Whether you're an entrepreneur, executive, or innovator, our podcast provides the competitive edge to help you make smarter decisions, build stronger networks, and drive meaningful impact. Don't just keep up with change—lead it."
+      ],
+      "ctaText": "Ready to score your next win? Let's connect.",
+      "shareStoryForm": "https://forms.gle/4QZVeeSwfB6BURG77"
+    }
+  },
+  "footer": {
+    "text": "Cyber Wins Podcast © 2026",
+    "logoSrc": "/images/cyber-wins-logo.png"
+  },
+  "host": "Mark Voorhies",
+  "transcript": "/data/stevebrining.txt"
+}

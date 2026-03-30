@@ -1,0 +1,366 @@
+0:08
+Welcome to the Cyber Winds podcast. This is Mark Vorhees. Our guest today is
+0:13
+Steve Brining from Acronis who has 30 plus years of experience in various
+0:17
+cyber security areas and I'm just going to throw over throw it over to you Steve
+0:21
+to do some introductions but thank you for joining the podcast. Well,
+0:24
+thanks for having me Mark. Um Steve Brining, cyber security evangelist for
+0:28
+Acronis. I've been with Acronis for a little over eight years as Mark alluded
+0:32
+to um a little over well about 30 years in the cyber security space mainly on
+0:37
+the manufacturing side. Um I'm also a CISSP
+0:44
+um commanding officer here in the Arizona Army National Guard, masters in
+0:49
+cyber security blah blah blah. Uh let's see the member of FBI Zen forgard.
+0:56
+Thank you for the program. I understand you have some interesting stories and
+1:00
+common challenges that some of the people that you deal with uh are
+1:03
+currently having. Let's hear them. Thanks for joining us. We appreciate it.
+1:07
+Yeah, I appreciate that. And you know, all four stories I I came up with uh
+1:12
+four different um managed service providers that we work with in
+1:16
+particular, but this can apply to end users as well. And you're going to hear
+1:20
+some common themes. And I'm kind of seeing this as what's happening uh in
+1:24
+the market today. and we have thousands of service providers worldwide. Um so we
+1:30
+talk to them all the time and uh the first one uh they're actually from
+1:34
+Jacksonville, uh Florida. Um they're a service provider that supports a little
+1:39
+over 3,000 end users and that's everywhere from legal, accounting,
+1:43
+healthcare uh for their data compliance needs. Uh some of the key challenges
+1:48
+that they uh were running into was they had some inefficiency from very
+1:52
+disconnected systems and using multiple vendor platforms. Uh they had some
+1:58
+manual processes if you will for deployments. Uh they needed a real the
+2:04
+hardest part was like central visibility into incidents um to help with response
+2:10
+to security incidents. uh and they all they wanted to do was have the
+2:14
+technician control things all from a single point. some of the key
+2:18
+requirements. Keep in mind that you know people are going to already have
+2:22
+existing products also. Um they needed um integration
+2:27
+um with uh competitor of ours uh RMM uh tools. It was actually with data. Um
+2:36
+they wanted to create some security profiles and to do some automated
+2:40
+deployments uh centralized ticketing uh but they wanted integration with um EDR
+2:47
+XDR um their sock and also identity management with entra ID in particular
+2:53
+at the time. Um, one of the things that they did, uh, by having this
+2:59
+consolidation was when they did this, um, they they
+3:04
+minimized their vendor sprawl. Um, and specifically what they told me was, uh,
+3:12
+they cut it they cut down their troubleshooting from approximately an
+3:17
+hour to about 5 to 10 minutes because they had a centralized data platform.
+3:24
+And they eliminated a lot of redundancy um in their platform loginins uh to act
+3:31
+you know for access management. And when it came to endpoint protection um became
+3:37
+automated for every device and they were able to migrate people um in their words
+3:43
+they said zero disruption. So, one of the things about them was you can hear
+3:48
+that common theme that they're looking they were looking more for
+3:54
+one console to work with everything because when you have vendor sprawl, I
+3:59
+mean, let's face it, you can have eight different products. You got to learn
+4:02
+eight different products. Uh sometimes you got to get certified on those
+4:05
+products and then they update the products and Lord knows when they have
+4:09
+major releases of it, things change on the screens. You don't know where they
+4:12
+are. Um so they were looking for that but what I'm finding also in the
+4:16
+industry is they need um integrations with a lot of other products. So you can
+4:23
+have an EDR product, but where do you send the alerts, right? Um, you know, do
+4:28
+you have your alerts go into a seam solution, for example? Uh, XDR, if a bad
+4:34
+email comes in and it bypassed because someone clicked on some stupid or just
+4:38
+bypassed the whole filters, next thing you know, um, they're hit. But how many
+4:43
+people were hit, right? And do you have the ability to shut down that person?
+4:49
+And that can even be an internal user. um say an internal threat that's
+4:53
+happening, but they were able to improve their overall troubleshooting literally
+4:59
+600% just by using the integrations. And I thought that was pretty cool.
+5:04
+So question, I mean, you've been in this industry a long time. You spent lots of
+5:07
+time in the uh uh uh you know, military various arms. That problem that you just
+5:13
+analyzed, I would expect it kind of affects everybody, right? Like how often
+5:17
+do you talk to someone who they say, "No, I don't have any of those issues."
+5:20
+It it seems to be a pretty pretty widespread issue being able to integrate
+5:24
+all of those things. And if you think about it from a
+5:26
+financial perspective, a lot of CFOs, I mean, this past year I've seen we want
+5:31
+vendor consolidation, right? We don't want to deal with multiple purchasing
+5:34
+agents. We don't want to do different renewals. We don't want to deal with
+5:37
+different supports. I've seen issues where, and I don't mean to pick on two
+5:41
+companies, but I'm just gonna throw two companies out. Um, let's just say
+5:46
+hypothetically you have support directly from Microsoft and Microsoft says it's
+5:51
+an Nvidia graphics card problem and you you know you reach out to Nvidia and
+5:56
+Nvidia says, "Oh, it's a Microsoft problem." Right? I'm sure a lot of
+6:01
+people here in this podcast will know this that you're like, "Personally, I
+6:05
+don't care whose problem it is. I just need it fixed." and then meanwhile
+6:10
+you're going back and forth for two to three days only to find out it's one of
+6:13
+the vendors um that caused the uh the issue. So, I always look at it like if
+6:19
+you're consolidating things, uh I guess the best phrase I could use and one of
+6:23
+my co-workers actually came up with this uh term. It's one throat to choke,
+6:29
+right? If you if you have one vendor that's doing multiple products and that
+6:33
+vendor consolidation, not only does it help from a financial perspective, but
+6:36
+it also helps uh from technology perspective that you know at least who
+6:41
+to call for support because you can't blame anyone else in that aspect. Do you
+6:46
+think that some of the things you you know essentially you're talking about a
+6:50
+private um enterprise chain of command right similar things that you would
+6:54
+learn in the military. Do you think that there are things that from the military
+6:57
+take chain of command come over into the private sector that exact do exactly
+7:01
+those kinds of things on the one throat to choke uh comment that kind of that's
+7:05
+exactly how the military cyber security built their programs right and I think
+7:09
+there's probably some we could learn from that in the private sector.
+7:12
+Yeah, I mean, let's face it, you know, I don't know, larger companies, um, now
+7:17
+this may not happen to everybody, but you know, security and network teams,
+7:21
+they're they're, you know, not always talking to each other. Um, and they're
+7:27
+like, well, we need security on your boxes. No, you're not touching you're
+7:30
+not touching that. No, you're not going to do the network. Yeah, but we're
+7:32
+security, you know. So, they get into this little little, for lack of better
+7:36
+term, pissing match. I don't know to say that. Um but you know then there's that
+7:43
+chain of command right and there's established processes and procedures
+7:46
+that you have to follow but then you start to realize when it comes to tool
+7:50
+sprawl where does the responsibility come into play and that's where we start
+7:55
+to get into integrations I mean you know um you know the military there's
+7:59
+middleware uh as a matter of fact uh yesterday um the military now all people
+8:07
+uh in the military um you have to your cat card to do all this. Uh we now have
+8:12
+a generative AI for every soldier. Um and it's actually going to start off
+8:16
+Yeah, it's actually going to start off with Gemini uh in there. They're going
+8:20
+to continue to more. But I mean, I could say what it is. It's like, yeah, you can
+8:24
+go to genai.mill. Well, if you tried that from the outside, it's going to
+8:27
+say, "Sorry, you can't have access to it." But literally everybody now in all
+8:32
+five branches now have the ability to do generative AI. Um, which is
+8:37
+And they are they teaching every soldier with that or just the cyber security and
+8:41
+IT teams? I Well, I could tell you in the in the
+8:45
+memo basically said you need to learn which we all know that that means
+8:51
+ultimately there's going to have to be training. Um, people are going to have
+8:55
+to realize there's going to be a policy that obviously is going to come forward
+8:58
+and say, you know, even though it's behind, you know, the nipper or
+9:01
+whatever. So, they're going to sit there and they're going to go, "Uh, yeah,
+9:04
+don't put confidential information in there, proprietary information." I mean,
+9:08
+you know, there's also going to be like what what classification of the
+9:11
+information. So, but at least it was a start and I thought that was really
+9:15
+interesting. Um, because they're they're going to be using it internally to
+9:20
+basically pull from all a whole bunch of data sources to be able to get
+9:23
+information. So, there was even a vendor consolidation thing, right? You know,
+9:26
+trying to get different things from an LM model to pull data in. So, what I've
+9:30
+seen over the last year is this this vendor consolidation thing. Financial
+9:36
+people love it. The IT people are loving it. You don't have to worry about even
+9:39
+though their subscriptions, it's like, well, we're paying six different
+9:42
+invoices. And quite frankly, when people have more stuff with one vendor, right,
+9:48
+they tend to get better pricing because of of the volume, the sheer volume that
+9:53
+they do. I find it interesting that that um AI
+9:58
+assistants, right? I mean, I have one. I use it all the time. I have one on my
+10:01
+phone. I use it all the time. That that that's becoming the standard, not the
+10:04
+norm. I even have a daughter that's a college student that tells me all the
+10:07
+time how much she learns from her quote unquote AI assistant. I'm not sure if
+10:10
+they use Gemini or someone else, but but um that consolidation that you're
+10:14
+talking about is happening happening everywhere at a really really rapid
+10:18
+rapid pace. Do you see that the pace of consolidation is speeding up
+10:22
+significantly from let's say five years ago?
+10:24
+Oh, dramatically. Imagine 10 years ago, you and you and I trying to say, uh,
+10:31
+what's the difference between an Apple iPad Pro and an Apple
+10:38
+iPad Air, right? We'd have to go to Apple. We'd have to go search. We'd have
+10:43
+to do that. Now, you just put it into a prompt and within like five seconds, 10
+10:47
+seconds, you have all the differences, right? So,
+10:50
+I almost I don't use uh Google search anymore. I almost completely use audio.
+10:56
+uh audio searching and and Gemini and and Grock and you know go through the
+11:01
+list of folks that we use on a regular basis. But it it you know it's 30 40 50
+11:06
+60 times a day that I use those kind of tools.
+11:09
+Yeah. And if you create an agent um with those types of items, you can actually
+11:13
+do all the repetitiveness that you need and it actually will
+11:18
+say hey every hour go out there and find this information from here every day
+11:22
+especially like news headlines. So, you know, I certainly use it for
+11:27
+news headlines when I wake up in the morning. Absolutely.
+11:30
+Oh, yeah. I I just wish that it could tell me tell me tell me which way the
+11:34
+stock's going to go today. You know, that'd be awesome. But, uh,
+11:38
+I'm sure there's one out there that will give you a good guess.
+11:41
+Well, it's a good guess, but it's but if it but if the money goes down, you know,
+11:44
+I'm not so happy about that, right? But, uh, if if
+11:48
+Go ahead. Yeah. tell us a little bit about what
+11:50
+you do at Acronis and and um you know what what kinds of things you're doing
+11:55
+to implement these kind of solutions and and and add them to the current
+11:59
+marketplace to help people consolidate. Yeah. Well, with with our product, uh,
+12:04
+we've taken um multiple things, whether it be backup, disaster recovery, RMM
+12:10
+tools, um, security, uh, from B, you know, from antivirus, antimower to EDR
+12:16
+to XDR, even security awareness training, email security, everything is
+12:20
+all based on one agent with one console, and it's all natively integrated. We
+12:26
+also have integrations with a little over 300 different vendors because we
+12:30
+know that people are going to need to work with maybe a PSA tool over there or
+12:35
+they have a scene out there, right? What kind of connector is it going to be?
+12:39
+Microsoft Sentinel, is it going to be logarithm? Um, do you need a generic one
+12:43
+if it's not necessarily uh one in our list? um working with uh 365 that's
+12:49
+another thing we do a lot with 365 as well from backup to back we can actually
+12:56
+scan the backups as well uh and we could do granular restores and we can even do
+13:02
+email archiving so there's a big bunch of stuff that we do but it's all based
+13:08
+on one agent with one console that is that native integration piece
+13:13
+um we're very huge and uh conclusion consolidation is one
+13:18
+of those things those things that we're all going through and obviously you used
+13:21
+a great example from the military and a couple of MSSPs that we're working
+13:25
+towards but we agree that's a challenge and several of the people I've had on
+13:29
+the podcast have talked specifically about how to win some of those
+13:31
+strategies and add value to others. Thank you for joining. We really
+13:35
+appreciate your time. Maybe in a couple of months you'll come and tell another
+13:38
+story with us. We'd love to have you back at some point in the future. How
+13:40
+does that sound? That sounds awesome. I appreciate it.
+13:43
+Thanks Mark. All right, my friend. Cheers.

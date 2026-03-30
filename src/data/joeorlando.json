@@ -1,0 +1,183 @@
+{
+  "slug": "joeorlando",
+  "hero": {
+    "profileImage": "/images/Joe-Orlando-Profile-pic.jpg",
+    "name": "Joe Orlando",
+    "tagline": "Cybersecurity Expert | Notable authority in incident response planning and data protection strategies."
+  },
+  "media": {
+    "sectionTitle": {
+      "primary": "Cyber",
+      "secondary": "Wins"
+    },
+    "description": "In this engaging discussion, Joe Orlando shares his extensive expertise in the cybersecurity industry, reflecting on significant advancements and the importance of proactive incident response planning. He highlights the evolution of cybersecurity from basic data encryption to complex frameworks that incorporate identity management and data protection. Joe emphasizes the critical need for organizations to develop thorough incident response plans that detail communication strategies and individual responsibilities during cybersecurity incidents. He advocates for regular reviews of these plans to adapt to changing technologies and personnel, underscoring that proactive preparation is essential for minimizing damage during a breach. Joe's insights serve as a guide for organizations to navigate the complexities of cybersecurity, ultimately fostering a culture of awareness and vigilance in protecting sensitive data.",
+    "items": [
+      {
+        "title": "Full Interview",
+        "type": "video",
+        "thumbnail": "/images/full-interview-thumbnail.png",
+        "icon": "PlayCircle",
+        "embedUrl": "https://drive.google.com/file/d/1LmkkHLQaIlWWRj0VfELn0IGR6fal04SW/preview",
+        "description": "Interview with Joe Orlando"
+      },
+      {
+        "title": "Speaker Introduction",
+        "type": "video",
+        "thumbnail": "/images/introduction-thumbnail.png",
+        "icon": "Mic",
+        "embedUrl": "https://drive.google.com/file/d/1iUcOV371AWJbPN3uAAbAydt4Guu5KMku/preview",
+        "description": "Introduction to Joe Orlando"
+      },
+      {
+        "title": "Interview Highlights",
+        "type": "videolist",
+        "thumbnail": "/images/highlights-thumbnail.png",
+        "icon": "Video",
+        "embedUrl": [
+          "https://drive.google.com/file/d/1XqZDWYimMkAocJySQGGLwWBi37dr4Zq4/preview",
+          "https://drive.google.com/file/d/1SZAlNbuKo8vnLBrDK5eiY-KtHaIOhHWu/preview",
+          "https://drive.google.com/file/d/122U7fCOtZ22h3Grs0F3XqKXQk3ttfOTM/preview",
+          "https://drive.google.com/file/d/135RnamZTbat-XDuzpFTTHas2RofNmzro/preview",
+          "https://drive.google.com/file/d/12bCj7yhiKaI9-Rx_f1Uv3XsgA4HrPBQl/preview",
+          "https://drive.google.com/file/d/19yoKmEH6_oc1cc9YAuZ8adBtnLFMNJvK/preview",
+          "https://drive.google.com/file/d/14a3eAG7yNl_cw-1ac2cM6hKjqwthdH64/preview",
+          "https://drive.google.com/file/d/1SLZtg-pCLnfbFMNAcjsD-H2Wdv37oMe_/preview",
+          "https://drive.google.com/file/d/1PINQ1--1C7Qx4GZoQ8c-3ozJIV1fF9qC/preview",
+          "https://drive.google.com/file/d/1kxkE3-SccQfEatk9saGoqo7pFg7oUphO/preview",
+          "https://drive.google.com/file/d/1u3c3x-NywM0Cp0j1LrPkZK4dkwNDtj2P/preview",
+          "https://drive.google.com/file/d/1oWlViaYXa_eHHzv5VhbaFIpZ8MUYOKRk/preview",
+          "https://drive.google.com/file/d/1TlAiqfq_dovEGDOW7glwyAHcMbL_OVOa/preview",
+          "https://drive.google.com/file/d/1CM4TDszK8-8fiEw8dwq4TV-ILXayhEvK/preview",
+          "https://drive.google.com/file/d/1R4_9tUmMfN_UkMpq3xfPCrb8t16JiLv6/preview",
+          "https://drive.google.com/file/d/1iSmHS-ycsZUwPqpW3YPf8lM4FeKtg9mY/preview",
+          "https://drive.google.com/file/d/1iixl5GNkfvyHaN-Pa_vIFyCIbFIaaDKo/preview",
+          "https://drive.google.com/file/d/1dg_AW-beh3e-MLZQBS7VhZWJAptwXFf0/preview",
+          "https://drive.google.com/file/d/1kjWwVe3Y4BVSL7HovJzDuW_QuA_OmNtZ/preview",
+          "https://drive.google.com/file/d/17a-UQYGyJ_bMhm6A8IVKgHHBvaMbmGA1/preview"
+        ],
+        "description": "Key moments and insights from the interview with Joe Orlando"
+      }
+    ],
+    "highlights": [
+      {
+        "title": "Highlight 1",
+        "fileId": "1XqZDWYimMkAocJySQGGLwWBi37dr4Zq4"
+      },
+      {
+        "title": "Highlight 2",
+        "fileId": "1SZAlNbuKo8vnLBrDK5eiY-KtHaIOhHWu"
+      },
+      {
+        "title": "Highlight 3",
+        "fileId": "122U7fCOtZ22h3Grs0F3XqKXQk3ttfOTM"
+      },
+      {
+        "title": "Highlight 4",
+        "fileId": "135RnamZTbat-XDuzpFTTHas2RofNmzro"
+      },
+      {
+        "title": "Highlight 5",
+        "fileId": "12bCj7yhiKaI9-Rx_f1Uv3XsgA4HrPBQl"
+      },
+      {
+        "title": "Highlight 6",
+        "fileId": "19yoKmEH6_oc1cc9YAuZ8adBtnLFMNJvK"
+      },
+      {
+        "title": "Highlight 7",
+        "fileId": "14a3eAG7yNl_cw-1ac2cM6hKjqwthdH64"
+      },
+      {
+        "title": "Highlight 8",
+        "fileId": "1SLZtg-pCLnfbFMNAcjsD-H2Wdv37oMe_"
+      },
+      {
+        "title": "Highlight 9",
+        "fileId": "1PINQ1--1C7Qx4GZoQ8c-3ozJIV1fF9qC"
+      },
+      {
+        "title": "Highlight 10",
+        "fileId": "1kxkE3-SccQfEatk9saGoqo7pFg7oUphO"
+      },
+      {
+        "title": "Highlight 11",
+        "fileId": "1u3c3x-NywM0Cp0j1LrPkZK4dkwNDtj2P"
+      },
+      {
+        "title": "Highlight 12",
+        "fileId": "1oWlViaYXa_eHHzv5VhbaFIpZ8MUYOKRk"
+      },
+      {
+        "title": "Highlight 13",
+        "fileId": "1TlAiqfq_dovEGDOW7glwyAHcMbL_OVOa"
+      },
+      {
+        "title": "Highlight 14",
+        "fileId": "1CM4TDszK8-8fiEw8dwq4TV-ILXayhEvK"
+      },
+      {
+        "title": "Highlight 15",
+        "fileId": "1R4_9tUmMfN_UkMpq3xfPCrb8t16JiLv6"
+      },
+      {
+        "title": "Highlight 16",
+        "fileId": "1iSmHS-ycsZUwPqpW3YPf8lM4FeKtg9mY"
+      },
+      {
+        "title": "Highlight 17",
+        "fileId": "1iixl5GNkfvyHaN-Pa_vIFyCIbFIaaDKo"
+      },
+      {
+        "title": "Highlight 18",
+        "fileId": "1dg_AW-beh3e-MLZQBS7VhZWJAptwXFf0"
+      },
+      {
+        "title": "Highlight 19",
+        "fileId": "1kjWwVe3Y4BVSL7HovJzDuW_QuA_OmNtZ"
+      },
+      {
+        "title": "Highlight 20",
+        "fileId": "17a-UQYGyJ_bMhm6A8IVKgHHBvaMbmGA1"
+      }
+    ]
+  },
+  "podcastInfo": {
+    "whatIs": {
+      "title": {
+        "prefix": "What is",
+        "highlight": "Cyber Wins"
+      },
+      "description": "Cyber Wins is a cutting-edge podcast that brings you exclusive interviews with cybersecurity leaders, CISOs, and experts who are at the forefront of protecting organizations in today's digital landscape. Each episode dives deep into the strategies, insights, and real-world experiences behind defending against cyber threats, managing security risks, and building resilient security programs. From threat detection and incident response to security architecture and compliance frameworks, we cover the critical topics that matter most to cybersecurity professionals and organizations navigating the complex cyber space. Learn from those who have secured major enterprises and discover actionable knowledge to strengthen your own cybersecurity posture."
+    },
+    "getInvolved": {
+      "title": {
+        "prefix": "Get",
+        "highlight": "Involved"
+      },
+      "subtitle": "Join the conversation and be part of the movement",
+      "description": "Ready to amplify your knowledge and connect with thought leaders? Here's how you can get involved with Cyber Wins:",
+      "links": {
+        "linkedIn": "https://www.linkedin.com/company/exclusive-networks-podcast-series/posts/?feedView=all",
+        "shareStoryForm": "https://forms.gle/4QZVeeSwfB6BURG77"
+      }
+    },
+    "whyCyberWins": {
+      "title": {
+        "prefix": "Why",
+        "highlight": "Cyber Wins"
+      },
+      "paragraphs": [
+        "In a rapidly evolving digital landscape, staying informed isn't just an advantage—it's essential. Cyber Wins delivers the insights, strategies, and inspiration you need to win in your field.",
+        "Whether you're an entrepreneur, executive, or innovator, our podcast provides the competitive edge to help you make smarter decisions, build stronger networks, and drive meaningful impact. Don't just keep up with change—lead it."
+      ],
+      "ctaText": "Ready to score your next win? Let's connect.",
+      "shareStoryForm": "https://forms.gle/4QZVeeSwfB6BURG77"
+    }
+  },
+  "footer": {
+    "text": "Cyber Wins Podcast © 2026",
+    "logoSrc": "/images/cyber-wins-logo.png"
+  },
+  "host": "Mark Voorhies",
+  "transcript": "/data/joeorlando.txt"
+}

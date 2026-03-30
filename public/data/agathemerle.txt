@@ -1,0 +1,490 @@
+0:08
+Welcome to our Cyber Security Wins podcast. We're really excited today to
+0:12
+have Aot Merrill with us who is the author of Cyber Like a Girl. Really
+0:17
+excited to hear her story and I'll turn the time over to you to introduce
+0:20
+yourself and and uh tell us how the process went.
+0:24
+Okay, sounds good. Yes. So, hi everyone. My name is Agat Merl. Very excited to be
+0:29
+here today. I ended up in cyber security a little bit on accident which is
+0:34
+different than most people probably. I didn't apply for my first role actually.
+0:40
+I was reached I a contracting agency reached out to me for a project
+0:44
+coordinator role and I was living in Florida at the time and I thought maybe
+0:49
+it was a scam but uh I really wanted a job. So I thought okay I'll I'll apply
+0:54
+and we'll see what happens. And it was an actual job. It was with the director
+0:59
+of security operations for Tao uh that is now Johnson Controls and it was very
+1:06
+interesting because I had never worked in cyber security. I had never worked in
+1:10
+IT before and I found myself in this department full of um really technical
+1:18
+nerds and uh I was very different from everybody and but I found that it was
+1:25
+very interesting. So I decided to start learning on the spot. We had people from
+1:29
+McAfee there that were helping us with our antivirus. So I just started
+1:34
+learning learning from them and little by little learned more and more
+1:38
+technical things and eventually I was converted to a full-time employee and I
+1:44
+was on the security tools team. Did that for a little while. Then I went to the
+1:50
+security architecture team and then I switched to the in vulnerability
+1:55
+management team which at some point got merged with incident response. So, I did
+1:59
+a little bit of that, too. But I spent most of my time, at least um during my
+2:04
+analyst years, in vulnerability management. And I found that that was a
+2:10
+pretty easy um area of cyber to go into, even as
+2:15
+someone who was not technical from the start. um because when you go to do the
+2:21
+scans, it's it's pretty self um explanatory to use those vulnerability
+2:25
+scanning tools and then to interpret the results, you get so much help whether
+2:30
+from the tool itself or anywhere on the internet. So I found that to be quite
+2:36
+easy to do. Um, so I did that for a while and then I wanted to go into more
+2:41
+of a leadership role and that's when I came to Abbott where I currently work as
+2:45
+first as a manager on the tax service management team and about a year and a
+2:51
+half ago now I became a senior manager for all of the corporate side of Abbott.
+2:59
+So I handle all of the cyber security for all of our corporate functions. So
+3:03
+that's your HR, finance and etc. Great story.
+3:08
+Great story. You're actually the second person in a
+3:12
+couple of days that said they fell into it by accident. So apparently that's not
+3:15
+that unable. No. Yeah, I guess not. And um I think I
+3:19
+have found when you talk to people and you ask them, oh, how did you get into
+3:22
+the field? A lot of them it wasn't really planned. especially the people
+3:26
+that have, you know, five or 10 plus years of experience because when they
+3:31
+came into the field, it didn't really exist or it wasn't really labeled as
+3:35
+cyber security. So maybe they were doing something that was cyber security, but
+3:39
+they just didn't know that that's what it was. And and a lot of us end up here
+3:45
+randomly, but then it works out. So, absolutely. One of the one of the things
+3:51
+I love about cyber security is it doesn't matter who your favorite
+3:54
+basketball team is or political persuasions or any of those kinds of
+3:58
+things. We're all standing side by side trying to protect all the organizations
+4:01
+and learn from each other each other. Yes, that's true. Um I have found that
+4:06
+there's a lot of really nice communities um lots of groups you can be a part of
+4:11
+and and and that's been really helpful for me uh in the field.
+4:16
+Tell us about your book. Let's hear your story. That's that's pretty unusual. So,
+4:19
+I'm excited to hear about it. Hear about it.
+4:21
+Yes. And I think, you know, part of writing the book is because I did not
+4:24
+come from cyber security. So, one of my first degree is in sociology and
+4:29
+anthropology. And I've always been fascinated by looking at societies,
+4:34
+people, and and systems. And when I came to cyber security, I almost
+4:41
+sometimes I feel like I'm an anthropologist and I'm studying the
+4:44
+nerds and I'm investigating how can I fit in
+4:49
+I I fit right into that category. Yes. And it it's helped me a lot in my
+4:53
+career. But that's also I think where the idea for the book came from is just
+4:57
+I observed some things and in particular around being a woman in cyber security
+5:03
+because I was in the most technical part all of my cyber career. When you look at
+5:10
+the statistics they'll tell you that there's about 25% of women in cyber
+5:14
+security overall for the general workforce. But when you go to look at
+5:18
+security operations, that number sometimes goes down to 10, even 5%
+5:23
+depending on the orgs because it's the more it's the more technical, maybe the
+5:27
+more darker side. And uh so far there's not been as many women there. And I I
+5:35
+never found it to be too much of an issue. I mean, I I dealt with some
+5:39
+negative things, but I I grew up in the Caribbean. I have a strong personality.
+5:44
+I not easily impressed or scared. So, so I did okay. But when I one of the things
+5:51
+that I've gotten to do with Abbott is I help with the cyber security interns
+5:55
+that we get each summer. And two I think it's three summers ago now. Um, I had an
+6:02
+intern who was a girl and she had so our interns have to do a group
+6:08
+project which is with a completely different manager than the one that they
+6:12
+have for their regular assignment. And my intern's group project manager was a
+6:18
+typical old school cyber security guy. And um he was very condescending, very
+6:24
+dismissive, um basically mean to her and um she had a really negative experience
+6:31
+and she was considering quitting cyber security because of that experience. And
+6:36
+that made me, you know, I'm I'm French. Revolution is our thing. So I was just
+6:41
+like, "No, I don't think so. You're not letting this guy stop you from what you
+6:46
+want to do." And especially to me, it was crazy because this girl had been in
+6:51
+Girls Who Code from a young age. I think she started that in elementary school.
+6:56
+So I was telling her, you've spent most of your life focusing and learning
+7:03
+towards this goal to work in this field. You cannot let this person who will be
+7:08
+gone within 5 years of you being in your career say whether or not you do this.
+7:13
+Um, and you know, I I was able to talk to her and kind of remotivate her, but
+7:18
+then I thought, okay, what about all the other girls that are interested in the
+7:23
+field, but then either don't see someone that looks like them and they get
+7:27
+discouraged, or they get into it, they they find themselves in a bad team, and
+7:33
+then they just decide this isn't for me. When the reality is it's just a bad
+7:37
+team, it's not a bad field. So, I thought, okay, they need something. What
+7:42
+can I do? And that's where the idea for the book came from. So I then decided I
+7:48
+was gonna interview 100 women who work in cyber security all over the world and
+7:54
+in all levels of their career and then make statistics and derive trends from
+8:00
+that and then give advice for the younger generation but also advice for
+8:05
+the women who are already in the field. So that's where I came. I told you I
+8:10
+immediately bought a copy and lent it to my daughter who's currently reading it.
+8:14
+So really really excited. Share with us some of the statistics that you think
+8:17
+were interesting. Interesting.
+8:18
+Yes. So the the first one that I thought was really interesting is that even
+8:23
+though a lot of the women, it was 85% that report reported some sort of
+8:28
+negative uh consequences of being a woman in the field, 100% of them would
+8:33
+recommend it to a girl family member. So I thought that was a really good sign
+8:38
+that even though some of them faced difficult situations, they still today
+8:44
+would recommend the field and most of them told me yes something some bad
+8:50
+things happened but I'm still here. I'm still interested in it and and I have a
+8:54
+true passion for it and I just cannot imagine doing anything else. So so I
+8:59
+thought that was really cool. Um I ended up having a pretty representative
+9:04
+sample. I didn't do that on purpose, but I ended up having about a third in each
+9:09
+kind of level of career. So, uh, beginner career, midlevel, and then
+9:14
+senior executive. Uh, so, so that worked out pretty well. I think what was
+9:19
+interesting, too, were all the just hearing all the stories. It it was
+9:23
+fascinating what what some of these women had done. Um, some of them were
+9:28
+just it was just really cool. Uh there was a a lady that I interviewed who was
+9:33
+in in Australia who ended up being the UN representative when it came to cyber
+9:40
+security roles for all of Australia. So she and she had grown up in the
+9:49
+um the more countryside part of Australia and she had had this dream to
+9:54
+one day go to the UN and then she fulfilled that and she went and she
+9:58
+represented her country and and she's still involved with that and shaping the
+10:04
+way the policies to bring more women into the field of cyber security but
+10:09
+also information technology as a whole and I was like I want to be sure We
+10:13
+actually have Brett Jordan on our program who is uh works in Geneva as a
+10:17
+consultant for the UN. So I'm sure they've probably met know each other.
+10:20
+That'll be interesting. Interesting.
+10:22
+It it was it was fascinating to see, you know, just how much some of these women
+10:26
+had accomplished and a lot of them they were just so willing to share their
+10:32
+experience. They all said how networking is so so important. And and that's
+10:37
+something that I tell the the interns that I get. I always tell them your
+10:42
+network is your net worth because you this is how you'll get your ne your next
+10:47
+job. You know the job I have now I didn't apply to it. Um well I actually I
+10:54
+guess this one now I did but the one before that when I got to Abbott I
+10:57
+didn't apply. It was through my network. Someone that knew I was looking who said
+11:03
+oh you know Abbott is looking potentially for somebody as well
+11:06
+connected me and and that's how I ended up with that role. So, it's actually I
+11:11
+have four daughters and when they were going through college, I wrote a a
+11:14
+little bit of a class on LinkedIn specifically on how to find a job or how
+11:18
+to find an internship to kind of help teach them and their
+11:21
+friends about how to get into the field. And it it's been very useful, I think.
+11:25
+I think. Yes. What did you put in there? What was
+11:29
+that? Well, if you if you think about LinkedIn
+11:32
+as a living resume, right? You need to add all of those things that you've done
+11:36
+and all of those steps so that people can see and understand who you are. But
+11:40
+it's also very important from a networking perspective to to see the
+11:43
+people that you look up to and to talk to them and and uh join the
+11:47
+organizations that talk about these kinds of things. It was just more of a
+11:51
+bit of a how-to on how to do that. Yes, I I think using the social media is
+11:56
+is is really going to be key in the future. I when I just went to the women
+12:02
+in cyber security conference in April and there was actually a presentation on
+12:06
+that where someone used LinkedIn they started posting about their journey and
+12:10
+what they were learning and that ended up getting them a role and this is a
+12:14
+story that I've heard a few times already where people are now sharing
+12:17
+okay this is what I'm learning in my class this is how I'm applying to my
+12:21
+current role or to whatever project I'm working on and
+12:26
+I think the younger generation they they grew up with the technology, you know,
+12:31
+not in a different way than than some of us did and they really know how to use
+12:37
+it and I think they should really leverage that because I think that will
+12:40
+be an advantage in the future because it's essentially your your portfolio.
+12:45
+LinkedIn is your your work portfolio. It it lets us know what have you done, what
+12:49
+have you worked on and then for me as a hiring manager when I see your LinkedIn
+12:55
+it tells me a little bit about your personality as well. I can see if you're
+12:58
+really interested in the field and I think that can make the difference when
+13:04
+you go to hire someone. Really? That's exactly what I tell my daughter.
+13:08
+Exactly. Exactly.
+13:09
+Yes. And and it can also break it. So you have to be careful that you know
+13:14
+what you're putting it is good. Um but I think yeah it definitely should be
+13:20
+leveraging that more and more. Um this is actually so the last part of the book
+13:25
+is a lot of the advice piece that I combined from what I got from the
+13:30
+different women but also what I got from doing research and literature review.
+13:36
+People were the women mentioned a few times how the next move or like the
+13:43
+breaking point in their career came from someone giving them a chance. and that
+13:48
+someone giving them a chance. It was either someone within their company or
+13:52
+someone that noticed them whether that was in person or within the internal
+13:58
+company or if they went to a industry event and presented something or also
+14:03
+some of them now on mediums like LinkedIn where someone noticed that oh
+14:08
+you're you're posting these things you're clearly reflecting you you have a
+14:13
+critical thinking that I'm looking for for my team and then give them the
+14:18
+opportunity like that. So, so I I thought that was interesting. And um
+14:22
+some other thing that um that I like to see was
+14:28
+the women were so they were so prepared and so highly educated. That was a key
+14:36
+very interesting finding that I had. I think 45% of my group had a graduate
+14:41
+degree education level which was really impressive. Um, and some of that comes
+14:47
+from the fact that the the women always felt like they should be extra prepared
+14:53
+because I think for for women in in cyber security, a lot of them still feel
+14:58
+a little bit of the imposttor syndrome and having in the degrees being more
+15:03
+prepared, having all the certifications, it it makes them feel like they're more
+15:08
+ready and like they will be seen more as experts. So,
+15:12
+one of my mentors many years ago. Her name was Tina
+15:16
+Thortonson, who I'll invite onto our program at some point, but she was the
+15:20
+CISO for um Arizona State University, and I spent lots and lots of time
+15:26
+talking with her about cyber security. She was truly an expert in the field and
+15:30
+just an absolutely wonderful person, good friend of mine currently. We and I
+15:36
+totally agree. She was very capable and competent and absolutely one of the
+15:40
+leaders in our field. Yes. always all of all of the women I've
+15:45
+met with I was just I was just so impressed. Not only were they doing a
+15:49
+lot at work, but a lot of them are involved in programs outside of work to
+15:54
+promote uh whether that's cyber security or um STEM in general for young kids. So
+16:01
+I it's very impressive to see all that they
+16:05
+Here's a question for you. You talked about uh uh your example of getting into
+16:09
+programming young. What would you recommend to girls these days and how to
+16:13
+how do they get into the program because cyber is such a great great experience
+16:17
+for all of us? Well, I think that they need to focus on
+16:21
+both the technical skills and then what people like to call the soft skills. I
+16:25
+think the soft skills are actually going to be the hardest one to gain because
+16:29
+being able to communicate well it we think that every day we talk. We think
+16:35
+it's easy. We just we just talk. But being able to communicate well, that's
+16:39
+going to be what differentiates them from their competition because they need
+16:44
+to communicate well when they do the interview. It's so if you impress
+16:48
+someone by your presence and how you talk, they're more likely to give you
+16:53
+the opportunity. And then once you get the job, you need, for instance, if you
+16:58
+work for me, I would like you to to be able to talk to my stakeholders that
+17:03
+sometimes might be, you know, senior vice presidents of HR. I need to know
+17:08
+that you'll be comfortable talking to any kind of population. So, this is
+17:14
+something that they can practice on and learn early on. Um the best way to do
+17:18
+that I would say is they can take classes but also the more you read
+17:23
+usually the better you are with communication. So definitely encourage
+17:28
+them to to read a lot u any kinds of books and so I would focus on that and
+17:33
+then I would try to find something that they are passionate about and if they're
+17:40
+really into cyber security as well find a way that it connects because
+17:45
+as time goes on more and more components of
+17:50
+our everyday lives have some sort of cyber security element to them. So maybe
+17:55
+you're passionate about cars. Well, a lot of these cars now have all these
+18:00
+electronics in them. They can be hacked. So you can combine your two passions
+18:05
+together and make a career out of it. Cuz I think if you are passionate about
+18:10
+what you do, things usually work out and it and it's easier. It's an easier road.
+18:17
+So that that would be my my advice for them. Find something you're really
+18:21
+passionate about that maybe doesn't feel like work or doesn't seem like work and
+18:26
+then connect it somehow to something else that is more work.
+18:32
+Thank you for joining our podcast. That was really really interesting. I hope
+18:36
+some point in the future in a couple of months that you might want to come back
+18:38
+and share another share another story. But in closing, I'm going to give you
+18:42
+the last two or three minutes to you know sum it up and tell us what you
+18:46
+think and and really appreciate you joining. for joining.
+18:49
+Yes. Well, thank you so much for having me. This was a a really interesting
+18:52
+conversation. And my last point is going to be, you know, a shameless plug for
+18:57
+the book that I wrote. I read it. It's really interesting. I
+19:01
+love the statistics. I spent a lot of time on it and it was
+19:06
+it was really interesting. So, if you are interested in joining cyber
+19:10
+security, if you're a woman, uh please check it out. But also, if you're a
+19:13
+leader who has women reporting to you, I think you would also find it valuable.
+19:17
+Totally agree. Like I said, maybe in the future when my daughter finishes it,
+19:22
+we'll have another conversation. Yes.
+19:24
+Once again, thank you for joining. Really looking forward to talking to you
+19:27
+again. And like I said, I really enjoyed the book, so I highly recommend it.
+19:32
+Thank you. Thank you.

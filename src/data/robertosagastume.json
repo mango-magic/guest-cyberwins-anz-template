@@ -1,0 +1,183 @@
+{
+  "slug": "robertosagastume",
+  "hero": {
+    "profileImage": "/images/Roberto-Sagastume-profile-picture.jpg",
+    "name": "Roberto Sagastume",
+    "tagline": "Cybersecurity Expert | Empowering organizations to navigate the complexities of cybersecurity through innovative chaos management strategies."
+  },
+  "media": {
+    "sectionTitle": {
+      "primary": "Cyber",
+      "secondary": "Wins"
+    },
+    "description": "In this enlightening episode of Cyber Wins, Roberto Sagastume shares his extensive experience in the cybersecurity realm, spanning 25 years. He explores the complexities of attack surfaces and the inherent chaos within cybersecurity and IT environments. Sagastume emphasizes the importance of understanding and managing this chaos to enhance risk management protocols. He discusses various cybersecurity frameworks, including the NIST framework, which offers critical guidance for organizations aiming to implement robust cybersecurity measures. Sagastume also highlights the significance of continuous mapping and prioritization of risks, encouraging organizations to develop a comprehensive view of their digital landscape. His holistic approach merges technical expertise with practical risk management strategies, addressing the need for organizations to cultivate a culture of cybersecurity awareness at all levels. This discussion provides vital insights into navigating the cybersecurity landscape and transforming chaos into strategic advantage.",
+    "items": [
+      {
+        "title": "Full Interview",
+        "type": "video",
+        "thumbnail": "/images/full-interview-thumbnail.png",
+        "icon": "PlayCircle",
+        "embedUrl": "https://drive.google.com/file/d/1TG8t6aEb9S5cjg8dY8oTK7_nPs_tzlJJ/preview",
+        "description": "Interview with Roberto Sagastume"
+      },
+      {
+        "title": "Speaker Introduction",
+        "type": "video",
+        "thumbnail": "/images/introduction-thumbnail.png",
+        "icon": "Mic",
+        "embedUrl": "https://drive.google.com/file/d/197yWdpC6JtvdvGXbczTe_AZHsLYAi0rU/preview",
+        "description": "Introduction to Roberto Sagastume"
+      },
+      {
+        "title": "Interview Highlights",
+        "type": "videolist",
+        "thumbnail": "/images/highlights-thumbnail.png",
+        "icon": "Video",
+        "embedUrl": [
+          "https://drive.google.com/file/d/1zqixFIwzwQnKs_9pTyaBQo-C1W_OrHbt/preview",
+          "https://drive.google.com/file/d/13aPghL3GTm-IKce1-PjF5nRLbrd09mMF/preview",
+          "https://drive.google.com/file/d/1MbfnKE-sRVYOftHkYtE9NpMpoalPo2B9/preview",
+          "https://drive.google.com/file/d/1iajv7dIOZTD47c6AQNkqthrCPbViIZcS/preview",
+          "https://drive.google.com/file/d/18XrZ6fnNEURkwZy5HIc-kIal8IJYUFU1/preview",
+          "https://drive.google.com/file/d/12gtG6brPjt5KX7MWdWfz_92dLIELEahw/preview",
+          "https://drive.google.com/file/d/1pOkP1wx7x7aWkXHBOKtcXhRC8fkE5r2E/preview",
+          "https://drive.google.com/file/d/141uY9u7H6jzI1TR_OBYviAiEhrZq-Bj6/preview",
+          "https://drive.google.com/file/d/1n_8J7xDW7r7-DjpQmiJvv-XERh_HdcLq/preview",
+          "https://drive.google.com/file/d/1ExLo8W74MUA_txbXvODiAs0jBrwkjlxu/preview",
+          "https://drive.google.com/file/d/1ZKZYk4iJMggc0SVEgEf9MAJamJSkjxtZ/preview",
+          "https://drive.google.com/file/d/15lV5u4sSAO9PSA4QgJTgABeI43vuTOsA/preview",
+          "https://drive.google.com/file/d/1DhadQnHA0yBYtSIKZlj_JkQFGk5hY3gp/preview",
+          "https://drive.google.com/file/d/1SCN2TODZ3qVBJ__Habc6-c_gYTQ9_5cU/preview",
+          "https://drive.google.com/file/d/1U1-muScjME9Ji6t2QCFNusNHUz9MbmGF/preview",
+          "https://drive.google.com/file/d/1iYEQ91gsrgbkrkCYA9Dl5AMqWzbOQ-R0/preview",
+          "https://drive.google.com/file/d/16kuv-6F4F4Ge5-Zo4SGj4xblh_WCErvx/preview",
+          "https://drive.google.com/file/d/1W4SInwt_s1P9yzKQs3NMS31p293gjNcU/preview",
+          "https://drive.google.com/file/d/1ZESSmGRWAg6WaY1jDZBNP0cHbGCgQMg8/preview",
+          "https://drive.google.com/file/d/1rvxnV36eIM3e4XgNbREo08z7HXHQFZam/preview"
+        ],
+        "description": "Key moments and insights from the interview with Roberto Sagastume"
+      }
+    ],
+    "highlights": [
+      {
+        "title": "Highlight 1",
+        "fileId": "1zqixFIwzwQnKs_9pTyaBQo-C1W_OrHbt"
+      },
+      {
+        "title": "Highlight 2",
+        "fileId": "13aPghL3GTm-IKce1-PjF5nRLbrd09mMF"
+      },
+      {
+        "title": "Highlight 3",
+        "fileId": "1MbfnKE-sRVYOftHkYtE9NpMpoalPo2B9"
+      },
+      {
+        "title": "Highlight 4",
+        "fileId": "1iajv7dIOZTD47c6AQNkqthrCPbViIZcS"
+      },
+      {
+        "title": "Highlight 5",
+        "fileId": "18XrZ6fnNEURkwZy5HIc-kIal8IJYUFU1"
+      },
+      {
+        "title": "Highlight 6",
+        "fileId": "12gtG6brPjt5KX7MWdWfz_92dLIELEahw"
+      },
+      {
+        "title": "Highlight 7",
+        "fileId": "1pOkP1wx7x7aWkXHBOKtcXhRC8fkE5r2E"
+      },
+      {
+        "title": "Highlight 8",
+        "fileId": "141uY9u7H6jzI1TR_OBYviAiEhrZq-Bj6"
+      },
+      {
+        "title": "Highlight 9",
+        "fileId": "1n_8J7xDW7r7-DjpQmiJvv-XERh_HdcLq"
+      },
+      {
+        "title": "Highlight 10",
+        "fileId": "1ExLo8W74MUA_txbXvODiAs0jBrwkjlxu"
+      },
+      {
+        "title": "Highlight 11",
+        "fileId": "1ZKZYk4iJMggc0SVEgEf9MAJamJSkjxtZ"
+      },
+      {
+        "title": "Highlight 12",
+        "fileId": "15lV5u4sSAO9PSA4QgJTgABeI43vuTOsA"
+      },
+      {
+        "title": "Highlight 13",
+        "fileId": "1DhadQnHA0yBYtSIKZlj_JkQFGk5hY3gp"
+      },
+      {
+        "title": "Highlight 14",
+        "fileId": "1SCN2TODZ3qVBJ__Habc6-c_gYTQ9_5cU"
+      },
+      {
+        "title": "Highlight 15",
+        "fileId": "1U1-muScjME9Ji6t2QCFNusNHUz9MbmGF"
+      },
+      {
+        "title": "Highlight 16",
+        "fileId": "1iYEQ91gsrgbkrkCYA9Dl5AMqWzbOQ-R0"
+      },
+      {
+        "title": "Highlight 17",
+        "fileId": "16kuv-6F4F4Ge5-Zo4SGj4xblh_WCErvx"
+      },
+      {
+        "title": "Highlight 18",
+        "fileId": "1W4SInwt_s1P9yzKQs3NMS31p293gjNcU"
+      },
+      {
+        "title": "Highlight 19",
+        "fileId": "1ZESSmGRWAg6WaY1jDZBNP0cHbGCgQMg8"
+      },
+      {
+        "title": "Highlight 20",
+        "fileId": "1rvxnV36eIM3e4XgNbREo08z7HXHQFZam"
+      }
+    ]
+  },
+  "podcastInfo": {
+    "whatIs": {
+      "title": {
+        "prefix": "What is",
+        "highlight": "Cyber Wins"
+      },
+      "description": "Cyber Wins is a cutting-edge podcast that brings you exclusive interviews with cybersecurity leaders, CISOs, and experts who are at the forefront of protecting organizations in today's digital landscape. Each episode dives deep into the strategies, insights, and real-world experiences behind defending against cyber threats, managing security risks, and building resilient security programs. From threat detection and incident response to security architecture and compliance frameworks, we cover the critical topics that matter most to cybersecurity professionals and organizations navigating the complex cyber space. Learn from those who have secured major enterprises and discover actionable knowledge to strengthen your own cybersecurity posture."
+    },
+    "getInvolved": {
+      "title": {
+        "prefix": "Get",
+        "highlight": "Involved"
+      },
+      "subtitle": "Join the conversation and be part of the movement",
+      "description": "Ready to amplify your knowledge and connect with thought leaders? Here's how you can get involved with Cyber Wins:",
+      "links": {
+        "linkedIn": "https://www.linkedin.com/company/exclusive-networks-podcast-series/posts/?feedView=all",
+        "shareStoryForm": "https://forms.gle/4QZVeeSwfB6BURG77"
+      }
+    },
+    "whyCyberWins": {
+      "title": {
+        "prefix": "Why",
+        "highlight": "Cyber Wins"
+      },
+      "paragraphs": [
+        "In a rapidly evolving digital landscape, staying informed isn't just an advantage—it's essential. Cyber Wins delivers the insights, strategies, and inspiration you need to win in your field.",
+        "Whether you're an entrepreneur, executive, or innovator, our podcast provides the competitive edge to help you make smarter decisions, build stronger networks, and drive meaningful impact. Don't just keep up with change—lead it."
+      ],
+      "ctaText": "Ready to score your next win? Let's connect.",
+      "shareStoryForm": "https://forms.gle/4QZVeeSwfB6BURG77"
+    }
+  },
+  "footer": {
+    "text": "Cyber Wins Podcast © 2026",
+    "logoSrc": "/images/cyber-wins-logo.png"
+  },
+  "host": "Mark Voorhies",
+  "transcript": "/data/robertosagastume.txt"
+}

@@ -1,0 +1,203 @@
+  I'd like to welcome Dan Wilkins to our  
+
+Dan Wilkins to our first edition of
+
+podcast.
+
+Wins podcast. I've known Dan for, I don't know, 10 or 12 years. He's been a great mentor over the years from a cybersecurity perspective with a long background. But I'll throw it over to you, Dan, and
+
+yourself
+
+free to introduce yourself and
+
+of
+
+give us some, uh, of your cybersecurity wins, and thanks for joining.
+
+Yeah, absolutely. Pleasure to be here, mark. And, uh, you know, there, there are so many wins in the category, but lemme start with a little bit of background on myself. So I've been in the cybersecurity realm for north of 25 years, and the great thing about, uh, once you hit the 25 milestone, you stop counting after that, it doesn't really matter.
+
+You just say, I'm more than 25 years and, and it's all good. So, uh, let's just, uh, um, leave it at that. So quite a bit of experience in the area here and, uh, over the course of the last several, um. Positions I've been in, including my current role as ciso. Uh, I also do, uh, vcso services outside of work as well.
+
+So, uh, kind of, uh, I'm able to provide a value add no matter where I am and any conversations that I'm part of. But, uh, um, but thinking about wind's perspective. There, there's just an unlimited bucket of things that we're all, um, associated with on a day-to-day basis. And if you look at this from, okay, I'm gonna, I'm gonna take an organization and I'm gonna plug in, you know, some questions here.
+
+Um, how about, uh, innovation? So let's look at innovation. Um. In government space innovation's a little bit difficult because we don't have unlimited budgets. We have all these problems and challenges with retaining good staff, and we have, uh, uh, you know, continual regulation changes and things that are coming in front of us.
+
+So how do we stay in front of that, right? How do we keep, uh, on, on top of those, uh, those different regulatory changes that are happening and. Be able to do it with restricted budgets, uh, not able to, uh, you know, to go out and just ask for more money when we need it and, and things like that. So these are the kinds of challenges that a lot of organizations face, and you don't have to be in government to face these problems.
+
+Right. You could be a small to medium sized business that is struggling to, you know, keep lights on and you got, you know, employees that, uh, you wanna make sure that you're keeping them paid and, and them happy so that way they're not leaving. And, you know, you have customers that are, uh, coming with various problems.
+
+So how do we solve those issues? Right? So we started looking at the approach of. How do we innovate with what we have today? How do we fill gaps? How do we do analysis and, uh, really look at, uh, ways to, to leverage technology and more importantly, our partner and, uh, our vendor community to help us solve some of these problems.
+
+Right? So. We rely on information. I think everybody can, uh, can agree that without information you can't make good decisions. You can't come in and say, here's my recommendation. I can't come in and say, uh, here's our projection, here's what we're gonna do. You, you can't do that without data. And I, I tell my team all the time, uh, how are you going to determine what abnormal is if you don't know what normal is?
+
+Right? So if there's, if there's nothing to compare it to, if you don't have a baseline, there's no way to actually. Determine what's abnormal. So we, we continually run into these like challenges, these invisible walls, so to speak. We have, uh, you know, a, a large attack base. We have these attackers coming in and they want access to either information or data or constituent data, customer, client data.
+
+Uh, whatever you, whatever lens you wanna put on this, they want to get to the data because the data has value. So our mission, of course, is to protect that data. Well, now you're saying, well, how do I do that? Well, I'm just gonna encrypt everything. Okay. I mean, if you take the encryption approach, there's, there's cost to that, right?
+
+There's licensing costs, there's infrastructure costs, there's hardware costs, and more importantly, there's a latency, uh, element that gets added, right? We, we add time to the transaction now because now for encrypting data, we have to decrypt it in order to view it, right? So these are the kind of challenges we went across.
+
+So how do we solve this in efficient ways? Um, I go to my team and I say, okay, well. Forget about technology for a second. Let's just, let's just simplify everything down to the point of what do people really have a problem with? Well, it's the unknown, it's fear. Um, I, I wanna stay in my comfort zone. I don't wanna do anything different.
+
+I want, I want to keep doing the same thing because I'm safe. I feel safe there. I, I don't wanna change, I don't wanna add new technology, artificial intelligence out there. I don't wanna embrace that. I wanna do these things because I'm, maybe I'm afraid of it. Maybe I'm scared of it. Right. So we have, we have that side of people.
+
+And I come back and say, we all are risk managers, right? So think about this, regardless of what your role is, what your capacity is, what your title is, where you are in the organization, how much experience you have, how many years you've been in the industry, it doesn't matter. Everybody's a risk manager.
+
+And, uh, you know, I've had people disagree with me on this and, and I, I say, let, let's refocus this. So if you are going to drive across town. You're, you're gonna get in the vehicle, you're gonna go out on the streets with other, you know, people driving around, uh, with obstacles, potholes, uh, you know, all these different things out there.
+
+Um, whether you're like it or not, that's a risky activity. Right. And you're gonna say, yeah, I'm safe inside my car, I got, you know, uh, uh, four doors and I got this metal cage and I'm sitting in, okay, well you're traveling at. Increasing speeds, right? So if you get on the freeway now your risk goes up because you're going faster and you're traveling with, uh, another population of people that's also going faster.
+
+So your risks are going up. You say, well, no, I've been driving for 20 years. I, I, I'm a good driver. I don't have these problems, and, and it's not risky for me. Okay? How about the person that's on their cell phone not paying attention? How about the, uh, the barrel that falls off the truck, uh, that's in, it's in a vehicle in front of the one that's in front of you that you don't see.
+
+So the, the car in front of you swerves outta the way of the barrel, and then you see it too late and then you hit the barrel, right? So these are risky things that we have to encounter. And cybersecurity is no different. We have these problems and these challenges that come at us. And, you know, from a risk perspective, um, we are trying to, we are trying to avoid a problem.
+
+You know, don't touch the hot stove because it burns. If you don't, if you don't have a reference to that, what does that mean to you? If you don't know what hot is, if you'd never experienced hot. You don't have a way to, to know that that's a problem. Right. Just because somebody says something doesn't automatically mean, oh, stay away from that.
+
+I, I better not do that. Uh, but I think most people have had the experience of touching something hot that was unpleasant. Right. So it was a, it was a. Memory that was burned into your brain that says, this activity is dangerous. Right? I need to pay attention when somebody says that's hot. That means it's probably gonna be unpleasant if I touch it.
+
+Cybersecurity's the same exact way. So if we have attackers coming in, if we have, you know, infrastructure changes, we have, you know, things that we need to respond to, it means that there's a danger there that we have to address. We have to deal with. And, um, you know, from an innovation perspective, this is where we start leveraging technology and saying, okay, I have all of these tools.
+
+I have all these data sets, all these data points, I have everything in my environment that I can use. How do I get the most effective information from these tools? To help me make an informed decision, right? So it's about, I have some level of risk in everything that's going on in my organization.
+
+Attackers coming in, we have, you know, insider threats, we have malware, we have all these different things. And yeah, you could throw around titles like ransomware and all these things like that, but ultimately that's just a different level of risk. If you look at a matrix, that's just one item on the list.
+
+So. I don't, I don't like to play the Whack-a-Mole game. I'm, I'm one that doesn't like to solve individual problems. Like, Hmm. I'm looking outta my office right now and I see, uh, about a half a dozen big drawer, front glass windows in my building over here. Uh, now they haven't been broken out. I mean, they, they, they're pretty solid and they look like they, they sustained, you know, good winds and some, maybe some hail and things like that.
+
+But will they stop somebody throwing a rock at it? Um, I don't think so. I, I, I would say no. So is that a risk from, from a building perspective? Well, now you gotta look at demographics. You have to look at your area. You have to look at what type of organization do you have, do you have people that don't like your organization and these things?
+
+And, and, and if that's the case, then that risk starts ratcheting up. That starts going up higher on the, on the list of things to, to be concerned about. And you might say, well, um, what are, what are some mitigation strategies? What can we do about that? Okay, well, you could put cameras in, you could hire, uh, maybe a security staff to walk around the building or outside the building.
+
+Uh, you could buy insurance policies. You could replace the glass with something that doesn't break right? You could replace it with a lexion or, or a, you know, a, a plexiglass or something like that, that doesn't break, right? So I could throw rocks at it, and it's not gonna shatter, it's not gonna break. But now I've got a different problem.
+
+I've got something that maybe heat will, will have a problem with the, after a while, maybe it'll change colors, maybe it'll get scratched and etched and I have to replace it. So I, I've, I've got these different things that I have to look at from a risk perspective. And each of these are a decision point.
+
+Each of these say, here's what's going on, here's what the environment looks like. Here's what my landscape looks like. Here are our options. Now are some better than others? Yeah. Yeah. Absolutely. That's why we have a recommendation list. So I, my, my process on, on innovation is to say, I have X amount of ways to solve this.
+
+Let's say it's five ways to solve this problem. A, B, C, D, EI, I support all five of 'em. Um, but I, I prefer option B because it's the best, right? So I always put option B as the best because that way it's easy to remember. You don't have to worry about keeping track of which one it is. It's just option B, it's the best one.
+
+Let's, let's go with option B, right? Um, the other options are good, and to be honest, you should support everyone that you recommend. You should say, here are the five options we can do, and one of those options should not ever be. Um, just tell me what I'm gonna do or just gimme a, gimme a path outta the woods here.
+
+And, uh, leave it in the hands of somebody else to decide that that should never be a recommendation. It should always be. Here are the, the well thought out strategies out of this particular problem, out of this particular issue, this risk, this, uh, this thing that we need to mitigate. And I support all five of these options, so it doesn't matter to me which one you pick, although I would prefer you pick option B because it's the best.
+
+Right. So that's kind of how I approach things. And, and you don't leave it open-ended. You don't leave it with, uh, ah, just, just tell me what you want here and, and we'll figure it out. Um, I, I, uh, I had this problem a while back where, um, the owner of the company. Wanted something to happen. And it was really vague.
+
+It wasn't clear on what he wanted. So I said, okay, let me just meet with him really quick. So I went into the company and I said, or to his office of the company, and I said, help me understand what we're trying to accomplish. 'cause I, I'm not clear on what, what the objectives are here. And he says, well, I want the email system to have five nines of availability.
+
+And for those that aren't sure what that is, that means 99.999% uptime. Okay. I said, uh, that's, uh, that's a pretty tall order. He said, I don't care. I want it to happen. I said, okay, well just let me, let me take a look at this for a minute and see if this is even feasible, because with our technology, that might even be an option.
+
+We might not have to, you know, do some things to make that work. Right. So I went away, did some research, and I came back and I said, okay. In our environment of 1100 employees, right? So it's not a huge company. You know, about just over a thousand employees. I said, in our environment to achieve five nines with our email system, it's gonna be about eight to $10 million.
+
+He
+
+And he was like,
+
+I.
+
+yeah, yeah. It, it was like, uh, I don't think our net profits this year was $8 million. Right? So it's like, uh, that that's gonna be a challenge, right? It that we gotta do it cheaper than that. I said, that's, that's what it's gonna cost. That's, it's gonna be eight to 10 million 'cause that's what it's gonna take.
+
+And he is like, I don't understand. Our, our initial email system didn't cost that. I said correct. Our initial system did not cost that. But what you're asking me for now is to maintain a five, nine cap, you know, uh, uptime, which means I need redundancy. I need alternate sites. I need things that don't exist today, which means they have to be built, right?
+
+So I have to build a building someplace. I have to have redundant power. I have to all these things, the data center, I have to have all these things that we currently have right now. And I have to duplicate that. I have to build another one of those someplace else, and that's gonna cost lots of money. And then, so his eyes were open a little bit and he says, okay, what would.
+
+A, a redundant system and everything like that, what would that cost? I said, hold on, let, let's, let's address the real problem here. And this is where companies really get into trouble. It's not understanding what they're trying to actually solve, what the problem is. So I said, all right, before we start talking about numbers, before we start talking about redundant sites and all these things, what is the actual issue that we have here?
+
+What problem are we trying to solve? And he comes back and he says, well. Um, during the business day, we have disruptions, we have outages and things like that. And, uh, you know, I have to be in communications, you know, between 8:00 AM and 5:00 PM during business hours. I said, oh, so you're telling me that during business hours we want high availability, but after business hours we can have maintenance cycles and we can have these things that the system can go down.
+
+That's not an issue, right? He says, yes during business hours. I said, okay. That's a completely different discussion, right? That is nowhere near a five nine discussion, right? Because five nines, if you do the math, is I wanna say like 15 minutes of downtime per year. I mean, it's like, it's next to nothing.
+
+It's, it's ridiculous on, on maintaining something like that. And I said, this is what you're asking for, right?
+
+Do you find that
+
+And find that that situations and communication like. This is frequently one of the biggest challenges in the cybersecurity world, explaining cybersecurity to people that may or may not understand this, uh, completely.
+
+Okay. Oh, absolutely. And, and some of the problem we run into is, is, is I'll catch little snippets here, little news articles, and they'll like, uh, I was on my Pan Am flight and I saw Sky Mall Magazine, and in there it said we had to do this. I'm like, okay, listen. I mean, I, I appreciate that they're giving you some ideas here, but the reality is in our environment, in our case, uh, we don't need to do that.
+
+And, and here's why. And so, um. Laying it out in business terms, which all, all risks should come back to some business term, right? It should come back to why is this important to the business? Why should the business care? Why does this matter, right? It should always come back to this is the impact or this is the challenge it brings to the business, and if we solve business problems now.
+
+I'm just using technology to help me solve the problem. It's not a technology issue to solve, I'm just, I'm just using things to leverage my time so that way I'm not having to go and manually do things. Right. And it really, at, at the end of the day, that's why we have technology. It's not, it's not to replace things.
+
+It's not to do things for us. It's so we can better use our time in other areas. That's the reason why we have technology. Uh, so when we present it that way, we can not only solve problems, but we can. Get vested buy-in and interest and support from our leadership to be able to solve future problems.
+
+Right.
+
+once you, once you explain that in
+
+once you, once you explain that in this, in this case, for 1100
+
+the
+
+employees, what was the change in attitude of the CEO and the president? He,
+
+understood
+
+he better understood the problem he, uh,
+
+leave it
+
+es and, and leave it up to your discretion as the expert in the CISO in this instance. Oh, absolutely. So, you know, I was security manager at the time and, uh, you know, the fantastic thing about that was.
+
+Uh, the, the, the entire mindset shifted between what he perceived to be the problem and what the actual problem was. And in that case, uh, I became a trusted advisor. So anything that came along, you know, if there was an acquisition, a merger, if there was anything that was, that was up and coming, he would always call and say.
+
+Uh, this is coming. What do we do? Right? And I'm like, okay, well let's, let's look at this. Let's break this down. Right? So it was always a conversation. It was never about, well just throw a bunch of money at this and we'll, we'll solve the problem, because that never solves the problem. You may, you may put a bandaid on something, you may temporarily fix something.
+
+It may seemingly fix the problem. But if you haven't addressed a real issue, which is what are we trying to accomplish here? Uh. You'll never get there. You'll be chasing your tail and you'll be playing whack-a-mole. And, and that, that game never ends. Anybody that's playing whack-a-mole, I mean, if, if the machine keeps going, you're always trying to hit the next thing, right?
+
+It's just, it never ends. And I'd rather have the strategy of, um, I know where it's gonna come up. I know what's going to prevent it from coming up. So if we put that in place, I don't have to play the game anymore. Right? I can walk away and, and, uh, I know we're good.
+
+That's
+
+And so
+
+That's a
+
+that's the approach that I have.
+
+that's a great, great
+
+Yeah, that's a great, great example of getting to that point where you're the trusted advisor and people believe in the things that you do, and
+
+the
+
+you can communicate the kinds of things, the solutions that they're looking for, that that totally changes the game from a cybersecurity perspective.
+
+thank you
+
+Dan,
+
+us.
+
+you for joining us.
+
+Uh, if you have a couple of last words, we're gonna give it back to you, but, um,
+
+win and
+
+great cyber win and great insights and we really appreciate you sharing that with us. Absolutely. I'll, I'll just leave you at this. I, I like to give a little, kind of a little last minute tidbit here. One, know what your finish line looks like.
+
+So if you're running a race, uh, know when you get to the end of it and what it looks like so you're not just continually running and just gonna never, ever get there 'cause you don't know what you're looking for. And number two, um, not everything needs to be modernized. Uh, you might say, well, hold on here, if I modernize, it makes things more efficient and more cost effective.
+
+Well, let's think about the stop sign. Does every stop sign in the city need to be replaced with a traffic light?
+
+Good
+
+I would say no.
+
+Yeah,
+
+So, uh, think about those two things and that's my takeaway.
+
+Thank you sir. Really
+
+Thank you, sir. Really appreciate it. Thanks for joining us for Cyber Winds. Well, hopefully in the, uh,
+
+you'd
+
+upcoming months, maybe you'd like to join us again and share another story with us.
+
+Absolutely. Be happy to.
+
+Cheers my friend. Talk to soon.
+
+Cheers my friend. Talk to you soon. All right. Thank you much. 
+
+  📍  📍 ​
