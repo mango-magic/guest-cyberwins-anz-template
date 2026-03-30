@@ -11,20 +11,30 @@ const AnzGuests = () => {
       <About />
       <ValueProps />
       <CTA />
-      
+
       {/* Learn More CTA */}
       <section className="relative bg-[hsl(var(--card1))] py-16 border-t border-[hsl(var(--border1))]">
-        <div className="container mx-auto px-6 text-center">
-          <Button 
-            size="lg"
-            className="font-medium text-base px-8 py-6 bg-gradient-to-r from-exclusive-purple to-exclusive-orange hover:opacity-90 text-white border-0"
-            onClick={() => window.open('https://cyberwins.exclusivenetworks.info/', '_blank')}
-          >
-            Learn more about CyberWins
-          </Button>
+        <div className="container mx-auto px-6 text-center flex flex-col items-center gap-4">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+            <Button
+              size="lg"
+              variant="outline"
+              className="font-medium text-base px-8 py-6 border border-[hsl(var(--border1))] bg-transparent text-[hsl(var(--foreground1))] hover:bg-[hsl(var(--foreground1)/0.05)]"
+              onClick={() => window.open('https://cyber-wins.com/anz', '_blank')}
+            >
+              Learn More
+            </Button>
+            <Button
+              size="lg"
+              className="font-medium text-base px-8 py-6 bg-gradient-to-r from-exclusive-purple to-exclusive-orange hover:opacity-90 text-white border-0"
+              onClick={() => window.open('#', '_blank')}
+            >
+              Apply Now
+            </Button>
+          </div>
         </div>
       </section>
-      
+
       {/* Footer */}
       <footer className="relative bg-black py-16 border-t border-[hsl(var(--border1))]">
         <div className="container relative mx-auto px-6">
