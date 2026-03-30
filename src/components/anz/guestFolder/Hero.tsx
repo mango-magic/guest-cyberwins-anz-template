@@ -165,7 +165,7 @@ const Hero = () => {
           <img
             src="https://pub-a2a1c741d75e42a1bfe46a442182bfed.r2.dev/c3f6eddd-72e9-46e0-872e-26ac824dac38/anz_logo.png"
             alt="CyberWins by Exclusive Networks"
-            style={{ height: "220px", width: "auto", maxWidth: "500px", marginBottom: "2px" }}
+            style={{ height: "220px", width: "auto", maxWidth: "600px", marginBottom: "2px", marginTop: "-40px" }}
           />
           <span
             style={{
@@ -175,7 +175,7 @@ const Hero = () => {
               letterSpacing: "0.18em",
               textTransform: "uppercase",
               padding: "4px 14px",
-              marginTop: "-28px",
+              marginTop: "-30px",
               borderRadius: "999px",
               border: "1px solid rgba(249,115,22,0.35)",
               background: "rgba(249,115,22,0.08)",
@@ -204,8 +204,8 @@ const Hero = () => {
           <div
             style={{
               position: "relative",
-              width: "100%",
-              maxWidth: "480px",
+              width: "auto",
+              maxWidth: "720px",
               borderRadius: "12px",
               overflow: "hidden",
               boxShadow: "0 0 0 1px rgba(139,92,246,0.2), 0 8px 40px rgba(139,92,246,0.18), 0 2px 12px rgba(0,0,0,0.6)",
@@ -321,7 +321,7 @@ const Hero = () => {
               style={{
                 display: "block",
                 width: "100%",
-                maxHeight: "calc(100vh - 260px - 175px)",
+                maxHeight: "calc(100vh - 250px - 160px)",
                 objectFit: "cover",
                 background: "#0a0a0a",
               }}
@@ -390,12 +390,12 @@ const Hero = () => {
               fontWeight: 300,
               lineHeight: 1.6,
               color: "rgba(255,255,255,0.45)",
-              maxWidth: "460px",
+              maxWidth: "600px",
               margin: 0,
             }}
           >
             You're about to share your cyber security win with the ANZ community.
-            We've put together something special to showcase your expertise.
+            We've put together something special to showcase your expertise — here's what to expect.
           </p>
 
           <div
@@ -437,7 +437,7 @@ const Hero = () => {
             </Button>
 
             <Button
-              onClick={() => document.getElementById("cta")?.scrollIntoView({ behavior: "smooth" })}
+              onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLScVwUkvdxNCJbXOtWVyZgdyjXUgn-VB7QMWf3NonjVNVjHUBw/viewform?usp=header', '_blank')}
               style={{
                 fontSize: "13px",
                 padding: "9px 22px",

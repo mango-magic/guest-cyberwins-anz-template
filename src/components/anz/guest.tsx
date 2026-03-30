@@ -27,7 +27,7 @@ const AnzGuests = () => {
             <Button
               size="lg"
               className="font-medium text-base px-8 py-6 bg-gradient-to-r from-exclusive-purple to-exclusive-orange hover:opacity-90 text-white border-0"
-              onClick={() => window.open('#', '_blank')}
+              onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLScVwUkvdxNCJbXOtWVyZgdyjXUgn-VB7QMWf3NonjVNVjHUBw/viewform?usp=header', '_blank')}
             >
               Apply Now
             </Button>
