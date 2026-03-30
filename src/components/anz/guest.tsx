@@ -19,7 +19,7 @@ const AnzGuests = () => {
             <Button
               size="lg"
               variant="outline"
-              className="border border-[hsl(var(--foreground1)/0.2)] bg-transparent text-[hsl(var(--foreground1))] hover:bg-[hsl(var(--foreground1)/0.05)] font-medium text-sm px-6 py-5"
+              className="border border-exclusive-orange/50 bg-transparent text-[hsl(var(--foreground1))] hover:bg-[hsl(var(--foreground1)/0.05)] font-medium text-sm px-6 py-5"
               onClick={() => window.open('https://cyber-wins.com/anz', '_blank')}
             >
               Learn More

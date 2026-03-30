@@ -389,7 +389,7 @@ const Hero = () => {
             <Button
               variant="outline"
               onClick={() => document.getElementById("workflow")?.scrollIntoView({ behavior: "smooth" })}
-              className="border border-[hsl(var(--foreground1)/0.2)] bg-transparent text-[hsl(var(--foreground1))] hover:bg-[hsl(var(--foreground1)/0.05)] font-medium text-sm px-6 py-5"
+              className="border border-exclusive-orange/50 bg-transparent text-[hsl(var(--foreground1))] hover:bg-[hsl(var(--foreground1)/0.05)] font-medium text-sm px-6 py-5"
             >
               See the Journey
             </Button>
