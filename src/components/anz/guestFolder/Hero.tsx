@@ -198,7 +198,8 @@ const Hero = () => {
               maxWidth: "720px",
               borderRadius: "12px",
               overflow: "hidden",
-              boxShadow: "0 0 0 1px hsl(var(--exclusive-purple) / 0.2), 0 8px 40px hsl(var(--exclusive-purple) / 0.18), 0 2px 12px rgba(0,0,0,0.6)",
+              boxShadow:
+                "0 0 0 1px hsl(var(--exclusive-purple) / 0.12), 0 6px 24px hsl(var(--exclusive-purple) / 0.10), 0 2px 8px rgba(0,0,0,0.5)",
             }}
           >
             {/* Animated shimmer border top */}
@@ -209,7 +210,8 @@ const Hero = () => {
                 left: 0,
                 right: 0,
                 height: "1px",
-                background: "linear-gradient(to bottom right, hsl(var(--exclusive-purple)), hsl(var(--exclusive-orange)))",
+                background:
+                  "linear-gradient(to right, hsl(var(--exclusive-purple)), hsl(var(--exclusive-orange)))",
                 backgroundSize: "200% 200%",
                 animation: "shimmerBorder 3s linear infinite",
                 zIndex: 20,
@@ -226,7 +228,7 @@ const Hero = () => {
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
-                  background: "rgba(139,92,246,0.05)",
+                  background: "hsl(var(--exclusive-purple) / 0.03)",
                 }}
               >
                 <div style={{ display: "flex", gap: "8px" }}>
@@ -238,7 +240,7 @@ const Hero = () => {
                         width: "8px",
                         height: "8px",
                         borderRadius: "50%",
-                        background: "#f97316",
+                        background: "hsl(var(--exclusive-orange))",
                         display: "block",
                         animationDelay: `${i * 0.15}s`,
                       }}
@@ -260,7 +262,7 @@ const Hero = () => {
                   alignItems: "center",
                   justifyContent: "center",
                   cursor: "pointer",
-                  background: isPlaying ? "transparent" : "rgba(0,0,0,0.35)",
+                  background: isPlaying ? "transparent" : "rgba(0,0,0,0.3)",
                   transition: "background 0.3s",
                 }}
               >
@@ -270,25 +272,29 @@ const Hero = () => {
                       width: "56px",
                       height: "56px",
                       borderRadius: "50%",
-                      background: "rgba(255,255,255,0.12)",
-                      backdropFilter: "blur(8px)",
-                      border: "1px solid rgba(255,255,255,0.2)",
+                      background: "rgba(255,255,255,0.1)",
+                      backdropFilter: "blur(6px)",
+                      border: "1px solid rgba(255,255,255,0.15)",
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
                       transition: "transform 0.2s, background 0.2s",
-                      boxShadow: "0 4px 24px rgba(168,85,247,0.35)",
+                      boxShadow:
+                        "0 2px 12px hsl(var(--exclusive-purple) / 0.2)",
                     }}
                     onMouseEnter={(e) => {
-                      (e.currentTarget as HTMLDivElement).style.background = "rgba(255,255,255,0.2)";
-                      (e.currentTarget as HTMLDivElement).style.transform = "scale(1.08)";
+                      (e.currentTarget as HTMLDivElement).style.background =
+                        "rgba(255,255,255,0.18)";
+                      (e.currentTarget as HTMLDivElement).style.transform =
+                        "scale(1.06)";
                     }}
                     onMouseLeave={(e) => {
-                      (e.currentTarget as HTMLDivElement).style.background = "rgba(255,255,255,0.12)";
-                      (e.currentTarget as HTMLDivElement).style.transform = "scale(1)";
+                      (e.currentTarget as HTMLDivElement).style.background =
+                        "rgba(255,255,255,0.1)";
+                      (e.currentTarget as HTMLDivElement).style.transform =
+                        "scale(1)";
                     }}
                   >
-                    {/* Play triangle */}
                     <div
                       style={{
                         width: 0,
@@ -363,7 +369,7 @@ const Hero = () => {
           />
 
           <p
-            className="mx-auto max-w-xl font-sans text-xs text-[hsl(var(--muted-foreground1))] font-light leading-relaxed animate-fade-in" style={{ animationDelay: '0.7s', animationFillMode: 'backwards' }}
+            className="mx-auto max-w-xl font-sans text-sm text-[hsl(var(--muted-foreground1))] font-light leading-relaxed animate-fade-in" style={{ animationDelay: '0.7s', animationFillMode: 'backwards' }}
           >
             You're about to share your cyber security win with the ANZ community.
             We've put together something special to showcase your expertise — here's what to expect.
@@ -391,7 +397,7 @@ const Hero = () => {
             <Button
               onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLScVwUkvdxNCJbXOtWVyZgdyjXUgn-VB7QMWf3NonjVNVjHUBw/viewform?usp=header', '_blank')}
               className="font-medium text-sm px-6 py-5 bg-gradient-to-r from-exclusive-purple to-exclusive-orange hover:opacity-90 text-white border-0"
-              
+
             >
               Join Now
             </Button>
