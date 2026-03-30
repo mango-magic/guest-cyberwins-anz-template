@@ -19,7 +19,7 @@ const AnzGuests = () => {
             <Button
               size="lg"
               variant="outline"
-              className="font-medium text-base px-8 py-6 border border-[hsl(var(--border1))] bg-transparent text-[hsl(var(--foreground1))] hover:bg-[hsl(var(--foreground1)/0.05)]"
+              className="border border-[hsl(var(--foreground1)/0.2)] bg-transparent text-[hsl(var(--foreground1))] hover:bg-[hsl(var(--foreground1)/0.05)] font-medium text-sm px-6 py-5"
               onClick={() => window.open('https://cyber-wins.com/anz', '_blank')}
             >
               Learn More
@@ -29,7 +29,7 @@ const AnzGuests = () => {
               className="font-medium text-base px-8 py-6 bg-gradient-to-r from-exclusive-purple to-exclusive-orange hover:opacity-90 text-white border-0"
               onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLScVwUkvdxNCJbXOtWVyZgdyjXUgn-VB7QMWf3NonjVNVjHUBw/viewform?usp=header', '_blank')}
             >
-              Apply Now
+              Join Now
             </Button>
           </div>
         </div>

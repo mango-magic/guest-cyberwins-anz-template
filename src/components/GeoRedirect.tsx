@@ -22,7 +22,7 @@ const GeoRedirect = () => {
   }, []);
 
   if (region === "anz") return <AnzGuests />;
-  if (region === "usa") return <Guest />;
+  if (region === "usa") return <AnzGuests />;
   return null; // loading state — no flash
 };
 

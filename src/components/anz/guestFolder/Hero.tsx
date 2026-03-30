@@ -96,7 +96,8 @@ const Hero = () => {
               width: "560px",
               height: "560px",
               borderRadius: "50%",
-              background: "radial-gradient(circle, rgba(139,92,246,0.5) 0%, rgba(249,115,22,0.2) 55%, transparent 72%)",
+              background:
+                "radial-gradient(circle, hsl(var(--exclusive-purple) / 0.5) 0%, hsl(var(--exclusive-orange) / 0.25) 55%, transparent 72%)",
               filter: "blur(72px)",
               animation: "pulseGlow 7s ease-in-out infinite",
             }}
@@ -107,9 +108,11 @@ const Hero = () => {
             style={{
               position: "absolute",
               inset: 0,
-              backgroundImage: "radial-gradient(rgba(255,255,255,0.06) 1px, transparent 1px)",
+              backgroundImage:
+                "radial-gradient(hsl(var(--foreground) / 0.06) 1px, transparent 1px)",
               backgroundSize: "36px 36px",
-              maskImage: "radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 100%)",
+              maskImage:
+                "radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 100%)",
             }}
           />
 
@@ -124,8 +127,9 @@ const Hero = () => {
                 width: `${p.size}px`,
                 height: `${p.size}px`,
                 borderRadius: "50%",
-                background: p.isOrange ? "#f97316" : "#a855f7",
-                ["--op" as string]: p.opacity,
+                background: p.isOrange
+                  ? "hsl(var(--exclusive-orange))"
+                  : "hsl(var(--exclusive-purple))",
                 opacity: p.opacity,
                 animation: `floatUp ${p.duration}s ease-in-out ${p.delay}s infinite`,
               }}
@@ -142,7 +146,8 @@ const Hero = () => {
                 left: 0,
                 height: "1px",
                 width: `${l.width}px`,
-                background: "linear-gradient(90deg, transparent, rgba(139,92,246,0.4), rgba(249,115,22,0.3), transparent)",
+                background:
+                  "linear-gradient(90deg, transparent, hsl(var(--exclusive-purple) / 0.4), hsl(var(--exclusive-orange) / 0.3), transparent)",
                 animation: `driftRight ${l.duration}s linear ${l.delay}s infinite`,
               }}
             />
@@ -167,23 +172,8 @@ const Hero = () => {
             alt="CyberWins by Exclusive Networks"
             style={{ height: "220px", width: "auto", maxWidth: "600px", marginBottom: "2px", marginTop: "-40px" }}
           />
-          <span
-            style={{
-              fontFamily: "sans-serif",
-              fontSize: "10px",
-              fontWeight: 600,
-              letterSpacing: "0.18em",
-              textTransform: "uppercase",
-              padding: "4px 14px",
-              marginTop: "-30px",
-              borderRadius: "999px",
-              border: "1px solid rgba(249,115,22,0.35)",
-              background: "rgba(249,115,22,0.08)",
-              color: "#f97316",
-              animation: "fadeSlideUp 0.7s ease 0.2s both",
-            }}
-          >
-            Australia &amp; New Zealand
+          <span className="font-sans text-xs font-medium tracking-widest uppercase px-3 py-1 rounded-full border border-exclusive-orange/40 text-exclusive-orange bg-exclusive-orange/10 -mt-4">
+            Australia & New Zealand
           </span>
         </div>
 
@@ -208,7 +198,7 @@ const Hero = () => {
               maxWidth: "720px",
               borderRadius: "12px",
               overflow: "hidden",
-              boxShadow: "0 0 0 1px rgba(139,92,246,0.2), 0 8px 40px rgba(139,92,246,0.18), 0 2px 12px rgba(0,0,0,0.6)",
+              boxShadow: "0 0 0 1px hsl(var(--exclusive-purple) / 0.2), 0 8px 40px hsl(var(--exclusive-purple) / 0.18), 0 2px 12px rgba(0,0,0,0.6)",
             }}
           >
             {/* Animated shimmer border top */}
@@ -219,7 +209,7 @@ const Hero = () => {
                 left: 0,
                 right: 0,
                 height: "1px",
-                background: "linear-gradient(270deg, transparent, #a855f7, #f97316, transparent)",
+                background: "linear-gradient(to bottom right, hsl(var(--exclusive-purple)), hsl(var(--exclusive-orange)))",
                 backgroundSize: "200% 200%",
                 animation: "shimmerBorder 3s linear infinite",
                 zIndex: 20,
@@ -354,23 +344,11 @@ const Hero = () => {
           }}
         >
           <p
-            style={{
-              fontFamily: "sans-serif",
-              fontSize: "clamp(15px, 2vw, 20px)",
-              fontWeight: 600,
-              letterSpacing: "0.01em",
-              color: "rgba(255,255,255,0.92)",
-              margin: 0,
-            }}
+            className="font-sans text-xl font-medium md:text-2xl lg:text-3xl tracking-wide animate-fade-in text-[hsl(var(--foreground1)/0.9)]"
+            style={{ animationDelay: '0.3s', animationFillMode: 'backwards' }}
           >
             Your Story. Your Success.{" "}
-            <span
-              style={{
-                background: "linear-gradient(90deg, #a855f7, #f97316)",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-              }}
-            >
+            <span className="bg-gradient-to-br from-exclusive-purple to-exclusive-orange bg-clip-text text-transparent">
               Your Stage.
             </span>
           </p>
@@ -379,20 +357,13 @@ const Hero = () => {
             style={{
               height: "1px",
               width: "40px",
-              background: "linear-gradient(90deg, transparent, rgba(139,92,246,0.6), transparent)",
+              background:
+                "linear-gradient(90deg, transparent, hsl(var(--exclusive-purple) / 0.6), transparent)",
             }}
           />
 
           <p
-            style={{
-              fontFamily: "sans-serif",
-              fontSize: "clamp(11px, 1.3vw, 13px)",
-              fontWeight: 300,
-              lineHeight: 1.6,
-              color: "rgba(255,255,255,0.45)",
-              maxWidth: "600px",
-              margin: 0,
-            }}
+            className="mx-auto max-w-xl font-sans text-xs text-[hsl(var(--muted-foreground1))] font-light leading-relaxed animate-fade-in" style={{ animationDelay: '0.7s', animationFillMode: 'backwards' }}
           >
             You're about to share your cyber security win with the ANZ community.
             We've put together something special to showcase your expertise — here's what to expect.
@@ -411,56 +382,18 @@ const Hero = () => {
           >
             <Button
               variant="outline"
-              onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}
-              style={{
-                fontSize: "13px",
-                padding: "9px 22px",
-                height: "auto",
-                border: "1px solid rgba(249,115,22,0.4)",
-                background: "rgba(249,115,22,0.07)",
-                color: "rgba(255,255,255,0.82)",
-                fontWeight: 500,
-                borderRadius: "8px",
-                cursor: "pointer",
-                transition: "background 0.2s, transform 0.2s",
-              }}
-              onMouseEnter={(e) => {
-                (e.currentTarget as HTMLButtonElement).style.background = "rgba(249,115,22,0.14)";
-                (e.currentTarget as HTMLButtonElement).style.transform = "scale(1.02)";
-              }}
-              onMouseLeave={(e) => {
-                (e.currentTarget as HTMLButtonElement).style.background = "rgba(249,115,22,0.07)";
-                (e.currentTarget as HTMLButtonElement).style.transform = "scale(1)";
-              }}
+              onClick={() => document.getElementById("workflow")?.scrollIntoView({ behavior: "smooth" })}
+              className="border border-[hsl(var(--foreground1)/0.2)] bg-transparent text-[hsl(var(--foreground1))] hover:bg-[hsl(var(--foreground1)/0.05)] font-medium text-sm px-6 py-5"
             >
               See the Journey
             </Button>
 
             <Button
               onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLScVwUkvdxNCJbXOtWVyZgdyjXUgn-VB7QMWf3NonjVNVjHUBw/viewform?usp=header', '_blank')}
-              style={{
-                fontSize: "13px",
-                padding: "9px 22px",
-                height: "auto",
-                background: "linear-gradient(135deg, #a855f7 0%, #f97316 100%)",
-                boxShadow: "0 4px 18px rgba(168,85,247,0.3)",
-                border: "none",
-                color: "#fff",
-                fontWeight: 500,
-                borderRadius: "8px",
-                cursor: "pointer",
-                transition: "opacity 0.2s, transform 0.2s",
-              }}
-              onMouseEnter={(e) => {
-                (e.currentTarget as HTMLButtonElement).style.opacity = "0.88";
-                (e.currentTarget as HTMLButtonElement).style.transform = "scale(1.02)";
-              }}
-              onMouseLeave={(e) => {
-                (e.currentTarget as HTMLButtonElement).style.opacity = "1";
-                (e.currentTarget as HTMLButtonElement).style.transform = "scale(1)";
-              }}
+              className="font-medium text-sm px-6 py-5 bg-gradient-to-r from-exclusive-purple to-exclusive-orange hover:opacity-90 text-white border-0"
+              
             >
-              Apply Now
+              Join Now
             </Button>
           </div>
         </div>

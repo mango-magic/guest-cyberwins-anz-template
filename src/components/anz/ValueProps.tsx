@@ -47,7 +47,7 @@ const workflowSteps = [
 
 const ValueProps = () => {
   return (
-    <section className="relative bg-[hsl(var(--card1))] py-24 overflow-hidden">
+    <section id="workflow" className="relative bg-[hsl(var(--card1))] py-24 overflow-hidden">
       {/* Top border */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[hsl(var(--border1))] to-transparent" />
       
