@@ -71,6 +71,15 @@ const Hero = () => {
           from { opacity: 0; transform: translateY(16px); }
           to   { opacity: 1; transform: translateY(0); }
         }
+
+        @keyframes pulse-play {
+  0%, 100% {
+    box-shadow: 0 0 0 0 hsla(28, 90%, 58%, 0.4), 0 2px 12px hsl(var(--exclusive-purple) / 0.2);
+  }
+  50% {
+    box-shadow: 0 0 0 8px hsla(28, 90%, 58%, 0), 0 2px 12px hsl(var(--exclusive-purple) / 0.2);
+  }
+}
       `}</style>
 
       <section
@@ -199,7 +208,7 @@ const Hero = () => {
               borderRadius: "12px",
               overflow: "hidden",
               boxShadow:
-                "0 0 0 1px hsl(var(--exclusive-purple) / 0.12), 0 6px 24px hsl(var(--exclusive-purple) / 0.10), 0 2px 8px rgba(0,0,0,0.5)",
+                "0 0 0 1px hsl(var(--exclusive-purple) / 0.12), 0 6px 24px hsl(var(--exclusive-purple) / 0.10), 0 2px 8px rgba(0,0,0,0.5), 0 0 28px 4px hsl(var(--exclusive-orange) / 0.18), 0 0 60px 10px hsl(var(--exclusive-orange) / 0.08)",
             }}
           >
             {/* Animated shimmer border top */}
@@ -210,10 +219,24 @@ const Hero = () => {
                 left: 0,
                 right: 0,
                 height: "1px",
-                background:
-                  "linear-gradient(to right, hsl(var(--exclusive-purple)), hsl(var(--exclusive-orange)))",
+                background: "linear-gradient(to right, #E8E22680, #FF993380)",
                 backgroundSize: "200% 200%",
                 animation: "shimmerBorder 3s linear infinite",
+                zIndex: 20,
+              }}
+            />
+
+            {/* Animated shimmer border bottom */}
+            <div
+              style={{
+                position: "absolute",
+                bottom: 0,
+                left: 0,
+                right: 0,
+                height: "1px",
+                background: "linear-gradient(to right, #E8E22680, #FF993380)",
+                backgroundSize: "200% 200%",
+                animation: "shimmerBorder 3s linear infinite reverse",
                 zIndex: 20,
               }}
             />
@@ -272,25 +295,24 @@ const Hero = () => {
                       width: "56px",
                       height: "56px",
                       borderRadius: "50%",
-                      background: "rgba(255,255,255,0.1)",
+                      background: "hsla(28, 90%, 58%, 0.15)",
                       backdropFilter: "blur(6px)",
-                      border: "1px solid rgba(255,255,255,0.15)",
+                      border: "1px solid hsla(28, 90%, 58%, 0.45)",
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
-                      transition: "transform 0.2s, background 0.2s",
-                      boxShadow:
-                        "0 2px 12px hsl(var(--exclusive-purple) / 0.2)",
+                      animation: "pulse-play 2.2s ease-in-out infinite",
+                      boxShadow: "0 2px 12px hsl(var(--exclusive-purple) / 0.2)",
                     }}
                     onMouseEnter={(e) => {
                       (e.currentTarget as HTMLDivElement).style.background =
-                        "rgba(255,255,255,0.18)";
+                        "hsla(28, 90%, 58%, 0.25)";
                       (e.currentTarget as HTMLDivElement).style.transform =
                         "scale(1.06)";
                     }}
                     onMouseLeave={(e) => {
                       (e.currentTarget as HTMLDivElement).style.background =
-                        "rgba(255,255,255,0.1)";
+                        "hsla(28, 90%, 58%, 0.15)";
                       (e.currentTarget as HTMLDivElement).style.transform =
                         "scale(1)";
                     }}
@@ -301,7 +323,7 @@ const Hero = () => {
                         height: 0,
                         borderTop: "10px solid transparent",
                         borderBottom: "10px solid transparent",
-                        borderLeft: "18px solid rgba(255,255,255,0.9)",
+                        borderLeft: "18px solid hsl(var(--exclusive-orange) / 0.85)",
                         marginLeft: "4px",
                       }}
                     />
