@@ -421,7 +421,7 @@ const Hero = () => {
               className="font-medium text-sm px-6 py-5 bg-gradient-to-r from-exclusive-purple to-exclusive-orange hover:opacity-90 text-white border-0"
 
             >
-              Join Now
+              Join the Series
             </Button>
           </div>
         </div>
