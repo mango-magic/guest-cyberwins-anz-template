@@ -116,6 +116,10 @@ export function ProfilePage({ data }: ProfilePageProps) {
 
     const { hero, media, podcastInfo, footer, host, transcript } = data
 
+    const linkedInUrl = data.region === "anz"
+        ? "https://www.linkedin.com/company/nextgen-group/"
+        : podcastInfo.getInvolved.links.linkedIn
+
     return (
         <div className="bg-[#FEFEFE] text-[#1A1A2E] font-light-body">
             <main>
@@ -199,7 +203,7 @@ export function ProfilePage({ data }: ProfilePageProps) {
                                         />
 
                                         {/* Bottom fade to hide image text bleeding at card edge */}
-                                        <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[#FEFEFE] to-transparent pointer-events-none" />
+                                        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#FEFEFE] via-[#FEFEFE]/40 to-transparent pointer-events-none" />
 
                                         <div className="absolute inset-0 bg-gradient-to-br from-[#90027D]/60 to-[#FF6B35]/40 group-hover:from-[#90027D]/80 group-hover:to-[#FF6B35]/60 transition-all duration-300 flex flex-col items-center justify-center p-4">
                                             {Icon && (
@@ -254,7 +258,7 @@ export function ProfilePage({ data }: ProfilePageProps) {
                                     <ul className="list-disc list-inside space-y-3 ml-4">
                                         <li>
                                             <a
-                                                href={podcastInfo.getInvolved.links.linkedIn}
+                                                href={linkedInUrl}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                                 className="text-[#90027D] font-bold hover:text-[#C23BD4] transition-colors"
@@ -277,7 +281,7 @@ export function ProfilePage({ data }: ProfilePageProps) {
                                         </li>
                                         <li>
                                             <a
-                                                href={podcastInfo.getInvolved.links.linkedIn}
+                                                href={linkedInUrl}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                                 className="text-[#C23BD4] font-bold hover:text-[#90027D] transition-colors"
@@ -353,7 +357,7 @@ export function ProfilePage({ data }: ProfilePageProps) {
                                 <p className="text-[#1A1A2E] mt-2 leading-relaxed">{modalContent.description}</p>
                             )}
                         </DialogHeader>
-                        <div className="p-1 md:p-2">
+                        <div className="p-0">
                             {modalContent.type === "video" && (
                                 <a
                                     href={(modalContent.embedUrl as string).replace("/preview", "/view")}
