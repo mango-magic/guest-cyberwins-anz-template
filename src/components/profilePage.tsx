@@ -2,10 +2,9 @@
 
 import React from "react"
 import { useState } from "react"
-import { PlayCircle, Mic, Video, Podcast, Users, Megaphone, Download, LucideIcon } from "lucide-react"
+import { PlayCircle, Mic, Video, Podcast, Users, Megaphone, Download, Play, LucideIcon } from "lucide-react"
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 import { LazyVideoIframe } from "@/components/lazy-video-iframe"
-import { CircularGallery, type GalleryItem } from "@/components/ui/circular-gallery"
 import "./globals.css"
 import "./styles/global.css"
 import GuestChatbot from "./GuestChatbot"
@@ -104,45 +103,6 @@ const iconMap = {
     Users,
     Megaphone,
     Download,
-}
-
-// Unsplash stock images for highlight gallery cards
-const highlightImages = [
-    { url: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=900&auto=format&fit=crop&q=80", text: "cybersecurity concept with shield icon", by: "Adi Goldstein" },
-    { url: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=900&auto=format&fit=crop&q=80", text: "server room with blue lights", by: "Taylor Vick" },
-    { url: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=900&auto=format&fit=crop&q=80", text: "matrix style digital rain", by: "Markus Spiske" },
-    { url: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=900&auto=format&fit=crop&q=80", text: "code on a laptop screen", by: "Luca Bravo" },
-    { url: "https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=900&auto=format&fit=crop&q=80", text: "programming code close-up", by: "Kevin Ku" },
-    { url: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=900&auto=format&fit=crop&q=80", text: "network connections visualization", by: "Alina Grubnyak" },
-    { url: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900&auto=format&fit=crop&q=80", text: "digital earth from space", by: "NASA" },
-    { url: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=900&auto=format&fit=crop&q=80", text: "circuit board macro", by: "Alexandre Debiève" },
-    { url: "https://images.unsplash.com/photo-1563986768609-322da13575f2?w=900&auto=format&fit=crop&q=80", text: "hacker with binary code", by: "Nahel Abdul Hadi" },
-    { url: "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=900&auto=format&fit=crop&q=80", text: "laptop glowing in the dark", by: "Clément Hélardot" },
-    { url: "https://images.unsplash.com/photo-1573164713988-8665fc963095?w=900&auto=format&fit=crop&q=80", text: "data center corridor", by: "Manuel Geissinger" },
-    { url: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=900&auto=format&fit=crop&q=80", text: "hands typing on laptop", by: "John Schnobrich" },
-    { url: "https://images.unsplash.com/photo-1496065187959-7f07b8353c55?w=900&auto=format&fit=crop&q=80", text: "abstract technology waves", by: "JJ Ying" },
-    { url: "https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=900&auto=format&fit=crop&q=80", text: "hand reaching through digital screen", by: "Gerold Hinzen" },
-    { url: "https://images.unsplash.com/photo-1605792657660-596af9009e82?w=900&auto=format&fit=crop&q=80", text: "cloud computing concept", by: "Growtika" },
-    { url: "https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?w=900&auto=format&fit=crop&q=80", text: "abstract digital technology", by: "Joshua Sortino" },
-    { url: "https://images.unsplash.com/photo-1580894894513-541e068a3e2b?w=900&auto=format&fit=crop&q=80", text: "digital padlock security", by: "FlyD" },
-    { url: "https://images.unsplash.com/photo-1562813733-b31f71025d54?w=900&auto=format&fit=crop&q=80", text: "cybersecurity padlock on keyboard", by: "Towfiqu barbhuiya" },
-    { url: "https://images.unsplash.com/photo-1551808525-51a94da548ce?w=900&auto=format&fit=crop&q=80", text: "digital network globe", by: "Shubham Dhage" },
-    { url: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=900&auto=format&fit=crop&q=80", text: "neon lock icon", by: "Fly D" },
-]
-
-/** Maps highlight data to GalleryItem[] for the CircularGallery */
-function buildGalleryItems(
-    highlights: HighlightItem[],
-    guestName: string,
-): GalleryItem[] {
-    return highlights.map((h, i) => ({
-        common: h.title,
-        binomial: `${guestName} Interview`,
-        photo: {
-            ...highlightImages[i % highlightImages.length],
-            pos: "center",
-        },
-    }))
 }
 
 export function ProfilePage({ data }: ProfilePageProps) {
@@ -389,35 +349,45 @@ export function ProfilePage({ data }: ProfilePageProps) {
                                 />
                             )}
                             {modalContent.type === "videolist" && (
-                                <div className="flex flex-col h-[80vh]">
-                                    {/* Circular Gallery */}
-                                    <div className="flex-1 min-h-0 relative overflow-hidden">
-                                        <CircularGallery
-                                            items={buildGalleryItems(media.highlights, hero.name)}
-                                            radius={Math.min(500, window.innerWidth * 0.35)}
-                                            autoRotateSpeed={0.03}
-                                            className="w-full h-full"
-                                        />
-                                    </div>
+                                <div className="max-h-[80vh] overflow-y-auto p-4 md:p-6 [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-[#90027D]/30 [&::-webkit-scrollbar-thumb]:rounded-full">
+                                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
+                                        {(modalContent.embedUrl as string[]).map((url, index) => {
+                                            const highlight = media.highlights[index]
+                                            return (
+                                                <div key={url} className="group relative rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 bg-white border border-gray-100 hover:border-[#FF6B35]/40">
+                                                    {/* Video embed */}
+                                                    <div className="relative aspect-[9/16] bg-gradient-to-br from-[#90027D]/10 via-[#C23BD4]/5 to-[#FF6B35]/10">
+                                                        <LazyVideoIframe
+                                                            src={url}
+                                                            title={highlight?.title || `Highlight ${index + 1}`}
+                                                            className="absolute inset-0 w-full h-full"
+                                                            poster={modalContent.thumbnail}
+                                                        />
+                                                        {/* Number badge */}
+                                                        <div className="absolute top-2.5 left-2.5 w-8 h-8 rounded-full bg-gradient-to-br from-[#90027D] to-[#FF6B35] flex items-center justify-center shadow-lg z-10">
+                                                            <span className="text-white text-xs font-bold">{index + 1}</span>
+                                                        </div>
+                                                    </div>
 
-                                    {/* Download buttons row */}
-                                    <div className="flex-shrink-0 border-t border-[#90027D]/20 p-4">
-                                        <p className="text-center text-sm text-[#1A1A2E]/70 mb-3 font-sans">Download individual highlights</p>
-                                        <div className="flex flex-wrap justify-center gap-2 max-h-[100px] overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-[#90027D]/30 [&::-webkit-scrollbar-thumb]:rounded-full">
-                                            {media.highlights.map((highlight, index) => (
-                                                <a
-                                                    key={highlight.fileId}
-                                                    href={`https://drive.google.com/uc?export=download&id=${highlight.fileId}`}
-                                                    target="_blank"
-                                                    rel="noopener noreferrer"
-                                                    className="flex items-center gap-1 bg-gradient-to-r from-[#90027D] to-[#FF6B35] text-white text-xs font-semibold py-1.5 px-3 rounded-full hover:opacity-90 transition-opacity"
-                                                    onClick={(e) => e.stopPropagation()}
-                                                >
-                                                    <Download className="w-3 h-3" />
-                                                    {highlight.title}
-                                                </a>
-                                            ))}
-                                        </div>
+                                                    {/* Card footer */}
+                                                    <div className="p-3 flex items-center justify-between gap-2">
+                                                        <h4 className="text-sm font-semibold text-[#1A1A2E] font-sans truncate">
+                                                            {highlight?.title || `Highlight ${index + 1}`}
+                                                        </h4>
+                                                        <a
+                                                            href={`https://drive.google.com/uc?export=download&id=${highlight?.fileId}`}
+                                                            target="_blank"
+                                                            rel="noopener noreferrer"
+                                                            className="flex-shrink-0 flex items-center gap-1 bg-gradient-to-r from-[#90027D] to-[#FF6B35] text-white text-xs font-semibold py-1.5 px-3 rounded-full hover:opacity-90 transition-opacity shadow-sm"
+                                                            onClick={(e) => e.stopPropagation()}
+                                                        >
+                                                            <Download className="w-3 h-3" />
+                                                            <span className="hidden sm:inline">Download</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            )
+                                        })}
                                     </div>
                                 </div>
                             )}
