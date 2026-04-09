@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NotFound from "./pages/NotFound";
+import Admin from "./pages/Admin";
 import Guest from "./components/guest";
 import AnzGuests from "./components/anz/guest";
 import ProfileLoader from "./pages/ProfileLoader";
@@ -26,6 +27,9 @@ const App = () => (
           {/* Explicit region routes */}
           <Route path="/usa" element={<Guest />} />
           <Route path="/anz" element={<AnzGuests />} />
+
+          {/* Admin */}
+          <Route path="/admin" element={<Admin />} />
 
           {/* Profile pages under each region */}
           <Route path="/usa/:slug" element={<ProfileLoader />} />
