@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NotFound from "./pages/NotFound";
 import Guest from "./components/guest";
 import AnzGuests from "./components/anz/guest";
+import ProfileLoader from "./pages/ProfileLoader";
 import FaviconManager from "./components/FaviconManager";
 import GeoRedirect from "./components/GeoRedirect";
 
@@ -19,7 +20,17 @@ const App = () => (
       <BrowserRouter>
         <FaviconManager />
         <Routes>
+          {/* Geo-detect landing */}
           <Route path="/" element={<GeoRedirect />} />
+
+          {/* Explicit region routes */}
+          <Route path="/usa" element={<Guest />} />
+          <Route path="/anz" element={<AnzGuests />} />
+
+          {/* Profile pages under each region */}
+          <Route path="/usa/:slug" element={<ProfileLoader />} />
+          <Route path="/anz/:slug" element={<ProfileLoader />} />
+
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
