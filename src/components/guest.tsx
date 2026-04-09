@@ -2,6 +2,7 @@ import Hero from "@/components/GuestFolder/Hero";
 import About from "@/components/About";
 import ValueProps from "@/components/ValueProps";
 import CTA from "@/components/CTA";
+import EpisodeGrid from "@/components/EpisodeGrid";
 import { Button } from "@/components/ui/button";
 
 import { useNavigate } from "react-router-dom";
@@ -13,6 +14,7 @@ const Index = () => {
     <div className="min-h-screen bg-background1">
       <Hero />
       <About />
+      <EpisodeGrid region="usa" />
       <ValueProps />
       <CTA />
       

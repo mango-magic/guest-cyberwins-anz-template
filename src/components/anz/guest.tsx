@@ -2,6 +2,7 @@ import Hero from "@/components/anz/guestFolder/Hero";
 import About from "@/components/anz/About";
 import ValueProps from "@/components/anz/ValueProps";
 import CTA from "@/components/anz/CTA";
+import EpisodeGrid from "@/components/EpisodeGrid";
 import { Button } from "@/components/ui/button";
 
 const AnzGuests = () => {
@@ -9,6 +10,7 @@ const AnzGuests = () => {
     <div className="min-h-screen bg-[hsl(var(--background1))]">
       <Hero />
       <About />
+      <EpisodeGrid region="anz" />
       <ValueProps />
       <CTA />
 

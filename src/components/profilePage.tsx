@@ -26,6 +26,9 @@ export type HighlightItem = {
 }
 
 export type ProfileData = {
+    slug: string
+    region?: "anz" | "usa"
+
     // Hero Section
     hero: {
         profileImage: string
