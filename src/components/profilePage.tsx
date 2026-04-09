@@ -189,25 +189,23 @@ export function ProfilePage({ data }: ProfilePageProps) {
                                 return (
                                     <div
                                         key={item.title}
-                                        className="group relative rounded-lg overflow-hidden shadow-lg cursor-pointer transform hover:scale-105 transition-transform duration-300 bg-white border-2 border-transparent hover:border-[#FF6B35] w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] max-w-md"
+                                        className="group relative rounded-lg shadow-lg cursor-pointer transform hover:scale-105 transition-transform duration-300 bg-white border-2 border-transparent hover:border-[#FF6B35] w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] max-w-md h-48 overflow-hidden"
                                         onClick={() => openModal(item)}
                                     >
-                                        <div className="aspect-video relative overflow-hidden">
-                                            <img
-                                                src={item.thumbnail || "/placeholder.svg"}
-                                                alt={item.title}
-                                                className="w-full h-full object-cover"
-                                            />
+                                        <img
+                                            src={item.thumbnail || "/placeholder.svg"}
+                                            alt={item.title}
+                                            className="absolute inset-0 w-full h-full object-cover"
+                                        />
 
-                                            <div className="absolute inset-0 bg-gradient-to-br from-[#90027D]/60 to-[#FF6B35]/40 group-hover:from-[#90027D]/80 group-hover:to-[#FF6B35]/60 transition-all duration-300 flex flex-col items-center justify-center p-4 overflow-hidden">
-                                                {Icon && (
-                                                    <Icon className="w-16 h-16 text-white opacity-90 group-hover:opacity-100 transform group-hover:scale-110 transition-all duration-300 drop-shadow-lg flex-shrink-0" />
-                                                )}
+                                        <div className="absolute inset-0 bg-gradient-to-br from-[#90027D]/60 to-[#FF6B35]/40 group-hover:from-[#90027D]/80 group-hover:to-[#FF6B35]/60 transition-all duration-300 flex flex-col items-center justify-center p-4">
+                                            {Icon && (
+                                                <Icon className="w-14 h-14 text-white opacity-90 group-hover:opacity-100 transform group-hover:scale-110 transition-all duration-300 drop-shadow-lg flex-shrink-0" />
+                                            )}
 
-                                                <h3 className="mt-3 text-lg text-center text-white font-semibold font-sans drop-shadow-md leading-tight line-clamp-2">
-                                                    {item.title}
-                                                </h3>
-                                            </div>
+                                            <h3 className="mt-2 text-base text-center text-white font-semibold font-sans drop-shadow-md leading-tight">
+                                                {item.title}
+                                            </h3>
                                         </div>
                                     </div>
                                 )
@@ -354,49 +352,72 @@ export function ProfilePage({ data }: ProfilePageProps) {
                         </DialogHeader>
                         <div className="p-1 md:p-2">
                             {modalContent.type === "video" && (
-                                <LazyVideoIframe
-                                    src={modalContent.embedUrl as string}
-                                    title={modalContent.title}
-                                    className="w-full aspect-video rounded-b-lg"
-                                    poster={modalContent.thumbnail}
-                                />
+                                <a
+                                    href={(modalContent.embedUrl as string).replace("/preview", "/view")}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="block relative w-full aspect-video rounded-b-lg overflow-hidden group/play cursor-pointer"
+                                >
+                                    <img
+                                        src={modalContent.thumbnail || "/placeholder.svg"}
+                                        alt={modalContent.title}
+                                        className="w-full h-full object-cover"
+                                    />
+                                    <div className="absolute inset-0 bg-black/30 group-hover/play:bg-black/40 transition-colors" />
+                                    <div className="absolute inset-0 flex items-center justify-center">
+                                        <div className="w-20 h-20 rounded-full bg-white/90 group-hover/play:bg-white group-hover/play:scale-110 transition-all duration-300 flex items-center justify-center shadow-xl">
+                                            <Play className="w-10 h-10 text-[#90027D] ml-1" fill="currentColor" />
+                                        </div>
+                                    </div>
+                                    <div className="absolute bottom-4 left-4 right-4 text-center">
+                                        <span className="text-white text-sm font-medium font-sans drop-shadow-md bg-black/40 px-3 py-1 rounded-full">
+                                            Click to watch on Google Drive
+                                        </span>
+                                    </div>
+                                </a>
                             )}
                             {modalContent.type === "videolist" && (
                                 <div className="max-h-[80vh] overflow-y-auto p-4 md:p-6 [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-[#90027D]/30 [&::-webkit-scrollbar-thumb]:rounded-full">
                                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
                                         {(modalContent.embedUrl as string[]).map((url, index) => {
                                             const highlight = media.highlights[index]
-                                            // Cycle through distinct gradient palettes per card
                                             const gradients = [
-                                                "from-[#90027D]/15 via-[#C23BD4]/8 to-[#FF6B35]/15",
-                                                "from-[#FF6B35]/15 via-[#E85D26]/8 to-[#90027D]/15",
-                                                "from-[#1A1A2E]/12 via-[#90027D]/8 to-[#C23BD4]/15",
-                                                "from-[#C23BD4]/15 via-[#FF6B35]/8 to-[#1A1A2E]/12",
-                                                "from-[#90027D]/20 to-[#1A1A2E]/10",
-                                                "from-[#FF6B35]/20 to-[#C23BD4]/10",
+                                                "from-[#90027D] to-[#C23BD4]",
+                                                "from-[#FF6B35] to-[#E8451A]",
+                                                "from-[#1A1A2E] to-[#90027D]",
+                                                "from-[#C23BD4] to-[#FF6B35]",
+                                                "from-[#90027D] to-[#FF6B35]",
+                                                "from-[#1A1A2E] to-[#C23BD4]",
                                             ]
                                             const gradient = gradients[index % gradients.length]
+                                            const viewUrl = url.replace("/preview", "/view")
                                             return (
-                                                <div key={url} className="group relative rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 bg-white border border-gray-100 hover:border-[#FF6B35]/40">
-                                                    {/* Video embed */}
-                                                    <div className={`relative aspect-[9/16] bg-gradient-to-br ${gradient}`}>
-                                                        <LazyVideoIframe
-                                                            src={url}
-                                                            title={highlight?.title || `Highlight ${index + 1}`}
-                                                            className="absolute inset-0 w-full h-full"
-                                                            poster={modalContent.thumbnail}
-                                                        />
-                                                        {/* Number badge */}
-                                                        <div className="absolute top-2.5 left-2.5 w-8 h-8 rounded-full bg-gradient-to-br from-[#90027D] to-[#FF6B35] flex items-center justify-center shadow-lg z-10">
-                                                            <span className="text-white text-xs font-bold">{index + 1}</span>
+                                                <div key={url} className="group relative rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                                                    {/* Gradient card with large number */}
+                                                    <a
+                                                        href={viewUrl}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        className={`block aspect-[3/4] bg-gradient-to-br ${gradient} relative cursor-pointer`}
+                                                    >
+                                                        <div className="absolute inset-0 flex flex-col items-center justify-center p-4">
+                                                            <span className="text-white/20 text-[120px] font-black font-sans leading-none select-none">
+                                                                {index + 1}
+                                                            </span>
                                                         </div>
-                                                    </div>
+                                                        <div className="absolute inset-0 flex flex-col items-center justify-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/20">
+                                                            <Play className="w-16 h-16 text-white drop-shadow-lg" fill="currentColor" />
+                                                        </div>
+                                                        <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/50 to-transparent">
+                                                            <h4 className="text-white text-sm font-semibold font-sans">
+                                                                {highlight?.title || `Highlight ${index + 1}`}
+                                                            </h4>
+                                                        </div>
+                                                    </a>
 
-                                                    {/* Card footer */}
-                                                    <div className="p-3 flex items-center justify-between gap-2">
-                                                        <h4 className="text-sm font-semibold text-[#1A1A2E] font-sans truncate">
-                                                            {highlight?.title || `Highlight ${index + 1}`}
-                                                        </h4>
+                                                    {/* Download bar */}
+                                                    <div className="p-2.5 bg-white flex items-center justify-between gap-2">
+                                                        <span className="text-xs text-[#1A1A2E]/60 font-sans truncate">Clip {index + 1}</span>
                                                         <a
                                                             href={`https://drive.google.com/uc?export=download&id=${highlight?.fileId}`}
                                                             target="_blank"
@@ -405,7 +426,7 @@ export function ProfilePage({ data }: ProfilePageProps) {
                                                             onClick={(e) => e.stopPropagation()}
                                                         >
                                                             <Download className="w-3 h-3" />
-                                                            <span className="hidden sm:inline">Download</span>
+                                                            Download
                                                         </a>
                                                     </div>
                                                 </div>
