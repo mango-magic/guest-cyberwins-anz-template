@@ -133,14 +133,28 @@ export function ProfilePage({ data }: ProfilePageProps) {
                     </div>
 
                     <div className="relative z-20 px-6 flex flex-col items-center">
-                        <div className="mb-8 md:mb-10">
+                        <div className="mb-8 md:mb-10 relative w-[200px] h-[200px]">
                             <img
                                 src={hero.profileImage}
                                 alt={hero.name}
                                 width={200}
                                 height={200}
-                                className="rounded-full border-4 border-[#FF6B35] shadow-2xl object-cover"
+                                className="rounded-full border-4 border-[#FF6B35] shadow-2xl object-cover w-full h-full"
+                                onError={(e) => {
+                                    const target = e.currentTarget
+                                    target.style.display = "none"
+                                    const fallback = target.nextElementSibling as HTMLElement
+                                    if (fallback) fallback.style.display = "flex"
+                                }}
                             />
+                            <div
+                                className="w-full h-full rounded-full border-4 border-[#FF6B35] shadow-2xl bg-gradient-to-br from-[#90027D] to-[#FF6B35] items-center justify-center"
+                                style={{ display: "none" }}
+                            >
+                                <span className="text-white text-5xl font-bold font-sans select-none">
+                                    {hero.name.split(" ").map(w => w[0]).join("").slice(0, 2).toUpperCase()}
+                                </span>
+                            </div>
                         </div>
 
                         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6 md:mb-8 font-sans gradient-cyber-text">
@@ -178,22 +192,21 @@ export function ProfilePage({ data }: ProfilePageProps) {
                                         className="group relative rounded-lg overflow-hidden shadow-lg cursor-pointer transform hover:scale-105 transition-transform duration-300 bg-white border-2 border-transparent hover:border-[#FF6B35] w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] max-w-md"
                                         onClick={() => openModal(item)}
                                     >
-                                        <div className="aspect-video relative">
+                                        <div className="aspect-video relative overflow-hidden">
                                             <img
                                                 src={item.thumbnail || "/placeholder.svg"}
                                                 alt={item.title}
                                                 className="w-full h-full object-cover"
                                             />
 
-                                            <div className="absolute inset-0 bg-gradient-to-br from-[#90027D]/60 to-[#FF6B35]/40 group-hover:from-[#90027D]/80 group-hover:to-[#FF6B35]/60 transition-all duration-300 flex flex-col items-center justify-center p-4">
+                                            <div className="absolute inset-0 bg-gradient-to-br from-[#90027D]/60 to-[#FF6B35]/40 group-hover:from-[#90027D]/80 group-hover:to-[#FF6B35]/60 transition-all duration-300 flex flex-col items-center justify-center p-4 overflow-hidden">
                                                 {Icon && (
-                                                    <Icon className="w-16 h-16 text-white opacity-90 group-hover:opacity-100 transform group-hover:scale-110 transition-all duration-300 drop-shadow-lg" />
+                                                    <Icon className="w-16 h-16 text-white opacity-90 group-hover:opacity-100 transform group-hover:scale-110 transition-all duration-300 drop-shadow-lg flex-shrink-0" />
                                                 )}
 
-                                                <h3 className="mt-4 text-xl text-center text-white font-semibold font-sans drop-shadow-md">
+                                                <h3 className="mt-3 text-lg text-center text-white font-semibold font-sans drop-shadow-md leading-tight line-clamp-2">
                                                     {item.title}
                                                 </h3>
-
                                             </div>
                                         </div>
                                     </div>
@@ -353,10 +366,20 @@ export function ProfilePage({ data }: ProfilePageProps) {
                                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
                                         {(modalContent.embedUrl as string[]).map((url, index) => {
                                             const highlight = media.highlights[index]
+                                            // Cycle through distinct gradient palettes per card
+                                            const gradients = [
+                                                "from-[#90027D]/15 via-[#C23BD4]/8 to-[#FF6B35]/15",
+                                                "from-[#FF6B35]/15 via-[#E85D26]/8 to-[#90027D]/15",
+                                                "from-[#1A1A2E]/12 via-[#90027D]/8 to-[#C23BD4]/15",
+                                                "from-[#C23BD4]/15 via-[#FF6B35]/8 to-[#1A1A2E]/12",
+                                                "from-[#90027D]/20 to-[#1A1A2E]/10",
+                                                "from-[#FF6B35]/20 to-[#C23BD4]/10",
+                                            ]
+                                            const gradient = gradients[index % gradients.length]
                                             return (
                                                 <div key={url} className="group relative rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 bg-white border border-gray-100 hover:border-[#FF6B35]/40">
                                                     {/* Video embed */}
-                                                    <div className="relative aspect-[9/16] bg-gradient-to-br from-[#90027D]/10 via-[#C23BD4]/5 to-[#FF6B35]/10">
+                                                    <div className={`relative aspect-[9/16] bg-gradient-to-br ${gradient}`}>
                                                         <LazyVideoIframe
                                                             src={url}
                                                             title={highlight?.title || `Highlight ${index + 1}`}

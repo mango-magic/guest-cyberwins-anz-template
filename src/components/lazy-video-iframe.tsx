@@ -13,6 +13,7 @@ export function LazyVideoIframe({ src, title, className = "", poster }: LazyVide
   const containerRef = useRef<HTMLDivElement>(null)
   const [isVisible, setIsVisible] = useState(false)
   const [hasInteracted, setHasInteracted] = useState(false)
+  const [iframeError, setIframeError] = useState(false)
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -40,9 +41,14 @@ export function LazyVideoIframe({ src, title, className = "", poster }: LazyVide
     }
   }, [])
 
+  // When iframe is triggered, set a timeout: if it hasn't visually loaded
+  // (we can't reliably detect iframe load errors cross-origin), at least
+  // collapse the empty white gap by keeping the poster visible as fallback.
+  const showIframe = isVisible && (hasInteracted || !poster) && !iframeError
+
   return (
-    <div ref={containerRef} className={`relative overflow-hidden bg-white ${className}`}>
-      {/* Poster/Thumbnail state - before user clicks */}
+    <div ref={containerRef} className={`relative overflow-hidden bg-gradient-to-br from-[#90027D]/5 to-[#FF6B35]/5 ${className}`}>
+      {/* Poster/Thumbnail state - shown before click or as fallback */}
       {!hasInteracted && poster && (
         <div className="absolute inset-0 cursor-pointer z-10" onClick={() => setHasInteracted(true)}>
           <img
@@ -63,7 +69,7 @@ export function LazyVideoIframe({ src, title, className = "", poster }: LazyVide
         </div>
       )}
 
-      {isVisible && (hasInteracted || !poster) && (
+      {showIframe && (
         <iframe
           src={src}
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 min-w-full min-h-full w-auto h-auto"
@@ -71,7 +77,15 @@ export function LazyVideoIframe({ src, title, className = "", poster }: LazyVide
           allowFullScreen
           title={title}
           loading="lazy"
+          onError={() => setIframeError(true)}
         />
+      )}
+
+      {/* Fallback when iframe fails or hasn't loaded yet after interaction */}
+      {hasInteracted && !poster && !showIframe && (
+        <div className="absolute inset-0 flex items-center justify-center text-[#90027D]/60">
+          <p className="text-sm font-sans">Video unavailable</p>
+        </div>
       )}
     </div>
   )

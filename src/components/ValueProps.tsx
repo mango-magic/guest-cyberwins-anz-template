@@ -11,7 +11,7 @@ const workflowSteps = [
     icon: Scissors,
     title: "Internal Review & Editing",
     subtitle: "We handle all production",
-    description: "Our team cleans up the video, creates a custom song for you, produces highlight clips, quote card1s, and an intro video—all keeping the natural, professional tone.",
+    description: "Our team cleans up the video, creates a custom song for you, produces highlight clips, quote cards, and an intro video—all keeping the natural, professional tone.",
   },
   {
     icon: Radio,
