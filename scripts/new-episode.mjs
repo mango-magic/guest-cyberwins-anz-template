@@ -22,12 +22,13 @@ const ROOT = join(__dirname, "..");
 
 // ── helpers ────────────────────────────────────────────────────────────────
 
-/** Turn "Jane O'Brien-Smith" into "janeobriensmith" */
+/** Turn "Jane O'Brien-Smith" into "jane-obrien-smith" */
 function toSlug(name) {
   return name
     .toLowerCase()
-    .replace(/[^a-z0-9]/g, "")
-    .trim();
+    .replace(/['']/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
 }
 
 /**

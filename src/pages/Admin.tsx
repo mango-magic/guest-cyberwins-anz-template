@@ -1,5 +1,5 @@
-import React, { useState, useCallback } from "react"
-import { Plus, Trash2, Upload, Eye, EyeOff, CheckCircle, AlertCircle, Loader2, ExternalLink } from "lucide-react"
+import React, { useState, useCallback, useRef } from "react"
+import { Plus, Trash2, Upload, Eye, EyeOff, CheckCircle, AlertCircle, Loader2, ExternalLink, ImagePlus, X } from "lucide-react"
 
 const REPO_OWNER = "mango-magic"
 const REPO_NAME = "guest-cyberwins-anz-template"
@@ -8,7 +8,11 @@ const BRANCH = "main"
 // ── helpers ─────────────────────────────────────────────────────────────
 
 function toSlug(name: string) {
-  return name.toLowerCase().replace(/[^a-z0-9]/g, "")
+  return name
+    .toLowerCase()
+    .replace(/['']/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
 }
 
 function extractDriveId(input: string) {
@@ -21,6 +25,19 @@ function extractDriveId(input: string) {
 
 function drivePreviewUrl(fileId: string) {
   return `https://drive.google.com/file/d/${fileId}/preview`
+}
+
+function fileToBase64(file: File): Promise<string> {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader()
+    reader.onload = () => {
+      const result = reader.result as string
+      // strip "data:image/...;base64," prefix
+      resolve(result.split(",")[1])
+    }
+    reader.onerror = reject
+    reader.readAsDataURL(file)
+  })
 }
 
 // ── boilerplate ─────────────────────────────────────────────────────────
@@ -77,9 +94,15 @@ async function githubApi(
   return res.json()
 }
 
+interface FileEntry {
+  path: string
+  content: string
+  encoding: "utf-8" | "base64"
+}
+
 async function commitFiles(
   token: string,
-  files: { path: string; content: string }[],
+  files: FileEntry[],
   message: string
 ) {
   // 1. Get current ref
@@ -90,12 +113,12 @@ async function commitFiles(
   const commit = await githubApi(token, `/git/commits/${latestSha}`)
   const treeSha = commit.tree.sha
 
-  // 3. Create blobs
+  // 3. Create blobs (supports both utf-8 and base64)
   const blobs = await Promise.all(
     files.map((f) =>
       githubApi(token, "/git/blobs", "POST", {
         content: f.content,
-        encoding: "utf-8",
+        encoding: f.encoding,
       })
     )
   )
@@ -126,9 +149,45 @@ async function commitFiles(
   return newCommit
 }
 
+// ── validation ──────────────────────────────────────────────────────────
+
+interface FormErrors {
+  token?: string
+  name?: string
+  tagline?: string
+  description?: string
+  fullInterviewUrl?: string
+  introUrl?: string
+}
+
+function validate(fields: {
+  token: string
+  name: string
+  tagline: string
+  description: string
+  fullInterviewUrl: string
+  introUrl: string
+}): FormErrors {
+  const errors: FormErrors = {}
+  if (!fields.token.trim()) errors.token = "GitHub token is required"
+  if (!fields.name.trim()) errors.name = "Guest name is required"
+  else if (fields.name.trim().split(/\s+/).length < 2) errors.name = "Enter first and last name"
+  if (!fields.tagline.trim()) errors.tagline = "Tagline is required"
+  if (!fields.description.trim()) errors.description = "Episode description is required"
+  else if (fields.description.trim().length < 50) errors.description = "Description should be at least 50 characters"
+  if (!fields.fullInterviewUrl.trim()) errors.fullInterviewUrl = "Full interview URL is required"
+  if (!fields.introUrl.trim()) errors.introUrl = "Speaker introduction URL is required"
+  return errors
+}
+
 // ── component ───────────────────────────────────────────────────────────
 
 type Status = "idle" | "submitting" | "success" | "error"
+
+function FieldError({ msg }: { msg?: string }) {
+  if (!msg) return null
+  return <p className="text-xs text-red-400 mt-1">{msg}</p>
+}
 
 export default function Admin() {
   // Auth
@@ -140,11 +199,20 @@ export default function Admin() {
   const [region, setRegion] = useState<"anz" | "usa">("anz")
   const [tagline, setTagline] = useState("")
   const [description, setDescription] = useState("")
-  const [profileImage, setProfileImage] = useState("")
   const [fullInterviewUrl, setFullInterviewUrl] = useState("")
   const [introUrl, setIntroUrl] = useState("")
   const [highlights, setHighlights] = useState<string[]>([""])
   const [transcript, setTranscript] = useState("")
+
+  // Image upload
+  const [imageFile, setImageFile] = useState<File | null>(null)
+  const [imagePreview, setImagePreview] = useState<string | null>(null)
+  const [dragOver, setDragOver] = useState(false)
+  const fileInputRef = useRef<HTMLInputElement>(null)
+
+  // Validation
+  const [errors, setErrors] = useState<FormErrors>({})
+  const [touched, setTouched] = useState<Set<string>>(new Set())
 
   // Status
   const [status, setStatus] = useState<Status>("idle")
@@ -164,12 +232,43 @@ export default function Admin() {
   const updateHighlight = (i: number, val: string) =>
     setHighlights((h) => h.map((v, idx) => (idx === i ? val : v)))
 
-  const isValid =
-    token && name && tagline && description && fullInterviewUrl && introUrl
+  const markTouched = (field: string) =>
+    setTouched((prev) => new Set(prev).add(field))
+
+  // Live validation on touched fields
+  const liveErrors = validate({ token, name, tagline, description, fullInterviewUrl, introUrl })
+
+  // Image handling
+  const handleImageSelect = (file: File) => {
+    if (!file.type.startsWith("image/")) return
+    setImageFile(file)
+    const url = URL.createObjectURL(file)
+    setImagePreview(url)
+  }
+
+  const handleDrop = (e: React.DragEvent) => {
+    e.preventDefault()
+    setDragOver(false)
+    const file = e.dataTransfer.files[0]
+    if (file) handleImageSelect(file)
+  }
+
+  const clearImage = () => {
+    setImageFile(null)
+    if (imagePreview) URL.revokeObjectURL(imagePreview)
+    setImagePreview(null)
+    if (fileInputRef.current) fileInputRef.current.value = ""
+  }
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    if (!isValid) return
+
+    // Validate all fields
+    const allErrors = validate({ token, name, tagline, description, fullInterviewUrl, introUrl })
+    setErrors(allErrors)
+    setTouched(new Set(["token", "name", "tagline", "description", "fullInterviewUrl", "introUrl"]))
+
+    if (Object.keys(allErrors).length > 0) return
 
     setStatus("submitting")
     setErrorMsg("")
@@ -181,6 +280,14 @@ export default function Admin() {
         .map((h) => h.trim())
         .filter(Boolean)
         .map(extractDriveId)
+
+      // Determine image path
+      let imageFilename = "placeholder.svg"
+      if (imageFile) {
+        const ext = imageFile.name.split(".").pop() || "jpg"
+        imageFilename = `${slug}-profile.${ext}`
+      }
+      const imagePath = `/images/${imageFilename}`
 
       const mediaItems: unknown[] = [
         {
@@ -217,11 +324,6 @@ export default function Admin() {
         fileId: id,
       }))
 
-      const imageFilename = profileImage.trim() || "placeholder.svg"
-      const imagePath = imageFilename.startsWith("/images/")
-        ? imageFilename
-        : `/images/${imageFilename}`
-
       const profile = {
         slug,
         region,
@@ -244,18 +346,33 @@ export default function Admin() {
       const transcriptContent =
         transcript.trim() || `Transcript for ${name}\n\n(paste full transcript here)`
 
+      // Build file list
+      const files: FileEntry[] = [
+        {
+          path: `src/data/${slug}.json`,
+          content: JSON.stringify(profile, null, 2) + "\n",
+          encoding: "utf-8",
+        },
+        {
+          path: `public/data/${slug}.txt`,
+          content: transcriptContent + "\n",
+          encoding: "utf-8",
+        },
+      ]
+
+      // Add image if uploaded
+      if (imageFile) {
+        const base64 = await fileToBase64(imageFile)
+        files.push({
+          path: `public/images/${imageFilename}`,
+          content: base64,
+          encoding: "base64",
+        })
+      }
+
       await commitFiles(
         token,
-        [
-          {
-            path: `src/data/${slug}.json`,
-            content: JSON.stringify(profile, null, 2) + "\n",
-          },
-          {
-            path: `public/data/${slug}.txt`,
-            content: transcriptContent + "\n",
-          },
-        ],
+        files,
         `Add new episode: ${name} (${region.toUpperCase()})`
       )
 
@@ -271,7 +388,7 @@ export default function Admin() {
     setName("")
     setTagline("")
     setDescription("")
-    setProfileImage("")
+    clearImage()
     setFullInterviewUrl("")
     setIntroUrl("")
     setHighlights([""])
@@ -279,7 +396,17 @@ export default function Admin() {
     setStatus("idle")
     setCreatedSlug("")
     setErrorMsg("")
+    setErrors({})
+    setTouched(new Set())
   }
+
+  // Input class helper - adds red border when field has error
+  const inputCls = (field: keyof FormErrors, extra = "") =>
+    `w-full bg-white/5 border rounded-lg px-4 py-2.5 text-white placeholder-white/20 focus:outline-none focus:ring-1 text-sm ${extra} ${
+      touched.has(field) && liveErrors[field]
+        ? "border-red-400/60 focus:border-red-400 focus:ring-red-400/30"
+        : "border-white/10 focus:border-[#FF6B35]/50 focus:ring-[#FF6B35]/30"
+    }`
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#1A1A2E] via-[#16132B] to-[#0F0D1A]">
@@ -308,26 +435,30 @@ export default function Admin() {
           <label className="block text-sm font-medium text-white/70 mb-2 font-sans">
             GitHub Personal Access Token
           </label>
-          <div className="flex gap-2">
-            <div className="relative flex-1">
-              <input
-                type={showToken ? "text" : "password"}
-                value={token}
-                onChange={(e) => saveToken(e.target.value)}
-                placeholder="ghp_xxxxxxxxxxxx"
-                className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-white placeholder-white/20 focus:outline-none focus:border-[#FF6B35]/50 focus:ring-1 focus:ring-[#FF6B35]/30 font-mono text-sm"
-              />
-              <button
-                type="button"
-                onClick={() => setShowToken(!showToken)}
-                className="absolute right-3 top-1/2 -translate-y-1/2 text-white/30 hover:text-white/60"
-              >
-                {showToken ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
-              </button>
-            </div>
+          <div className="relative">
+            <input
+              type={showToken ? "text" : "password"}
+              value={token}
+              onChange={(e) => saveToken(e.target.value)}
+              onBlur={() => markTouched("token")}
+              placeholder="ghp_xxxxxxxxxxxx"
+              className={`w-full bg-white/5 border rounded-lg px-4 py-2.5 text-white placeholder-white/20 focus:outline-none focus:ring-1 font-mono text-sm pr-10 ${
+                touched.has("token") && liveErrors.token
+                  ? "border-red-400/60 focus:border-red-400 focus:ring-red-400/30"
+                  : "border-white/10 focus:border-[#FF6B35]/50 focus:ring-[#FF6B35]/30"
+              }`}
+            />
+            <button
+              type="button"
+              onClick={() => setShowToken(!showToken)}
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-white/30 hover:text-white/60"
+            >
+              {showToken ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
+            </button>
           </div>
+          <FieldError msg={touched.has("token") ? liveErrors.token : undefined} />
           <p className="text-xs text-white/30 mt-2">
-            Needs <code className="text-[#FF6B35]/60">repo</code> scope.
+            Needs <code className="text-[#FF6B35]/60">Contents: Read & Write</code> permission.
             Stored locally in your browser only.
           </p>
         </div>
@@ -372,7 +503,7 @@ export default function Admin() {
 
         {/* Form */}
         {status !== "success" && (
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form onSubmit={handleSubmit} className="space-y-6" noValidate>
             {/* Guest Info */}
             <fieldset className="bg-white/5 border border-white/10 rounded-xl p-6 space-y-4">
               <legend className="text-sm font-semibold text-[#FF6B35] px-2 font-sans">
@@ -386,11 +517,12 @@ export default function Admin() {
                     type="text"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
+                    onBlur={() => markTouched("name")}
                     placeholder="Jane Smith"
-                    required
-                    className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-white placeholder-white/20 focus:outline-none focus:border-[#FF6B35]/50 focus:ring-1 focus:ring-[#FF6B35]/30 text-sm"
+                    className={inputCls("name")}
                   />
-                  {slug && (
+                  <FieldError msg={touched.has("name") ? liveErrors.name : undefined} />
+                  {slug && !liveErrors.name && (
                     <p className="text-xs text-white/30 mt-1">
                       Slug: <code className="text-[#C23BD4]">{slug}</code>
                     </p>
@@ -425,10 +557,11 @@ export default function Admin() {
                   type="text"
                   value={tagline}
                   onChange={(e) => setTagline(e.target.value)}
+                  onBlur={() => markTouched("tagline")}
                   placeholder="CISO at Acme Corp | Zero trust across multi-cloud environments"
-                  required
-                  className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-white placeholder-white/20 focus:outline-none focus:border-[#FF6B35]/50 focus:ring-1 focus:ring-[#FF6B35]/30 text-sm"
+                  className={inputCls("tagline")}
                 />
+                <FieldError msg={touched.has("tagline") ? liveErrors.tagline : undefined} />
               </div>
 
               <div>
@@ -438,24 +571,64 @@ export default function Admin() {
                 <textarea
                   value={description}
                   onChange={(e) => setDescription(e.target.value)}
+                  onBlur={() => markTouched("description")}
                   placeholder="A detailed synopsis of the episode..."
-                  required
                   rows={4}
-                  className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-white placeholder-white/20 focus:outline-none focus:border-[#FF6B35]/50 focus:ring-1 focus:ring-[#FF6B35]/30 text-sm resize-none"
+                  className={inputCls("description", "resize-none")}
                 />
+                <FieldError msg={touched.has("description") ? liveErrors.description : undefined} />
               </div>
 
+              {/* Image drag-drop */}
               <div>
                 <label className="block text-xs font-medium text-white/50 mb-1.5">
-                  Profile Image Filename
+                  Profile Photo
                 </label>
-                <input
-                  type="text"
-                  value={profileImage}
-                  onChange={(e) => setProfileImage(e.target.value)}
-                  placeholder="Jane-Smith-Profile.jpg (must be uploaded to /images/ separately)"
-                  className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-white placeholder-white/20 focus:outline-none focus:border-[#FF6B35]/50 focus:ring-1 focus:ring-[#FF6B35]/30 text-sm"
-                />
+                {imagePreview ? (
+                  <div className="relative inline-block">
+                    <img
+                      src={imagePreview}
+                      alt="Profile preview"
+                      className="w-28 h-28 rounded-full object-cover border-4 border-[#FF6B35]/40"
+                    />
+                    <button
+                      type="button"
+                      onClick={clearImage}
+                      className="absolute -top-1 -right-1 w-6 h-6 rounded-full bg-red-500 flex items-center justify-center hover:bg-red-400 transition-colors"
+                    >
+                      <X className="w-3.5 h-3.5 text-white" />
+                    </button>
+                    <p className="text-xs text-white/30 mt-2">{imageFile?.name}</p>
+                  </div>
+                ) : (
+                  <div
+                    onDragOver={(e) => { e.preventDefault(); setDragOver(true) }}
+                    onDragLeave={() => setDragOver(false)}
+                    onDrop={handleDrop}
+                    onClick={() => fileInputRef.current?.click()}
+                    className={`border-2 border-dashed rounded-xl p-8 text-center cursor-pointer transition-colors ${
+                      dragOver
+                        ? "border-[#FF6B35] bg-[#FF6B35]/5"
+                        : "border-white/10 hover:border-white/20"
+                    }`}
+                  >
+                    <ImagePlus className="w-8 h-8 text-white/20 mx-auto mb-2" />
+                    <p className="text-sm text-white/40">
+                      Drag & drop a photo or <span className="text-[#FF6B35]">click to browse</span>
+                    </p>
+                    <p className="text-xs text-white/20 mt-1">JPG, PNG, WebP</p>
+                    <input
+                      ref={fileInputRef}
+                      type="file"
+                      accept="image/*"
+                      onChange={(e) => {
+                        const file = e.target.files?.[0]
+                        if (file) handleImageSelect(file)
+                      }}
+                      className="hidden"
+                    />
+                  </div>
+                )}
               </div>
             </fieldset>
 
@@ -476,10 +649,11 @@ export default function Admin() {
                   type="text"
                   value={fullInterviewUrl}
                   onChange={(e) => setFullInterviewUrl(e.target.value)}
+                  onBlur={() => markTouched("fullInterviewUrl")}
                   placeholder="https://drive.google.com/file/d/.../view"
-                  required
-                  className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-white placeholder-white/20 focus:outline-none focus:border-[#FF6B35]/50 focus:ring-1 focus:ring-[#FF6B35]/30 text-sm font-mono"
+                  className={inputCls("fullInterviewUrl", "font-mono")}
                 />
+                <FieldError msg={touched.has("fullInterviewUrl") ? liveErrors.fullInterviewUrl : undefined} />
               </div>
 
               <div>
@@ -490,10 +664,11 @@ export default function Admin() {
                   type="text"
                   value={introUrl}
                   onChange={(e) => setIntroUrl(e.target.value)}
+                  onBlur={() => markTouched("introUrl")}
                   placeholder="https://drive.google.com/file/d/.../view"
-                  required
-                  className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-white placeholder-white/20 focus:outline-none focus:border-[#FF6B35]/50 focus:ring-1 focus:ring-[#FF6B35]/30 text-sm font-mono"
+                  className={inputCls("introUrl", "font-mono")}
                 />
+                <FieldError msg={touched.has("introUrl") ? liveErrors.introUrl : undefined} />
               </div>
             </fieldset>
 
@@ -556,7 +731,7 @@ export default function Admin() {
             {/* Submit */}
             <button
               type="submit"
-              disabled={!isValid || status === "submitting"}
+              disabled={status === "submitting"}
               className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-[#90027D] via-[#C23BD4] to-[#FF6B35] text-white font-semibold py-4 rounded-xl shadow-lg hover:shadow-xl hover:opacity-95 transition-all duration-300 disabled:opacity-40 disabled:cursor-not-allowed text-base font-sans"
             >
               {status === "submitting" ? (

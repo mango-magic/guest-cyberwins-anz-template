@@ -17,17 +17,27 @@ const Index = () => {
       <EpisodeGrid region="usa" />
       <ValueProps />
       <CTA />
-      
+
       {/* Learn More CTA */}
       <section className="relative bg-[hsl(var(--card1))] py-16 border-t border-[hsl(var(--border)/0.1)]">
-        <div className="container mx-auto px-6 text-center">
-          <Button 
-            size="lg"
-            className="font-medium text-base px-8 py-6 bg-gradient-to-r from-exclusive-purple to-exclusive-orange hover:opacity-90 text-white border-0"
-            onClick={() => navigate("/")}
-          >
-            Learn more about CyberWins
-          </Button>
+        <div className="container mx-auto px-6 text-center flex flex-col items-center gap-4">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+            <Button
+              size="lg"
+              className="font-medium text-base px-8 py-6 bg-gradient-to-r from-exclusive-purple to-exclusive-orange hover:opacity-90 text-white border-0"
+              onClick={() => navigate("/")}
+            >
+              Learn more about CyberWins
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="border border-exclusive-orange/50 bg-transparent text-[hsl(var(--foreground1))] hover:bg-[hsl(var(--foreground1)/0.05)] font-medium text-sm px-6 py-5"
+              onClick={() => navigate("/admin")}
+            >
+              Guest Portal
+            </Button>
+          </div>
         </div>
       </section>
       

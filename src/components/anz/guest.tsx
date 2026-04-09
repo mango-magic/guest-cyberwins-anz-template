@@ -4,8 +4,10 @@ import ValueProps from "@/components/anz/ValueProps";
 import CTA from "@/components/anz/CTA";
 import EpisodeGrid from "@/components/EpisodeGrid";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 const AnzGuests = () => {
+  const navigate = useNavigate();
   return (
     <div className="min-h-screen bg-[hsl(var(--background1))]">
       <Hero />
@@ -32,6 +34,14 @@ const AnzGuests = () => {
               onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLScVwUkvdxNCJbXOtWVyZgdyjXUgn-VB7QMWf3NonjVNVjHUBw/viewform?usp=header', '_blank')}
             >
               Join the Series
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="border border-exclusive-orange/50 bg-transparent text-[hsl(var(--foreground1))] hover:bg-[hsl(var(--foreground1)/0.05)] font-medium text-sm px-6 py-5"
+              onClick={() => navigate("/admin")}
+            >
+              Guest Portal
             </Button>
           </div>
         </div>
