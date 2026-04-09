@@ -189,7 +189,7 @@ export function ProfilePage({ data }: ProfilePageProps) {
                                 return (
                                     <div
                                         key={item.title}
-                                        className="group relative rounded-lg shadow-lg cursor-pointer transform hover:scale-105 transition-transform duration-300 bg-white border-2 border-transparent hover:border-[#FF6B35] w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] max-w-md h-48 overflow-hidden"
+                                        className="group relative rounded-xl shadow-lg cursor-pointer transform hover:scale-105 transition-transform duration-300 bg-[#FEFEFE] border-2 border-transparent hover:border-[#FF6B35] w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] max-w-md h-48 overflow-hidden"
                                         onClick={() => openModal(item)}
                                     >
                                         <img
@@ -197,6 +197,9 @@ export function ProfilePage({ data }: ProfilePageProps) {
                                             alt={item.title}
                                             className="absolute inset-0 w-full h-full object-cover"
                                         />
+
+                                        {/* Bottom fade to hide image text bleeding at card edge */}
+                                        <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[#FEFEFE] to-transparent pointer-events-none" />
 
                                         <div className="absolute inset-0 bg-gradient-to-br from-[#90027D]/60 to-[#FF6B35]/40 group-hover:from-[#90027D]/80 group-hover:to-[#FF6B35]/60 transition-all duration-300 flex flex-col items-center justify-center p-4">
                                             {Icon && (
