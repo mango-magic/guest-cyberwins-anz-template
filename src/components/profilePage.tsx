@@ -116,9 +116,10 @@ export function ProfilePage({ data }: ProfilePageProps) {
 
     const { hero, media, podcastInfo, footer, host, transcript } = data
 
-    const linkedInUrl = data.region === "anz"
+    const isAnz = window.location.pathname.startsWith("/anz")
+    const linkedInUrl = isAnz
         ? "https://www.linkedin.com/company/nextgen-group/"
-        : podcastInfo.getInvolved.links.linkedIn
+        : "https://www.linkedin.com/company/exclusive-networks-podcast-series/posts/?feedView=all"
 
     return (
         <div className="bg-[#FEFEFE] text-[#1A1A2E] font-light-body">
