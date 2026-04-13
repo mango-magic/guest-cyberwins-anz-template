@@ -48,22 +48,14 @@ const AnzGuests = () => {
       </section>
 
       {/* Footer */}
-      <footer className="relative bg-black py-16 border-t border-[hsl(var(--border1))]">
+      <footer className="relative bg-black py-10 border-t border-[hsl(var(--border1))]">
         <div className="container relative mx-auto px-6">
-          <div className="text-center space-y-6 max-w-2xl mx-auto">
-            <p className="font-sans text-sm text-[hsl(var(--foreground1)/0.7)] font-light">
-              <span className="text-exclusive-orange">CyberWins</span> Australia & New Zealand is produced by{" "}
-              <span className="text-[hsl(var(--foreground1)/0.9)]">Nextgen</span>.
+          <div className="text-center space-y-3">
+            <p className="font-sans text-sm text-[hsl(var(--foreground1)/0.6)] font-light">
+              <span className="text-exclusive-orange">CyberWins</span> ANZ is produced by Nextgen | Exclusive Networks
             </p>
-            <p className="font-sans text-sm text-[hsl(var(--muted-foreground1))] font-light leading-relaxed">
-              Nextgen is the Exclusive Networks company dedicated to Australia & New Zealand, bringing together perspectives across vendors, industries, and architectures.
-            </p>
-            <p className="font-sans text-xs text-[hsl(var(--muted-foreground1)/0.7)] font-light italic">
-              Vendor mentions in CyberWins are editorial, not paid placements.
-            </p>
-            <div className="h-px w-16 mx-auto bg-[hsl(var(--border1))] mt-8" />
-            <p className="font-sans text-xs text-[hsl(var(--muted-foreground1)/0.5)] pt-2 font-light">
-              © 2026 Nextgen | Exclusive Networks. All rights reserved.
+            <p className="font-sans text-xs text-[hsl(var(--muted-foreground1)/0.4)] font-light">
+              Vendor mentions are editorial, not paid placements · &copy; 2026 Nextgen | Exclusive Networks
             </p>
           </div>
         </div>
