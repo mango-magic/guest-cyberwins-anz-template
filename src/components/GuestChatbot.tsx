@@ -8,14 +8,18 @@ type chatbotProps = {
 }
 
 export default function GuestChatbot({ name, transcriptPath, host }: chatbotProps) {
-    console.log(transcriptPath)
     useEffect(() => {
         const existing = document.getElementById("n8n-chat")
         if (existing) return;
 
         async function trigger() {
-            const res = await fetch(transcriptPath);
-            const text = await res.text();
+            let text = "";
+            try {
+                const res = await fetch(transcriptPath);
+                if (res.ok) text = await res.text();
+            } catch {
+                // transcript unavailable — chatbot still works without it
+            }
 
             // ── 1. Store data on window so the injected script can read it safely ──
             (window as any).__cyberWinsName = name;

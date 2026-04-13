@@ -1,10 +1,8 @@
 "use client"
 
-import React from "react"
 import { useState } from "react"
-import { PlayCircle, Mic, Video, Podcast, Users, Megaphone, Download, Play, LucideIcon } from "lucide-react"
+import { PlayCircle, Mic, Video, Podcast, Users, Megaphone, Download, Play } from "lucide-react"
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
-import { LazyVideoIframe } from "@/components/lazy-video-iframe"
 import "./globals.css"
 import "./styles/global.css"
 import GuestChatbot from "./GuestChatbot"
@@ -451,6 +449,3 @@ export function ProfilePage({ data }: ProfilePageProps) {
         </div>
     )
 }
-
-// Export icons for use in data files
-export { PlayCircle, Mic, Video }

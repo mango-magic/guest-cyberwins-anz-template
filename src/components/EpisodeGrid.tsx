@@ -1,13 +1,14 @@
 import { Link } from "react-router-dom";
 import { profilesByRegion } from "@/data";
 import { PlayCircle } from "lucide-react";
+import type { ProfileData } from "@/components/profilePage";
 
 interface EpisodeGridProps {
   region: "anz" | "usa";
 }
 
 export default function EpisodeGrid({ region }: EpisodeGridProps) {
-  const episodes = profilesByRegion(region);
+  const episodes = profilesByRegion(region) as ProfileData[];
 
   if (episodes.length === 0) return null;
 
@@ -23,7 +24,7 @@ export default function EpisodeGrid({ region }: EpisodeGridProps) {
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-6xl mx-auto">
-          {episodes.map((ep: any) => (
+          {episodes.map((ep) => (
             <Link
               key={ep.slug}
               to={`/${region}/${ep.slug}`}
