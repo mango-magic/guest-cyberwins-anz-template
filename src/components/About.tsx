@@ -20,7 +20,7 @@ const pillars = [
 
 const About = () => {
   return (
-    <section id="about" className="relative bg-[hsl(0_0%_0%)] py-24 overflow-hidden">
+    <section id="about" className="relative bg-[hsl(var(--background1))] py-24 overflow-hidden">
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-exclusive-purple/30 to-transparent" />
 
       <div className="container relative mx-auto px-6">
@@ -38,7 +38,7 @@ const About = () => {
             {pillars.map((p, i) => (
               <div
                 key={i}
-                className="group text-center p-8 rounded-xl border border-[hsl(var(--border)/0.1)] bg-[hsl(var(--card1))] hover:border-exclusive-purple/40 transition-all duration-300"
+                className="group text-center p-8 rounded-xl border border-[hsl(var(--border1))] bg-[hsl(var(--card1))] hover:border-exclusive-purple/40 transition-all duration-300"
               >
                 <div className="mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-exclusive-purple to-exclusive-orange">
                   <p.icon className="h-6 w-6 text-white" />

@@ -30,7 +30,7 @@ const CTA = () => {
             {deliverables.map((item, i) => (
               <div
                 key={i}
-                className="group flex flex-col items-center text-center p-5 rounded-xl border border-[hsl(var(--border)/0.1)] hover:border-exclusive-orange/30 transition-all duration-300"
+                className="group flex flex-col items-center text-center p-5 rounded-xl border border-[hsl(var(--border1))] hover:border-exclusive-orange/30 transition-all duration-300"
               >
                 <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-exclusive-orange/10 group-hover:bg-exclusive-orange/20 transition-colors">
                   <item.icon className="h-5 w-5 text-exclusive-orange" />
@@ -46,7 +46,7 @@ const CTA = () => {
           </div>
 
           <div className="text-center pt-2 space-y-2">
-            <div className="h-px w-32 mx-auto bg-gradient-to-r from-transparent via-[hsl(var(--border)/0.3)] to-transparent" />
+            <div className="h-px w-32 mx-auto bg-gradient-to-r from-transparent via-[hsl(var(--border1))] to-transparent" />
             <p className="font-sans text-sm text-[hsl(var(--muted-foreground1))] font-light pt-2">
               LinkedIn Live broadcast · Global cybersecurity audience · Professional amplification
             </p>

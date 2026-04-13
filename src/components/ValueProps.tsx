@@ -12,7 +12,7 @@ const steps = [
 const ValueProps = () => {
   return (
     <section className="relative bg-[hsl(var(--card1))] py-24 overflow-hidden">
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[hsl(var(--border)/0.2)] to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[hsl(var(--border1))] to-transparent" />
 
       <div className="container relative mx-auto px-6">
         <div className="mx-auto max-w-4xl space-y-16">
@@ -30,7 +30,7 @@ const ValueProps = () => {
             {steps.map((step, i) => (
               <div
                 key={i}
-                className="group relative text-center p-5 rounded-xl bg-[hsl(var(--background1))] border border-[hsl(var(--border)/0.15)] hover:border-exclusive-purple/40 transition-all duration-300"
+                className="group relative text-center p-5 rounded-xl bg-[hsl(var(--background1))] border border-[hsl(var(--border1))] hover:border-exclusive-purple/40 transition-all duration-300"
               >
                 {/* Step number */}
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2 flex h-6 w-6 items-center justify-center rounded-full bg-gradient-to-br from-exclusive-purple to-exclusive-orange text-[10px] font-bold text-white shadow-md">

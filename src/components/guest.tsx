@@ -19,7 +19,7 @@ const Index = () => {
       <CTA />
 
       {/* Learn More CTA */}
-      <section className="relative bg-[hsl(var(--card1))] py-16 border-t border-[hsl(var(--border)/0.1)]">
+      <section className="relative bg-[hsl(var(--card1))] py-16 border-t border-[hsl(var(--border1))]">
         <div className="container mx-auto px-6 text-center flex flex-col items-center gap-4">
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
             <Button
@@ -42,7 +42,7 @@ const Index = () => {
       </section>
       
       {/* Footer */}
-      <footer className="relative bg-black py-10 border-t border-[hsl(var(--border)/0.1)]">
+      <footer className="relative bg-black py-10 border-t border-[hsl(var(--border1))]">
         <div className="container relative mx-auto px-6">
           <div className="text-center space-y-3">
             <p className="font-sans text-sm text-[hsl(var(--foreground1)/0.6)] font-light">
